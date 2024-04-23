@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif; /* or any preferred font */
+}
+.screen_class {
+    display: flex;
+    height: 100%;
+    background-color: #4B3B60; /* Main background color */
+}
+.right_screen_class {
+    flex: 1;
+    background-color: #563D7C; /* Right screen background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px; /* Adjust padding as needed */
+}
+.user_title_class {
+    background-color: #322F40; /* Chat title background color */
+    display: flex; /* Use flexbox to arrange children inline */
+    justify-content: space-between; /* Space out children */
+    align-items: bottom; /* Align items vertically */
+    padding: 10px;
+    margin-bottom: 20px; /* Space between title and chat box */
+    color: #FFF; /* Text color */
+    width: 400px;
+}
+.user_title_text_class, .user_title_input_class, .user_title_button_class {
+    flex: 1; /* Each child will take up equal amount of space */
+    display: flex; /* Also use flexbox within children if needed */
+    justify-content: center; /* Center content of children */
+    align-items: center; /* Align content of children vertically */
+}
+.chat_box_class {
+    background-color: #6C648B; /* Chat box background color */
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto; /* For scrollable content */
+    color: #FFF; /* Text color */
+}
+.chat_input_class {
+    display: flex;
+}
+
+.input_text_class {
+    flex-grow: 1;
+    margin-right: 10px; /* Space between input field and button */
+}
+
+.input_button_class button {
+    background-color: #9887B1; /* Button background color */
+    color: #FFF; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.left_screen_class {
+    width: 250px; /* Adjust width as necessary */
+    background-color: #4B3B60; /* Sidebar background color */
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Adjust padding as needed */
+    color: #FFF; /* Text color */
+}
+.time_class, .state_class {
+    background-color: #322F40; /* Sidebar elements background color */
+    padding: 10px;
+    margin-bottom: 20px; /* Space between elements */
+}
+.votes_class{
+    background-color: #322F40; /* Sidebar elements background color */
+    padding: 10px;
+    margin-bottom: 20px; /* Space between chat box and input */
+    flex-grow: 1;
+    overflow-y: auto; /* For scrollable content */
+    color: #FFF; /* Text color */
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* If individual inputs need space */
+    border: 1px solid #9887B1; /* Border color */
+    color: #000; /* Text color */
+}
+
+button {
+    background-color: #9887B1; /* Button background color */
+    color: #FFF; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}

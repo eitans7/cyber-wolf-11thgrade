@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>הזאב</title>
+    <link rel="stylesheet" href="/static/clientstyle.css">
+</head>
+
+
+<body>
+
+    <div id="screen_id" class="screen_class">
+
+        <div id="right_screen_id" class="right_screen_class">
+
+            <div id="user_title_id" class="user_title_class">
+                <div id="user_title_text_id" class="user_title_text_class">
+                    הכנס את שמך:
+                </div>
+                <div id="user_title_input_id" class="user_title_input_class">
+                    <input type="text" id="input_username_id" placeholder="הקלד את שמך...">
+                </div>
+                <div id="user_title_button_id" class="user_title_button_class">
+                   <button onclick="registerUser()">שלח</button>
+                </div>
+            </div>
+
+            <div id="chat_box_id" class="chat_box_class">
+                כאן יופיעו הודעות
+            </div>
+
+            <div id="chat_input_id" class="chat_input_class">
+
+                <div id="input_text_id" class="input_text_class">
+                     <input type="text" id="input_message_id" placeholder="הקלד את ההודעה שלך...">
+                </div>
+
+                <div id="input_button_id" class="input_button_class">
+                     <button onclick="sendMessage()">שלח</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="left_screen_id" class="left_screen_class">
+
+            <div id="time_id" class="time_class">
+                זמן
+            </div>
+
+            <div id="votes_id" class="votes_class">
+                הצבעות
+            </div>
+
+            <div id="state_id" class="state_class">
+                מצב
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
+    <script src="/static/clientscript.js"></script>
+</body>
+
+
+</html>

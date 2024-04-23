@@ -1,0 +1,459 @@
+WARNING | 2024-04-21 16:15:00,838 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-21 16:15:01,761 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-21 16:15:01,761 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-21 16:15:01,761 |  * Restarting with stat
+WARNING | 2024-04-21 16:15:02,118 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-21 16:15:02,119 |  * Debugger is active!
+INFO | 2024-04-21 16:15:02,120 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-21 16:15:03,042 | 127.0.0.1 - - [21/Apr/2024 16:15:03] "GET /socket.io/?EIO=4&transport=polling&t=Oy0oxl_ HTTP/1.1" 200 -
+INFO | 2024-04-21 16:15:03,045 | 127.0.0.1 - - [21/Apr/2024 16:15:03] "POST /socket.io/?EIO=4&transport=polling&t=Oy0oxm3&sid=f7qinuiDl8IACkFZAAAA HTTP/1.1" 200 -
+INFO | 2024-04-21 16:15:03,047 | 127.0.0.1 - - [21/Apr/2024 16:15:03] "GET /socket.io/?EIO=4&transport=polling&t=Oy0oxm4&sid=f7qinuiDl8IACkFZAAAA HTTP/1.1" 200 -
+WARNING | 2024-04-21 16:15:29,394 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-21 16:15:30,305 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-21 16:15:30,305 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-21 16:15:30,305 |  * Restarting with stat
+WARNING | 2024-04-21 16:15:30,683 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-21 16:15:30,684 |  * Debugger is active!
+INFO | 2024-04-21 16:15:30,685 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-21 16:15:32,055 | 127.0.0.1 - - [21/Apr/2024 16:15:32] "GET /socket.io/?EIO=4&transport=polling&t=Oy0p2rE HTTP/1.1" 200 -
+INFO | 2024-04-21 16:15:32,067 | 127.0.0.1 - - [21/Apr/2024 16:15:32] "POST /socket.io/?EIO=4&transport=polling&t=Oy0p2rR&sid=1LFfteBdm70xe8ryAAAA HTTP/1.1" 200 -
+INFO | 2024-04-21 16:15:32,069 | 127.0.0.1 - - [21/Apr/2024 16:15:32] "GET /socket.io/?EIO=4&transport=polling&t=Oy0p2rT&sid=1LFfteBdm70xe8ryAAAA HTTP/1.1" 200 -
+INFO | 2024-04-21 16:15:35,703 | 127.0.0.1 - - [21/Apr/2024 16:15:35] "GET /socket.io/?EIO=4&transport=websocket&sid=1LFfteBdm70xe8ryAAAA HTTP/1.1" 200 -
+INFO | 2024-04-21 16:15:37,465 | 127.0.0.1 - - [21/Apr/2024 16:15:37] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-21 16:15:37,556 | 127.0.0.1 - - [21/Apr/2024 16:15:37] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-21 16:15:37,556 | 127.0.0.1 - - [21/Apr/2024 16:15:37] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-21 16:15:37,565 | 127.0.0.1 - - [21/Apr/2024 16:15:37] "GET /socket.io/?EIO=4&transport=polling&t=Oy0p4BP HTTP/1.1" 200 -
+INFO | 2024-04-21 16:15:37,572 | 127.0.0.1 - - [21/Apr/2024 16:15:37] "POST /socket.io/?EIO=4&transport=polling&t=Oy0p4BY&sid=khv7rCC7NEbXKSk8AAAC HTTP/1.1" 200 -
+INFO | 2024-04-21 16:15:37,573 | 127.0.0.1 - - [21/Apr/2024 16:15:37] "GET /socket.io/?EIO=4&transport=polling&t=Oy0p4BZ&sid=khv7rCC7NEbXKSk8AAAC HTTP/1.1" 200 -
+INFO | 2024-04-21 16:15:37,577 | 127.0.0.1 - - [21/Apr/2024 16:15:37] "POST /socket.io/?EIO=4&transport=polling&t=Oy0p4Bd&sid=khv7rCC7NEbXKSk8AAAC HTTP/1.1" 200 -
+INFO | 2024-04-21 16:15:38,864 | 127.0.0.1 - - [21/Apr/2024 16:15:38] "GET /socket.io/?EIO=4&transport=polling&t=Oy0p4Bd.0&sid=khv7rCC7NEbXKSk8AAAC HTTP/1.1" 200 -
+WARNING | 2024-04-21 16:18:56,560 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-21 16:18:57,468 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-21 16:18:57,468 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-21 16:18:57,469 |  * Restarting with stat
+WARNING | 2024-04-21 16:18:57,831 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-21 16:18:57,831 |  * Debugger is active!
+INFO | 2024-04-21 16:18:57,834 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-21 16:19:00,049 | 127.0.0.1 - - [21/Apr/2024 16:19:00] "GET /socket.io/?EIO=4&transport=polling&t=Oy0prdD HTTP/1.1" 200 -
+INFO | 2024-04-21 16:19:00,054 | 127.0.0.1 - - [21/Apr/2024 16:19:00] "POST /socket.io/?EIO=4&transport=polling&t=Oy0prdJ&sid=u8qTdIVFcSOlwCBTAAAA HTTP/1.1" 200 -
+INFO | 2024-04-21 16:19:00,058 | 127.0.0.1 - - [21/Apr/2024 16:19:00] "GET /socket.io/?EIO=4&transport=polling&t=Oy0prdK&sid=u8qTdIVFcSOlwCBTAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-21 16:19:00,062 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+DEBUG | 2024-04-21 16:19:26,628 | Received From Client: ['registration', 'undefined', '5', 'eitan']
+DEBUG | 2024-04-21 16:20:16,066 | Received From Client: ['registration', 'undefined', '5', 'eitan']
+WARNING | 2024-04-21 16:20:36,843 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-21 16:20:37,710 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-21 16:20:37,710 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-21 16:20:37,710 |  * Restarting with stat
+WARNING | 2024-04-21 16:20:38,081 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-21 16:20:38,081 |  * Debugger is active!
+INFO | 2024-04-21 16:20:38,083 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-21 16:20:55,217 | 127.0.0.1 - - [21/Apr/2024 16:20:55] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-21 16:20:55,308 | 127.0.0.1 - - [21/Apr/2024 16:20:55] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-21 16:20:55,309 | 127.0.0.1 - - [21/Apr/2024 16:20:55] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-21 16:20:55,317 | 127.0.0.1 - - [21/Apr/2024 16:20:55] "GET /socket.io/?EIO=4&transport=polling&t=Oy0qHmI HTTP/1.1" 200 -
+INFO | 2024-04-21 16:20:55,327 | 127.0.0.1 - - [21/Apr/2024 16:20:55] "POST /socket.io/?EIO=4&transport=polling&t=Oy0qHmS&sid=aBPfby843q92w-RVAAAA HTTP/1.1" 200 -
+INFO | 2024-04-21 16:20:55,327 | 127.0.0.1 - - [21/Apr/2024 16:20:55] "GET /socket.io/?EIO=4&transport=polling&t=Oy0qHmT&sid=aBPfby843q92w-RVAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-21 16:20:55,332 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+INFO | 2024-04-21 16:20:55,332 | 127.0.0.1 - - [21/Apr/2024 16:20:55] "POST /socket.io/?EIO=4&transport=polling&t=Oy0qHmY&sid=aBPfby843q92w-RVAAAA HTTP/1.1" 200 -
+INFO | 2024-04-21 16:20:56,405 | 127.0.0.1 - - [21/Apr/2024 16:20:56] "GET /socket.io/?EIO=4&transport=polling&t=Oy0qHmY.0&sid=aBPfby843q92w-RVAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-21 16:21:16,364 | Received From Client: ['registration', 'undefined', '5', 'itzik']
+DEBUG | 2024-04-21 16:21:22,128 | Received From Client: ['registration', 'undefined', '5', 'itzik']
+WARNING | 2024-04-21 16:23:28,698 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-21 16:23:29,549 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-21 16:23:29,549 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-21 16:23:29,549 |  * Restarting with stat
+WARNING | 2024-04-21 16:23:29,916 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-21 16:23:29,917 |  * Debugger is active!
+INFO | 2024-04-21 16:23:29,918 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-21 16:23:32,120 | 127.0.0.1 - - [21/Apr/2024 16:23:32] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-21 16:23:32,257 | 127.0.0.1 - - [21/Apr/2024 16:23:32] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-21 16:23:32,259 | 127.0.0.1 - - [21/Apr/2024 16:23:32] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-21 16:23:32,265 | 127.0.0.1 - - [21/Apr/2024 16:23:32] "GET /socket.io/?EIO=4&transport=polling&t=Oy0qu4c HTTP/1.1" 200 -
+INFO | 2024-04-21 16:23:32,274 | 127.0.0.1 - - [21/Apr/2024 16:23:32] "POST /socket.io/?EIO=4&transport=polling&t=Oy0qu4l&sid=YPtRGEXCEfUXglIlAAAA HTTP/1.1" 200 -
+INFO | 2024-04-21 16:23:32,275 | 127.0.0.1 - - [21/Apr/2024 16:23:32] "GET /socket.io/?EIO=4&transport=polling&t=Oy0qu4m&sid=YPtRGEXCEfUXglIlAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-21 16:23:32,279 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+INFO | 2024-04-21 16:23:32,280 | 127.0.0.1 - - [21/Apr/2024 16:23:32] "POST /socket.io/?EIO=4&transport=polling&t=Oy0qu4r&sid=YPtRGEXCEfUXglIlAAAA HTTP/1.1" 200 -
+INFO | 2024-04-21 16:23:34,994 | 127.0.0.1 - - [21/Apr/2024 16:23:34] "GET /socket.io/?EIO=4&transport=polling&t=Oy0qu4r.0&sid=YPtRGEXCEfUXglIlAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-21 16:23:47,396 | Received From Client: ['registration', 'undefined', '5', 'eitan']
+DEBUG | 2024-04-21 16:24:22,970 | Received From Client: ['registration', 'undefined', '5', 'eitan']
+INFO | 2024-04-21 16:40:14,043 | 127.0.0.1 - - [21/Apr/2024 16:40:14] "GET /socket.io/?EIO=4&transport=websocket&sid=YPtRGEXCEfUXglIlAAAA HTTP/1.1" 200 -
+INFO | 2024-04-21 18:20:02,735 | 127.0.0.1 - - [21/Apr/2024 18:20:02] "GET /socket.io/?EIO=4&transport=polling&t=Oy1FYgM HTTP/1.1" 200 -
+INFO | 2024-04-21 18:20:02,746 | 127.0.0.1 - - [21/Apr/2024 18:20:02] "POST /socket.io/?EIO=4&transport=polling&t=Oy1FYkq&sid=_-TmdswDAr0d8lXUAAAC HTTP/1.1" 200 -
+INFO | 2024-04-21 18:20:02,751 | 127.0.0.1 - - [21/Apr/2024 18:20:02] "GET /socket.io/?EIO=4&transport=polling&t=Oy1FYkt&sid=_-TmdswDAr0d8lXUAAAC HTTP/1.1" 200 -
+DEBUG | 2024-04-21 18:20:02,764 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+INFO | 2024-04-21 18:20:14,183 | 127.0.0.1 - - [21/Apr/2024 18:20:14] "GET /socket.io/?EIO=4&transport=websocket&sid=_-TmdswDAr0d8lXUAAAC HTTP/1.1" 200 -
+WARNING | 2024-04-23 14:03:52,558 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 14:03:53,469 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 14:03:53,469 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 14:03:53,469 |  * Restarting with stat
+WARNING | 2024-04-23 14:03:53,893 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 14:03:53,894 |  * Debugger is active!
+INFO | 2024-04-23 14:03:53,896 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 14:04:15,880 | 127.0.0.1 - - [23/Apr/2024 14:04:15] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 14:04:15,962 | 127.0.0.1 - - [23/Apr/2024 14:04:15] "GET /static/clientstyle.css HTTP/1.1" 200 -
+INFO | 2024-04-23 14:04:15,973 | 127.0.0.1 - - [23/Apr/2024 14:04:15] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-04-23 14:04:16,185 | 127.0.0.1 - - [23/Apr/2024 14:04:16] "GET /socket.io/?EIO=4&transport=polling&t=OyAeBWr HTTP/1.1" 200 -
+INFO | 2024-04-23 14:04:16,188 | 127.0.0.1 - - [23/Apr/2024 14:04:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO | 2024-04-23 14:04:16,194 | 127.0.0.1 - - [23/Apr/2024 14:04:16] "POST /socket.io/?EIO=4&transport=polling&t=OyAeBWy&sid=JjNqWdHkSdk_Igu6AAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:04:16,195 | 127.0.0.1 - - [23/Apr/2024 14:04:16] "GET /socket.io/?EIO=4&transport=polling&t=OyAeBW-&sid=JjNqWdHkSdk_Igu6AAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-23 14:04:16,200 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+DEBUG | 2024-04-23 14:04:38,097 | Received From Client: ['registration', 'undefined', '5', 'timor']
+WARNING | 2024-04-23 14:07:56,673 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 14:07:57,528 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 14:07:57,528 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 14:07:57,528 |  * Restarting with stat
+WARNING | 2024-04-23 14:07:57,899 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 14:07:57,900 |  * Debugger is active!
+INFO | 2024-04-23 14:07:57,901 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 14:08:01,063 | 127.0.0.1 - - [23/Apr/2024 14:08:01] "GET /socket.io/?EIO=4&transport=polling&t=OyAf2QU HTTP/1.1" 200 -
+INFO | 2024-04-23 14:08:01,071 | 127.0.0.1 - - [23/Apr/2024 14:08:01] "POST /socket.io/?EIO=4&transport=polling&t=OyAf2Qh&sid=H0jj7zOQO-cwpucJAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:08:01,073 | 127.0.0.1 - - [23/Apr/2024 14:08:01] "GET /socket.io/?EIO=4&transport=polling&t=OyAf2Qk&sid=H0jj7zOQO-cwpucJAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:08:01,136 | 127.0.0.1 - - [23/Apr/2024 14:08:01] "GET /socket.io/?EIO=4&transport=websocket&sid=H0jj7zOQO-cwpucJAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:08:01,141 | 127.0.0.1 - - [23/Apr/2024 14:08:01] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 14:08:01,219 | 127.0.0.1 - - [23/Apr/2024 14:08:01] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 14:08:01,220 | 127.0.0.1 - - [23/Apr/2024 14:08:01] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 14:08:01,228 | 127.0.0.1 - - [23/Apr/2024 14:08:01] "GET /socket.io/?EIO=4&transport=polling&t=OyAf2TA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:08:01,232 | 127.0.0.1 - - [23/Apr/2024 14:08:01] "POST /socket.io/?EIO=4&transport=polling&t=OyAf2TD&sid=hd1DKgxFWStMSW4SAAAC HTTP/1.1" 200 -
+INFO | 2024-04-23 14:08:01,233 | 127.0.0.1 - - [23/Apr/2024 14:08:01] "GET /socket.io/?EIO=4&transport=polling&t=OyAf2TE&sid=hd1DKgxFWStMSW4SAAAC HTTP/1.1" 200 -
+WARNING | 2024-04-23 14:08:37,513 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 14:08:38,355 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 14:08:38,355 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 14:08:38,355 |  * Restarting with stat
+WARNING | 2024-04-23 14:08:38,761 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 14:08:38,762 |  * Debugger is active!
+INFO | 2024-04-23 14:08:38,763 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 14:08:40,181 | 127.0.0.1 - - [23/Apr/2024 14:08:40] "GET /socket.io/?EIO=4&transport=polling&t=OyAfBzi HTTP/1.1" 200 -
+INFO | 2024-04-23 14:08:40,191 | 127.0.0.1 - - [23/Apr/2024 14:08:40] "POST /socket.io/?EIO=4&transport=polling&t=OyAfBzw&sid=DfESOFFp1hauw_4nAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:08:40,193 | 127.0.0.1 - - [23/Apr/2024 14:08:40] "GET /socket.io/?EIO=4&transport=polling&t=OyAfBzz&sid=DfESOFFp1hauw_4nAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-23 14:08:40,197 | Received From Client: ['recieve error']
+INFO | 2024-04-23 14:08:40,408 | 127.0.0.1 - - [23/Apr/2024 14:08:40] "GET /socket.io/?EIO=4&transport=websocket&sid=DfESOFFp1hauw_4nAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:08:40,421 | 127.0.0.1 - - [23/Apr/2024 14:08:40] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 14:08:40,499 | 127.0.0.1 - - [23/Apr/2024 14:08:40] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 14:08:40,500 | 127.0.0.1 - - [23/Apr/2024 14:08:40] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 14:08:40,507 | 127.0.0.1 - - [23/Apr/2024 14:08:40] "GET /socket.io/?EIO=4&transport=polling&t=OyAfC2u HTTP/1.1" 200 -
+INFO | 2024-04-23 14:08:40,511 | 127.0.0.1 - - [23/Apr/2024 14:08:40] "POST /socket.io/?EIO=4&transport=polling&t=OyAfC2z&sid=A5z2Iw6SaxW8flGmAAAC HTTP/1.1" 200 -
+INFO | 2024-04-23 14:08:40,514 | 127.0.0.1 - - [23/Apr/2024 14:08:40] "GET /socket.io/?EIO=4&transport=polling&t=OyAfC2z.0&sid=A5z2Iw6SaxW8flGmAAAC HTTP/1.1" 200 -
+DEBUG | 2024-04-23 14:08:40,516 | Received From Client: ['recieve error']
+DEBUG | 2024-04-23 14:08:44,400 | Received From Client: ['recieve error']
+WARNING | 2024-04-23 14:09:42,174 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 14:09:43,054 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 14:09:43,054 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 14:09:43,054 |  * Restarting with stat
+WARNING | 2024-04-23 14:09:43,443 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 14:09:43,444 |  * Debugger is active!
+INFO | 2024-04-23 14:09:43,445 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 14:09:43,463 | 127.0.0.1 - - [23/Apr/2024 14:09:43] "GET /socket.io/?EIO=4&transport=polling&t=OyAfR42 HTTP/1.1" 200 -
+INFO | 2024-04-23 14:09:43,468 | 127.0.0.1 - - [23/Apr/2024 14:09:43] "POST /socket.io/?EIO=4&transport=polling&t=OyAfRQe&sid=mOM-Qg_D1r0kSyfmAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:09:43,471 | 127.0.0.1 - - [23/Apr/2024 14:09:43] "GET /socket.io/?EIO=4&transport=polling&t=OyAfRQf&sid=mOM-Qg_D1r0kSyfmAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-23 14:09:43,485 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+INFO | 2024-04-23 14:09:52,212 | 127.0.0.1 - - [23/Apr/2024 14:09:52] "GET /socket.io/?EIO=4&transport=websocket&sid=mOM-Qg_D1r0kSyfmAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:09:52,225 | 127.0.0.1 - - [23/Apr/2024 14:09:52] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 14:09:52,295 | 127.0.0.1 - - [23/Apr/2024 14:09:52] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 14:09:52,296 | 127.0.0.1 - - [23/Apr/2024 14:09:52] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 14:09:52,302 | 127.0.0.1 - - [23/Apr/2024 14:09:52] "GET /socket.io/?EIO=4&transport=polling&t=OyAfTah HTTP/1.1" 200 -
+INFO | 2024-04-23 14:09:52,306 | 127.0.0.1 - - [23/Apr/2024 14:09:52] "POST /socket.io/?EIO=4&transport=polling&t=OyAfTam&sid=6hvN3-cIxfOqPF3hAAAC HTTP/1.1" 200 -
+INFO | 2024-04-23 14:09:52,308 | 127.0.0.1 - - [23/Apr/2024 14:09:52] "GET /socket.io/?EIO=4&transport=polling&t=OyAfTan&sid=6hvN3-cIxfOqPF3hAAAC HTTP/1.1" 200 -
+DEBUG | 2024-04-23 14:09:52,311 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+WARNING | 2024-04-23 14:10:40,696 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 14:10:41,546 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 14:10:41,546 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 14:10:41,546 |  * Restarting with stat
+WARNING | 2024-04-23 14:10:41,950 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 14:10:41,951 |  * Debugger is active!
+INFO | 2024-04-23 14:10:41,954 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 14:10:43,014 | 127.0.0.1 - - [23/Apr/2024 14:10:43] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 14:10:43,144 | 127.0.0.1 - - [23/Apr/2024 14:10:43] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 14:10:43,144 | 127.0.0.1 - - [23/Apr/2024 14:10:43] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 14:10:43,159 | 127.0.0.1 - - [23/Apr/2024 14:10:43] "GET /socket.io/?EIO=4&transport=polling&t=OyAff_K HTTP/1.1" 200 -
+INFO | 2024-04-23 14:10:43,163 | 127.0.0.1 - - [23/Apr/2024 14:10:43] "POST /socket.io/?EIO=4&transport=polling&t=OyAff_P&sid=BNDIbKEJx9e27IhMAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:10:43,166 | 127.0.0.1 - - [23/Apr/2024 14:10:43] "GET /socket.io/?EIO=4&transport=polling&t=OyAff_Q&sid=BNDIbKEJx9e27IhMAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-23 14:10:43,170 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+DEBUG | 2024-04-23 14:10:49,911 | Received From Client: ['registration', 'undefined', '4', '123e']
+WARNING | 2024-04-23 14:15:54,413 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 14:15:55,286 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 14:15:55,287 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 14:15:55,287 |  * Restarting with stat
+WARNING | 2024-04-23 14:15:55,663 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 14:15:55,664 |  * Debugger is active!
+INFO | 2024-04-23 14:15:55,666 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 14:15:58,010 | 127.0.0.1 - - [23/Apr/2024 14:15:58] "GET /socket.io/?EIO=4&transport=polling&t=OyAgsss HTTP/1.1" 200 -
+INFO | 2024-04-23 14:15:58,013 | 127.0.0.1 - - [23/Apr/2024 14:15:58] "POST /socket.io/?EIO=4&transport=polling&t=OyAgssy&sid=uUphoOEyTk3b7CvQAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:15:58,015 | 127.0.0.1 - - [23/Apr/2024 14:15:58] "GET /socket.io/?EIO=4&transport=polling&t=OyAgssy.0&sid=uUphoOEyTk3b7CvQAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-23 14:15:58,018 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+DEBUG | 2024-04-23 14:16:10,279 | Received From Client: ['registration', 'undefined', '5', 'eitan']
+WARNING | 2024-04-23 14:37:17,120 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 14:37:17,979 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 14:37:17,979 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 14:37:17,979 |  * Restarting with stat
+WARNING | 2024-04-23 14:37:18,366 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 14:37:18,366 |  * Debugger is active!
+INFO | 2024-04-23 14:37:18,368 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 14:37:23,995 | 127.0.0.1 - - [23/Apr/2024 14:37:23] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 14:37:24,136 | 127.0.0.1 - - [23/Apr/2024 14:37:24] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 14:37:24,139 | 127.0.0.1 - - [23/Apr/2024 14:37:24] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 14:37:24,155 | 127.0.0.1 - - [23/Apr/2024 14:37:24] "GET /socket.io/?EIO=4&transport=polling&t=OyAlmst HTTP/1.1" 200 -
+INFO | 2024-04-23 14:37:24,159 | 127.0.0.1 - - [23/Apr/2024 14:37:24] "POST /socket.io/?EIO=4&transport=polling&t=OyAlmsy&sid=j9pcJJ5VQ0UuYBNkAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:37:24,161 | 127.0.0.1 - - [23/Apr/2024 14:37:24] "GET /socket.io/?EIO=4&transport=polling&t=OyAlmsz&sid=j9pcJJ5VQ0UuYBNkAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-23 14:37:24,164 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+DEBUG | 2024-04-23 14:37:40,158 | Received From Client: ['registration', 'undefined', '5', 'eitan']
+DEBUG | 2024-04-23 14:37:40,159 | Did user manage to connect: True
+DEBUG | 2024-04-23 14:37:40,159 | Game current overall state: Game State: registration, User Count: 1, Users: ['eitan'], Wolf: No wolf assigned
+DEBUG | 2024-04-23 14:37:52,470 | Received From Client: ['registration', 'undefined', '7', 'shoshan']
+DEBUG | 2024-04-23 14:37:52,471 | Did user manage to connect: True
+DEBUG | 2024-04-23 14:37:52,471 | Game current overall state: Game State: registration, User Count: 2, Users: ['eitan', 'shoshan'], Wolf: No wolf assigned
+WARNING | 2024-04-23 14:42:20,034 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 14:42:20,891 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 14:42:20,891 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 14:42:20,891 |  * Restarting with stat
+WARNING | 2024-04-23 14:42:21,280 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 14:42:21,281 |  * Debugger is active!
+INFO | 2024-04-23 14:42:21,284 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 14:42:21,308 | 127.0.0.1 - - [23/Apr/2024 14:42:21] "GET /socket.io/?EIO=4&transport=polling&t=OyAmusA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:42:21,313 | 127.0.0.1 - - [23/Apr/2024 14:42:21] "POST /socket.io/?EIO=4&transport=polling&t=OyAmvP-&sid=xC-jptibiXezU54EAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:42:21,316 | 127.0.0.1 - - [23/Apr/2024 14:42:21] "GET /socket.io/?EIO=4&transport=polling&t=OyAmvP_&sid=xC-jptibiXezU54EAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-23 14:42:21,320 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+INFO | 2024-04-23 14:42:24,195 | 127.0.0.1 - - [23/Apr/2024 14:42:24] "GET /socket.io/?EIO=4&transport=websocket&sid=xC-jptibiXezU54EAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 14:42:24,205 | 127.0.0.1 - - [23/Apr/2024 14:42:24] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 14:42:24,280 | 127.0.0.1 - - [23/Apr/2024 14:42:24] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 14:42:24,282 | 127.0.0.1 - - [23/Apr/2024 14:42:24] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-04-23 14:42:24,288 | 127.0.0.1 - - [23/Apr/2024 14:42:24] "GET /socket.io/?EIO=4&transport=polling&t=OyAmw8U HTTP/1.1" 200 -
+INFO | 2024-04-23 14:42:24,292 | 127.0.0.1 - - [23/Apr/2024 14:42:24] "POST /socket.io/?EIO=4&transport=polling&t=OyAmw8Y&sid=zfJThbKCmF69jGf9AAAC HTTP/1.1" 200 -
+INFO | 2024-04-23 14:42:24,293 | 127.0.0.1 - - [23/Apr/2024 14:42:24] "GET /socket.io/?EIO=4&transport=polling&t=OyAmw8Y.0&sid=zfJThbKCmF69jGf9AAAC HTTP/1.1" 200 -
+DEBUG | 2024-04-23 14:42:24,297 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+DEBUG | 2024-04-23 14:42:28,056 | Received From Client: ['registration', 'undefined', '4', 'fhie']
+DEBUG | 2024-04-23 14:42:28,057 | Did user manage to connect: True
+DEBUG | 2024-04-23 14:42:28,057 | Game current overall state: Game State: registration, User Count: 1, Users: ['fhie'], Wolf: No wolf assigned
+DEBUG | 2024-04-23 14:42:31,537 | Received From Client: ['registration', 'undefined', '4', '38jd']
+DEBUG | 2024-04-23 14:42:31,537 | Did user manage to connect: True
+DEBUG | 2024-04-23 14:42:31,538 | Game current overall state: Game State: registration, User Count: 2, Users: ['fhie', '38jd'], Wolf: No wolf assigned
+WARNING | 2024-04-23 15:30:53,666 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 15:30:54,531 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 15:30:54,531 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 15:30:54,531 |  * Restarting with stat
+WARNING | 2024-04-23 15:30:54,899 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 15:30:54,900 |  * Debugger is active!
+INFO | 2024-04-23 15:30:54,902 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 15:30:56,047 | 127.0.0.1 - - [23/Apr/2024 15:30:56] "GET /socket.io/?EIO=4&transport=polling&t=OyAy10i HTTP/1.1" 200 -
+INFO | 2024-04-23 15:30:56,051 | 127.0.0.1 - - [23/Apr/2024 15:30:56] "POST /socket.io/?EIO=4&transport=polling&t=OyAy10n&sid=EE-LDiBI754qQyFQAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 15:30:56,055 | 127.0.0.1 - - [23/Apr/2024 15:30:56] "GET /socket.io/?EIO=4&transport=polling&t=OyAy10n.0&sid=EE-LDiBI754qQyFQAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-23 15:30:56,058 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+INFO | 2024-04-23 15:30:56,774 | 127.0.0.1 - - [23/Apr/2024 15:30:56] "GET /socket.io/?EIO=4&transport=websocket&sid=EE-LDiBI754qQyFQAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 15:30:57,186 | 127.0.0.1 - - [23/Apr/2024 15:30:57] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 15:30:57,267 | 127.0.0.1 - - [23/Apr/2024 15:30:57] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 15:30:57,270 | 127.0.0.1 - - [23/Apr/2024 15:30:57] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 15:30:57,275 | 127.0.0.1 - - [23/Apr/2024 15:30:57] "GET /socket.io/?EIO=4&transport=polling&t=OyAy1Ju HTTP/1.1" 200 -
+INFO | 2024-04-23 15:30:57,279 | 127.0.0.1 - - [23/Apr/2024 15:30:57] "POST /socket.io/?EIO=4&transport=polling&t=OyAy1Jy&sid=AQPogttGgIOGvf3KAAAC HTTP/1.1" 200 -
+INFO | 2024-04-23 15:30:57,281 | 127.0.0.1 - - [23/Apr/2024 15:30:57] "GET /socket.io/?EIO=4&transport=polling&t=OyAy1Jz&sid=AQPogttGgIOGvf3KAAAC HTTP/1.1" 200 -
+DEBUG | 2024-04-23 15:30:57,284 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+WARNING | 2024-04-23 15:36:35,712 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 15:36:36,634 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 15:36:36,634 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 15:36:36,634 |  * Restarting with stat
+WARNING | 2024-04-23 15:36:37,038 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 15:36:37,039 |  * Debugger is active!
+INFO | 2024-04-23 15:36:37,041 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 15:36:41,313 | 127.0.0.1 - - [23/Apr/2024 15:36:41] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 15:36:41,452 | 127.0.0.1 - - [23/Apr/2024 15:36:41] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 15:36:41,453 | 127.0.0.1 - - [23/Apr/2024 15:36:41] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 15:36:41,470 | 127.0.0.1 - - [23/Apr/2024 15:36:41] "GET /socket.io/?EIO=4&transport=polling&t=OyAzLLw HTTP/1.1" 200 -
+INFO | 2024-04-23 15:36:41,474 | 127.0.0.1 - - [23/Apr/2024 15:36:41] "POST /socket.io/?EIO=4&transport=polling&t=OyAzLM0&sid=lr71GZ6qcG1w08esAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 15:36:41,476 | 127.0.0.1 - - [23/Apr/2024 15:36:41] "GET /socket.io/?EIO=4&transport=polling&t=OyAzLM1&sid=lr71GZ6qcG1w08esAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-23 15:36:41,480 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+INFO | 2024-04-23 15:37:16,696 | 127.0.0.1 - - [23/Apr/2024 15:37:16] "GET /socket.io/?EIO=4&transport=websocket&sid=lr71GZ6qcG1w08esAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 15:37:45,837 | 127.0.0.1 - - [23/Apr/2024 15:37:45] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 15:37:45,857 | 127.0.0.1 - - [23/Apr/2024 15:37:45] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 15:37:45,864 | 127.0.0.1 - - [23/Apr/2024 15:37:45] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 15:37:45,893 | 127.0.0.1 - - [23/Apr/2024 15:37:45] "GET /socket.io/?EIO=4&transport=polling&t=OyAzb4Z HTTP/1.1" 200 -
+INFO | 2024-04-23 15:37:45,899 | 127.0.0.1 - - [23/Apr/2024 15:37:45] "POST /socket.io/?EIO=4&transport=polling&t=OyAzb4e&sid=oPdxGgZxKPs7EjEPAAAC HTTP/1.1" 200 -
+INFO | 2024-04-23 15:37:45,903 | 127.0.0.1 - - [23/Apr/2024 15:37:45] "GET /socket.io/?EIO=4&transport=polling&t=OyAzb4f&sid=oPdxGgZxKPs7EjEPAAAC HTTP/1.1" 200 -
+DEBUG | 2024-04-23 15:37:45,907 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+DEBUG | 2024-04-23 15:38:01,643 | Received From Client: ['registration', 'undefined', '5', 'ethan']
+DEBUG | 2024-04-23 15:38:01,644 | Did user manage to connect: True
+DEBUG | 2024-04-23 15:38:01,644 | Game current overall state: Game State: registration, User Count: 1, Users: ['ethan'], Wolf: No wolf assigned
+WARNING | 2024-04-23 15:49:50,293 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 15:49:51,177 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 15:49:51,177 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 15:49:51,177 |  * Restarting with stat
+WARNING | 2024-04-23 15:49:51,538 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 15:49:51,538 |  * Debugger is active!
+INFO | 2024-04-23 15:49:51,540 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 15:50:03,520 | 127.0.0.1 - - [23/Apr/2024 15:50:03] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 15:50:03,619 | 127.0.0.1 - - [23/Apr/2024 15:50:03] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 15:50:03,622 | 127.0.0.1 - - [23/Apr/2024 15:50:03] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 15:50:03,641 | 127.0.0.1 - - [23/Apr/2024 15:50:03] "GET /socket.io/?EIO=4&transport=polling&t=OyB0PBs HTTP/1.1" 200 -
+INFO | 2024-04-23 15:50:03,648 | 127.0.0.1 - - [23/Apr/2024 15:50:03] "POST /socket.io/?EIO=4&transport=polling&t=OyB0PBx&sid=ToGnLZVobpUIpp78AAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 15:50:03,652 | 127.0.0.1 - - [23/Apr/2024 15:50:03] "GET /socket.io/?EIO=4&transport=polling&t=OyB0PBz&sid=ToGnLZVobpUIpp78AAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-23 15:50:03,655 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+INFO | 2024-04-23 15:50:08,989 | 127.0.0.1 - - [23/Apr/2024 15:50:08] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 15:50:09,009 | 127.0.0.1 - - [23/Apr/2024 15:50:09] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 15:50:09,021 | 127.0.0.1 - - [23/Apr/2024 15:50:09] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 15:50:09,045 | 127.0.0.1 - - [23/Apr/2024 15:50:09] "GET /socket.io/?EIO=4&transport=polling&t=OyB0QWI HTTP/1.1" 200 -
+INFO | 2024-04-23 15:50:09,054 | 127.0.0.1 - - [23/Apr/2024 15:50:09] "POST /socket.io/?EIO=4&transport=polling&t=OyB0QWQ&sid=A6c_QKDJyMEQSGl8AAAC HTTP/1.1" 200 -
+INFO | 2024-04-23 15:50:09,056 | 127.0.0.1 - - [23/Apr/2024 15:50:09] "GET /socket.io/?EIO=4&transport=polling&t=OyB0QWS&sid=A6c_QKDJyMEQSGl8AAAC HTTP/1.1" 200 -
+DEBUG | 2024-04-23 15:50:09,062 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+WARNING | 2024-04-23 15:53:07,067 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 15:53:07,978 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 15:53:07,978 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 15:53:07,978 |  * Restarting with stat
+WARNING | 2024-04-23 15:53:08,354 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 15:53:08,355 |  * Debugger is active!
+INFO | 2024-04-23 15:53:08,357 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 15:53:11,337 | 127.0.0.1 - - [23/Apr/2024 15:53:11] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 15:53:11,438 | 127.0.0.1 - - [23/Apr/2024 15:53:11] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 15:53:11,445 | 127.0.0.1 - - [23/Apr/2024 15:53:11] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 15:53:11,460 | 127.0.0.1 - - [23/Apr/2024 15:53:11] "GET /socket.io/?EIO=4&transport=polling&t=OyB172X HTTP/1.1" 200 -
+INFO | 2024-04-23 15:53:11,466 | 127.0.0.1 - - [23/Apr/2024 15:53:11] "POST /socket.io/?EIO=4&transport=polling&t=OyB172d&sid=0Gr2Mkf_M1lsg-KiAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 15:53:11,469 | 127.0.0.1 - - [23/Apr/2024 15:53:11] "GET /socket.io/?EIO=4&transport=polling&t=OyB172f&sid=0Gr2Mkf_M1lsg-KiAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-23 15:53:11,474 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+INFO | 2024-04-23 15:53:15,185 | 127.0.0.1 - - [23/Apr/2024 15:53:15] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 15:53:15,204 | 127.0.0.1 - - [23/Apr/2024 15:53:15] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 15:53:15,211 | 127.0.0.1 - - [23/Apr/2024 15:53:15] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 15:53:15,243 | 127.0.0.1 - - [23/Apr/2024 15:53:15] "GET /socket.io/?EIO=4&transport=polling&t=OyB17zd HTTP/1.1" 200 -
+INFO | 2024-04-23 15:53:15,249 | 127.0.0.1 - - [23/Apr/2024 15:53:15] "POST /socket.io/?EIO=4&transport=polling&t=OyB17zk&sid=XpwtNW6kNG-pi8oRAAAC HTTP/1.1" 200 -
+INFO | 2024-04-23 15:53:15,251 | 127.0.0.1 - - [23/Apr/2024 15:53:15] "GET /socket.io/?EIO=4&transport=polling&t=OyB17zl&sid=XpwtNW6kNG-pi8oRAAAC HTTP/1.1" 200 -
+DEBUG | 2024-04-23 15:53:15,257 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+DEBUG | 2024-04-23 15:53:19,994 | Received From Client: ['registration', 'undefined', '5', 'eitan']
+DEBUG | 2024-04-23 15:53:19,994 | Did user manage to connect: True
+DEBUG | 2024-04-23 15:53:19,994 | Game current overall state: Game State: registration, User Count: 1, Users: ['eitan'], Wolf: No wolf assigned
+WARNING | 2024-04-23 16:08:33,822 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 16:08:34,697 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 16:08:34,697 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 16:08:34,697 |  * Restarting with stat
+WARNING | 2024-04-23 16:08:35,070 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 16:08:35,071 |  * Debugger is active!
+INFO | 2024-04-23 16:08:35,072 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 16:08:45,222 | 127.0.0.1 - - [23/Apr/2024 16:08:45] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 16:08:45,329 | 127.0.0.1 - - [23/Apr/2024 16:08:45] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 16:08:45,330 | 127.0.0.1 - - [23/Apr/2024 16:08:45] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 16:08:45,351 | 127.0.0.1 - - [23/Apr/2024 16:08:45] "GET /socket.io/?EIO=4&transport=polling&t=OyB4h2a HTTP/1.1" 200 -
+INFO | 2024-04-23 16:08:45,357 | 127.0.0.1 - - [23/Apr/2024 16:08:45] "POST /socket.io/?EIO=4&transport=polling&t=OyB4h2f&sid=PFVVIIJ1IlfCqLPwAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 16:08:45,360 | 127.0.0.1 - - [23/Apr/2024 16:08:45] "GET /socket.io/?EIO=4&transport=polling&t=OyB4h2h&sid=PFVVIIJ1IlfCqLPwAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-23 16:08:45,365 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+INFO | 2024-04-23 16:08:50,361 | 127.0.0.1 - - [23/Apr/2024 16:08:50] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 16:08:50,378 | 127.0.0.1 - - [23/Apr/2024 16:08:50] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 16:08:50,387 | 127.0.0.1 - - [23/Apr/2024 16:08:50] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 16:08:50,414 | 127.0.0.1 - - [23/Apr/2024 16:08:50] "GET /socket.io/?EIO=4&transport=polling&t=OyB4iHh HTTP/1.1" 200 -
+INFO | 2024-04-23 16:08:50,421 | 127.0.0.1 - - [23/Apr/2024 16:08:50] "POST /socket.io/?EIO=4&transport=polling&t=OyB4iHo&sid=0rKcMhLuMUqO2To9AAAC HTTP/1.1" 200 -
+INFO | 2024-04-23 16:08:50,424 | 127.0.0.1 - - [23/Apr/2024 16:08:50] "GET /socket.io/?EIO=4&transport=polling&t=OyB4iHp&sid=0rKcMhLuMUqO2To9AAAC HTTP/1.1" 200 -
+DEBUG | 2024-04-23 16:08:50,430 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+DEBUG | 2024-04-23 16:09:12,287 | Received From Client: ['registration', 'undefined', '5', 'eitan']
+DEBUG | 2024-04-23 16:09:12,287 | Did user manage to connect: True
+DEBUG | 2024-04-23 16:09:12,287 | Game current overall state: Game State: registration, User Count: 1, Users: ['eitan'], Wolf: No wolf assigned
+WARNING | 2024-04-23 16:12:36,353 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 16:12:37,213 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 16:12:37,213 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 16:12:37,213 |  * Restarting with stat
+WARNING | 2024-04-23 16:12:37,616 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 16:12:37,617 |  * Debugger is active!
+INFO | 2024-04-23 16:12:37,618 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 16:12:40,887 | 127.0.0.1 - - [23/Apr/2024 16:12:40] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 16:12:40,981 | 127.0.0.1 - - [23/Apr/2024 16:12:40] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 16:12:40,984 | 127.0.0.1 - - [23/Apr/2024 16:12:40] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 16:12:41,002 | 127.0.0.1 - - [23/Apr/2024 16:12:41] "GET /socket.io/?EIO=4&transport=polling&t=OyB5aad HTTP/1.1" 200 -
+INFO | 2024-04-23 16:12:41,008 | 127.0.0.1 - - [23/Apr/2024 16:12:41] "POST /socket.io/?EIO=4&transport=polling&t=OyB5aaj&sid=qDYZ3qhXesTLHBoDAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 16:12:41,011 | 127.0.0.1 - - [23/Apr/2024 16:12:41] "GET /socket.io/?EIO=4&transport=polling&t=OyB5aak&sid=qDYZ3qhXesTLHBoDAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-23 16:12:41,018 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+INFO | 2024-04-23 16:12:49,380 | 127.0.0.1 - - [23/Apr/2024 16:12:49] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 16:12:49,399 | 127.0.0.1 - - [23/Apr/2024 16:12:49] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 16:12:49,406 | 127.0.0.1 - - [23/Apr/2024 16:12:49] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 16:12:49,434 | 127.0.0.1 - - [23/Apr/2024 16:12:49] "GET /socket.io/?EIO=4&transport=polling&t=OyB5ceN HTTP/1.1" 200 -
+INFO | 2024-04-23 16:12:49,440 | 127.0.0.1 - - [23/Apr/2024 16:12:49] "POST /socket.io/?EIO=4&transport=polling&t=OyB5ceS&sid=aiRvhPcdRiISFgRVAAAC HTTP/1.1" 200 -
+INFO | 2024-04-23 16:12:49,442 | 127.0.0.1 - - [23/Apr/2024 16:12:49] "GET /socket.io/?EIO=4&transport=polling&t=OyB5ceT&sid=aiRvhPcdRiISFgRVAAAC HTTP/1.1" 200 -
+INFO | 2024-04-23 16:12:49,446 | 127.0.0.1 - - [23/Apr/2024 16:12:49] "GET /socket.io/?EIO=4&transport=polling&t=OyB5ceZ&sid=aiRvhPcdRiISFgRVAAAC HTTP/1.1" 200 -
+DEBUG | 2024-04-23 16:12:49,451 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+DEBUG | 2024-04-23 16:12:58,715 | Received From Client: ['registration', 'undefined', '5', 'eitan']
+DEBUG | 2024-04-23 16:12:58,715 | Did user manage to connect: True
+DEBUG | 2024-04-23 16:12:58,715 | Game current overall state: Game State: registration, User Count: 1, Users: ['eitan'], Wolf: No wolf assigned
+DEBUG | 2024-04-23 16:13:16,393 | Received From Client: ['registration', 'undefined', '7', 'shoshan']
+DEBUG | 2024-04-23 16:13:16,393 | Did user manage to connect: True
+DEBUG | 2024-04-23 16:13:16,393 | Game current overall state: Game State: registration, User Count: 2, Users: ['eitan', 'shoshan'], Wolf: No wolf assigned
+WARNING | 2024-04-23 16:18:28,015 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-04-23 16:18:28,935 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-04-23 16:18:28,935 | [33mPress CTRL+C to quit[0m
+INFO | 2024-04-23 16:18:28,935 |  * Restarting with stat
+WARNING | 2024-04-23 16:18:29,345 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-04-23 16:18:29,346 |  * Debugger is active!
+INFO | 2024-04-23 16:18:29,348 |  * Debugger PIN: 890-987-633
+INFO | 2024-04-23 16:18:35,812 | 127.0.0.1 - - [23/Apr/2024 16:18:35] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 16:18:35,905 | 127.0.0.1 - - [23/Apr/2024 16:18:35] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 16:18:35,908 | 127.0.0.1 - - [23/Apr/2024 16:18:35] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 16:18:35,928 | 127.0.0.1 - - [23/Apr/2024 16:18:35] "GET /socket.io/?EIO=4&transport=polling&t=OyB6xEK HTTP/1.1" 200 -
+INFO | 2024-04-23 16:18:35,935 | 127.0.0.1 - - [23/Apr/2024 16:18:35] "POST /socket.io/?EIO=4&transport=polling&t=OyB6xES&sid=UF_fmJ0mjKY6brBuAAAA HTTP/1.1" 200 -
+INFO | 2024-04-23 16:18:35,937 | 127.0.0.1 - - [23/Apr/2024 16:18:35] "GET /socket.io/?EIO=4&transport=polling&t=OyB6xEU&sid=UF_fmJ0mjKY6brBuAAAA HTTP/1.1" 200 -
+DEBUG | 2024-04-23 16:18:35,942 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+INFO | 2024-04-23 16:18:45,386 | 127.0.0.1 - - [23/Apr/2024 16:18:45] "GET / HTTP/1.1" 200 -
+INFO | 2024-04-23 16:18:45,404 | 127.0.0.1 - - [23/Apr/2024 16:18:45] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 16:18:45,411 | 127.0.0.1 - - [23/Apr/2024 16:18:45] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-04-23 16:18:45,441 | 127.0.0.1 - - [23/Apr/2024 16:18:45] "GET /socket.io/?EIO=4&transport=polling&t=OyB6zYz HTTP/1.1" 200 -
+INFO | 2024-04-23 16:18:45,447 | 127.0.0.1 - - [23/Apr/2024 16:18:45] "POST /socket.io/?EIO=4&transport=polling&t=OyB6zZ3&sid=SsqvA3ONhV05KpLbAAAC HTTP/1.1" 200 -
+INFO | 2024-04-23 16:18:45,450 | 127.0.0.1 - - [23/Apr/2024 16:18:45] "GET /socket.io/?EIO=4&transport=polling&t=OyB6zZ4&sid=SsqvA3ONhV05KpLbAAAC HTTP/1.1" 200 -
+DEBUG | 2024-04-23 16:18:45,455 | Received From Client: ['connect', 'undefined', '22', 'Connected Successfully']
+DEBUG | 2024-04-23 16:18:58,161 | Received From Client: ['registration', 'undefined', '9', 'איתן שושן']
+DEBUG | 2024-04-23 16:18:58,161 | Did user manage to connect: True
+DEBUG | 2024-04-23 16:18:58,161 | Game current overall state: Game State: registration, User Count: 1, Users: ['איתן שושן'], Wolf: No wolf assigned
+DEBUG | 2024-04-23 16:19:10,520 | Received From Client: ['registration', 'undefined', '9', 'איתן שושן']
+DEBUG | 2024-04-23 16:19:10,520 | Did user manage to connect: False
+DEBUG | 2024-04-23 16:19:10,520 | Game current overall state: Game State: registration, User Count: 1, Users: ['איתן שושן'], Wolf: No wolf assigned
+DEBUG | 2024-04-23 16:19:22,114 | Received From Client: ['registration', 'undefined', '10', 'איציק שושן']
+DEBUG | 2024-04-23 16:19:22,115 | Did user manage to connect: True
+DEBUG | 2024-04-23 16:19:22,115 | Game current overall state: Game State: registration, User Count: 2, Users: ['איתן שושן', 'איציק שושן'], Wolf: No wolf assigned
