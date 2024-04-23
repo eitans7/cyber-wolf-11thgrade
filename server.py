@@ -1,6 +1,6 @@
 # server.py
-from flask import Flask, render_template, request
-from flask_socketio import SocketIO, emit, join_room
+from flask import Flask, render_template
+from flask_socketio import SocketIO, emit
 import random
 import logging
 import os
@@ -22,6 +22,9 @@ class User:
 
     def set_alive(self, is_alive):
         self.is_alive = is_alive  # Update the user's active status
+
+    def get_user_id(self):
+        return self.user_id
 
     def __str__(self):
         # Returns a string representation of the user
@@ -77,8 +80,9 @@ def index():
 @socketio.on('connect')
 def handle_connect():
     print('Client connected')
-    # Each client gets a unique session id which can be accessed by request.sid
-    emit('server_event', {'data': 'Welcome, user!'})
+    message = write_by_protocol("undefined user", 'Welcome, user!')
+    logging.debug(f"Sending To Client: {message}")
+    emit('server_event', {'message': message})
 
 
 @socketio.on('disconnect')
@@ -101,14 +105,24 @@ def handle_registrations(data_in_list):
     logging.debug(f"Did user manage to connect: {flag}")
     logging.debug(f"Game current overall state: {game}")
     if flag:
-        emit('server_event', {'message': f'{data_in_list[3]}, registered successfully'})
+        message = write_by_protocol(data_in_list[3], f'{data_in_list[3]}, registered successfully')
+        emit('server_event', {'message': message})
     else:
-        emit('server_event', {'message': f'{data_in_list[3]}, registration failed, please try again'})
+        message = write_by_protocol(data_in_list[3], f'{data_in_list[3]}, registration failed, please try again')
+        emit('server_event', {'message': message})
 
 
 def read_by_protocol(data):
     recieved_list = data.split('#$#')
-    return recieved_list
+    if recieved_list[2] == str(len(recieved_list[3])):
+        return recieved_list
+    else:
+        return ["error in data delivery"]
+
+
+def write_by_protocol(user_id, message):
+    delimiter = '#$#'
+    return game.get_state() + delimiter + user_id + delimiter + str(len(message)) + delimiter + message
 
 
 if __name__ == '__main__':

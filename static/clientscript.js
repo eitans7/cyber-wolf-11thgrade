@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     socket.on('connect', function() {
         console.log('Connected to server');
         // Emit an event to the server upon connection
-        message = write_by_protocol("connect", "Connected Successfully")
-        socket.emit('client_event', {data: message});
     });
 
     socket.on('disconnect', function() {
@@ -16,7 +14,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
     socket.on('server_event', function(data) {
-        console.log('Received from server:', data);
+        console.log("Full data received:", data);  // Log the entire data object
+        let protocol_versioned_data = read_by_protocol(data); // Define and initialize here
+        console.log('Received from server (protocol versioned):', protocol_versioned_data);
+        console.log('message from server:', protocol_versioned_data[3])
     });
 });
 
@@ -38,4 +39,19 @@ function registerUser() {
 function write_by_protocol(state, content) {
     const delimiter = '#$#';
     return state + delimiter + user + delimiter + content.length + delimiter + content;
+}
+
+function read_by_protocol(data) {
+    const delimiter = '#$#';
+    message = data.message
+    if (typeof message !== 'string') {
+        console.error('Invalid input: inputString must be a string', message);
+        return []; // Return an empty array if the input isn't a string
+    }
+    data = message.split(delimiter);
+    if (data[2] == String(data[3].length)){
+        return data;
+    } else {
+        return ["error in data delivery"];
+    }
 }
