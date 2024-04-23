@@ -96,7 +96,7 @@ def handle_client_event(data):
     protocol_versioned_data = read_by_protocol(message)
     logging.debug(f"Received From Client: {protocol_versioned_data}")
     # sort to functions by data
-    if game.get_state() == "registration" and protocol_versioned_data[0] == "registration":
+    if game.get_state() == "registration" and protocol_versioned_data[0] == "registration request":
         handle_registrations(protocol_versioned_data)
 
 
@@ -105,10 +105,10 @@ def handle_registrations(data_in_list):
     logging.debug(f"Did user manage to connect: {flag}")
     logging.debug(f"Game current overall state: {game}")
     if flag:
-        message = write_by_protocol(data_in_list[3], f'{data_in_list[3]}, registered successfully')
+        message = write_by_protocol(data_in_list[3], 'success')
         emit('server_event', {'message': message})
     else:
-        message = write_by_protocol(data_in_list[3], f'{data_in_list[3]}, registration failed, please try again')
+        message = write_by_protocol(data_in_list[3], 'fail, already exists')
         emit('server_event', {'message': message})
 
 

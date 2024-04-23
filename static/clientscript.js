@@ -18,6 +18,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
         let protocol_versioned_data = read_by_protocol(data); // Define and initialize here
         console.log('Received from server (protocol versioned):', protocol_versioned_data);
         console.log('message from server:', protocol_versioned_data[3])
+        //sort to functions by data
+        if (protocol_versioned_data[0] == "registration"){
+            if(protocol_versioned_data[3] == "success"){
+                welcome_message_display(protocol_versioned_data[1] + ", ברוך הבא למשחק");
+            }
+            if(protocol_versioned_data[3] == "fail, already exists"){
+                alert("שם המשתמש כבר קיים, אנא הכנס שם חדש");
+            }
+        }
     });
 });
 
@@ -27,7 +36,7 @@ function registerUser() {
     if (username) {
         // Ensure that `socket` is defined before trying to use it
         if (socket) {
-            message = write_by_protocol("registration", username)
+            message = write_by_protocol("registration request", username)
             socket.emit('client_event', {data: message});
             usernameElement.value = '';
         } else {
@@ -55,3 +64,12 @@ function read_by_protocol(data) {
         return ["error in data delivery"];
     }
 }
+
+function welcome_message_display(content) {
+    var welcomeMessage = document.getElementById('welcome_message_id');
+    var userTitle = document.getElementById('user_title_id')
+    welcomeMessage.style.display = 'block'; // Change display from 'none' to 'block' to show it
+    userTitle.style.display = 'none'
+    welcomeMessage.textContent = content;
+}
+
