@@ -45,8 +45,7 @@ class Game:
                 self.users_list.append(current_user)
                 self.user_count += 1
                 return True
-            else:
-                return False
+        return False
 
     def set_state(self, state):
         self.state = state
@@ -57,6 +56,9 @@ class Game:
     def set_wolf(self):
         rand_index = random.randrange(len(self.users_list))
         self.wolf = self.users_list[rand_index]
+
+    def get_user_count(self):
+        return self.user_count
 
     def __str__(self):
         # Creating a string that describes the game state
@@ -70,6 +72,7 @@ game = Game()
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
+max_users = 3
 
 
 @app.route('/')
@@ -96,8 +99,10 @@ def handle_client_event(data):
     protocol_versioned_data = read_by_protocol(message)
     logging.debug(f"Received From Client: {protocol_versioned_data}")
     # sort to functions by data
-    if game.get_state() == "registration" and protocol_versioned_data[0] == "registration request":
+    if protocol_versioned_data[0] == "registration request" and game.get_state() == "registration":
         handle_registrations(protocol_versioned_data)
+    if protocol_versioned_data[0] == "chat message" and game.get_state() == "day":
+        handle_chat_messages(protocol_versioned_data)
 
 
 def handle_registrations(data_in_list):
@@ -107,9 +112,15 @@ def handle_registrations(data_in_list):
     if flag:
         message = write_by_protocol(data_in_list[3], 'success')
         emit('server_event', {'message': message})
+        if game.get_user_count() == max_users:
+            game.set_state("day")
     else:
-        message = write_by_protocol(data_in_list[3], 'fail, already exists')
+        message = write_by_protocol("undefined user", 'fail, already exists')
         emit('server_event', {'message': message})
+
+
+def handle_chat_messages(data_in_list):
+    return True
 
 
 def read_by_protocol(data):

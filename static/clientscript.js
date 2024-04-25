@@ -15,17 +15,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     socket.on('server_event', function(data) {
         console.log("Full data received:", data);  // Log the entire data object
-        let protocol_versioned_data = read_by_protocol(data); // Define and initialize here
-        console.log('Received from server (protocol versioned):', protocol_versioned_data);
-        console.log('message from server:', protocol_versioned_data[3])
+        let protocolVersionedData = readByProtocol(data); // Define and initialize here
+        console.log('Received from server (protocol versioned):', protocolVersionedData);
+        console.log('message from server:', protocolVersionedData[3])
         //sort to functions by data
-        if (protocol_versioned_data[0] == "registration"){
-            if(protocol_versioned_data[3] == "success"){
-                welcome_message_display(protocol_versioned_data[1] + ", ברוך הבא למשחק");
-            }
-            if(protocol_versioned_data[3] == "fail, already exists"){
-                alert("שם המשתמש כבר קיים, אנא הכנס שם חדש");
-            }
+        if (protocolVersionedData[0] == "registration"){
+            registrationHandle(protocolVersionedData)
         }
     });
 });
@@ -36,7 +31,7 @@ function registerUser() {
     if (username) {
         // Ensure that `socket` is defined before trying to use it
         if (socket) {
-            message = write_by_protocol("registration request", username)
+            message = writeByProtocol("registration request", username)
             socket.emit('client_event', {data: message});
             usernameElement.value = '';
         } else {
@@ -45,12 +40,23 @@ function registerUser() {
     }
 }
 
-function write_by_protocol(state, content) {
+function registrationHandle(protocolVersionedData){
+    if(protocolVersionedData[3] == "success"){
+        user = protocolVersionedData[1]
+        welcomeMessageDisplay(user + ", ברוך הבא למשחק");
+        chatInputDisplay()
+    }
+    if(protocolVersionedData[3] == "fail, already exists"){
+        alert("שם המשתמש כבר קיים, אנא הכנס שם חדש");
+    }
+}
+
+function writeByProtocol(state, content) {
     const delimiter = '#$#';
     return state + delimiter + user + delimiter + content.length + delimiter + content;
 }
 
-function read_by_protocol(data) {
+function readByProtocol(data) {
     const delimiter = '#$#';
     message = data.message
     if (typeof message !== 'string') {
@@ -65,11 +71,15 @@ function read_by_protocol(data) {
     }
 }
 
-function welcome_message_display(content) {
+function welcomeMessageDisplay(content) {
     var welcomeMessage = document.getElementById('welcome_message_id');
     var userTitle = document.getElementById('user_title_id')
     welcomeMessage.style.display = 'block'; // Change display from 'none' to 'block' to show it
     userTitle.style.display = 'none'
     welcomeMessage.textContent = content;
+}
+
+function chatInputDisplay(){
+    document.getElementById('chat_input_id').style.display = 'block'; // Change display from 'none' to 'block' to show it
 }
 
