@@ -37,6 +37,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 chatInputDisplay();
             }
         }
+        if (protocolVersionedData[0] == "day"){
+            handleReceivingMessages(protocolVersionedData[1], protocolVersionedData[3])
+        }
     });
 });
 
@@ -63,6 +66,29 @@ function registrationHandle(protocolVersionedData){
     if(protocolVersionedData[3] == "fail, already exists"){
         alert("שם המשתמש כבר קיים, אנא הכנס שם חדש");
     }
+}
+
+function sendMessage(){
+    const messageInput = document.getElementById("input_message_id");
+    const message = messageInput.value.trim();
+    if (message) {
+        protocolVersionedMessage = writeByProtocol("send message", message)
+        socket.emit('client_event', {'data': protocolVersionedMessage});
+        messageInput.value = '';
+    }
+}
+
+function handleReceivingMessages(username, message){
+    displayMessage(username, message)
+}
+
+function displayMessage(username, message){
+    if (document.getElementById('chat_box_id').textContent.trim() == "כאן יופיעו הודעות"){
+        document.getElementById('chat_box_id').textContent = '';
+    }
+    const messageElement = document.createElement("p");
+    messageElement.textContent = `${username}: ${message}`;
+    document.getElementById("chat_box_id").appendChild(messageElement);
 }
 
 function writeByProtocol(state, content) {

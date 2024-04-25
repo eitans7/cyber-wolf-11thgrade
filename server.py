@@ -113,7 +113,8 @@ def handle_client_event(data):
     # sort to functions by data
     if protocol_versioned_data[0] == "registration request" and game.get_state() == "registration":
         handle_registrations(protocol_versioned_data)
-    # if protocol_versioned_data[0] == "chat message" and game.get_state() == "day":
+    if protocol_versioned_data[0] == "send message":
+        handle_chat_messages(protocol_versioned_data)
 
 
 def handle_registrations(data_in_list):
@@ -136,6 +137,7 @@ def start_game():
     game.set_state("start game")
     message = write_by_protocol("broadcast", "the game begins")
     emit('server_event', {'message': message}, broadcast=True)
+    game.set_state("day")
 
 
 def emit_to_user(user, message):
@@ -151,6 +153,13 @@ def set_wolf_stage():
     wolf = game.get_wolf()
     message = write_by_protocol(wolf.get_user_id(), "you are the wolf")
     emit_to_user(wolf, message)
+
+
+def handle_chat_messages(protocol_versioned_data):
+    message = protocol_versioned_data[3]
+    username = protocol_versioned_data[1]
+    protocol_versioned_message = write_by_protocol(username, message)
+    emit('server_event', {'message': protocol_versioned_message}, broadcast=True)
 
 
 def read_by_protocol(data):
