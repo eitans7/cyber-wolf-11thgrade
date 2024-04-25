@@ -42,6 +42,26 @@ body, html {
     color: #FFF; /* Text color */
     width: 400px;
 }
+.wolf_title_class {
+    background-color: #FF0000; /* Chat title background color */
+    display: flex; /* Use flexbox to arrange children inline */
+    justify-content: space-between; /* Space out children */
+    align-items: bottom; /* Align items vertically */
+    padding: 10px;
+    margin-bottom: 20px; /* Space between title and chat box */
+    color: #FFF; /* Text color */
+    width: 400px;
+}
+.human_title_class {
+    background-color: #322F40; /* Chat title background color */
+    display: flex; /* Use flexbox to arrange children inline */
+    justify-content: space-between; /* Space out children */
+    align-items: bottom; /* Align items vertically */
+    padding: 10px;
+    margin-bottom: 20px; /* Space between title and chat box */
+    color: #FFF; /* Text color */
+    width: 400px;
+}
 .user_title_text_class, .user_title_input_class, .user_title_button_class {
     flex: 1; /* Each child will take up equal amount of space */
     display: flex; /* Also use flexbox within children if needed */

@@ -1,5 +1,6 @@
 var socket;
 var user;
+var amIWolf = false;
 document.addEventListener('DOMContentLoaded', (event) => {
     socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port);
 
@@ -21,6 +22,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
         //sort to functions by data
         if (protocolVersionedData[0] == "registration"){
             registrationHandle(protocolVersionedData)
+        }
+        if (protocolVersionedData[0] == "set wolf"){
+            if (protocolVersionedData[3] == 'you are the wolf'){
+                amIWolf = true;
+                wolfTitleDisplay(user + ", אתה הוא הזאב");
+            }
+        }
+        if (protocolVersionedData[0] == "start game"){
+            if (protocolVersionedData[3] == "the game begins"){
+                if (amIWolf == false){
+                    humanTitleDisplay(user + ", אתה בן אדם");
+                }
+                chatInputDisplay();
+            }
         }
     });
 });
@@ -44,7 +59,6 @@ function registrationHandle(protocolVersionedData){
     if(protocolVersionedData[3] == "success"){
         user = protocolVersionedData[1]
         welcomeMessageDisplay(user + ", ברוך הבא למשחק");
-        chatInputDisplay()
     }
     if(protocolVersionedData[3] == "fail, already exists"){
         alert("שם המשתמש כבר קיים, אנא הכנס שם חדש");
@@ -77,6 +91,22 @@ function welcomeMessageDisplay(content) {
     welcomeMessage.style.display = 'block'; // Change display from 'none' to 'block' to show it
     userTitle.style.display = 'none'
     welcomeMessage.textContent = content;
+}
+
+function wolfTitleDisplay(content) {
+    var wolfTitle = document.getElementById('wolf_title_id');
+    var welcomeMessage = document.getElementById('welcome_message_id')
+    wolfTitle.style.display = 'block'; // Change display from 'none' to 'block' to show it
+    welcomeMessage.style.display = 'none'
+    wolfTitle.textContent = content;
+}
+
+function humanTitleDisplay(content) {
+    var humanTitle = document.getElementById('human_title_id');
+    var welcomeMessage = document.getElementById('welcome_message_id')
+    humanTitle.style.display = 'block'; // Change display from 'none' to 'block' to show it
+    welcomeMessage.style.display = 'none'
+    humanTitle.textContent = content;
 }
 
 function chatInputDisplay(){

@@ -1,5 +1,5 @@
 # server.py
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_socketio import SocketIO, emit
 import random
 import logging
@@ -12,8 +12,9 @@ LOG_FILE = LOG_DIR + '/server.log'
 
 
 class User:
-    def __init__(self, user_id, is_alive=True):
+    def __init__(self, user_id, session_id, is_alive=True):
         self.user_id = user_id
+        self.session_id = session_id  # Store the session ID when the user connects
         self.user_type = "human"  # Could be 'human', 'wolf'.
         self.is_alive = is_alive  # Active/Inactive status
 
@@ -26,22 +27,27 @@ class User:
     def get_user_id(self):
         return self.user_id
 
+    def get_session_id(self):
+        return self.session_id
+
     def __str__(self):
         # Returns a string representation of the user
         return f"User ID: {self.user_id}, Type: {self.user_type}, Alive: {self.is_alive}"
 
 
 class Game:
+    MAX_USERS = 3
+
     def __init__(self):
         self.users_list = []
         self.user_count = 0
         self.state = "registration"
         self.wolf = None
 
-    def add_user(self, new_username):
+    def add_user(self, new_username, sid):
         if self.state == "registration":
             if not any(user.user_id == new_username for user in self.users_list):
-                current_user = User(new_username)
+                current_user = User(new_username, sid)
                 self.users_list.append(current_user)
                 self.user_count += 1
                 return True
@@ -57,8 +63,14 @@ class Game:
         rand_index = random.randrange(len(self.users_list))
         self.wolf = self.users_list[rand_index]
 
+    def get_wolf(self):
+        return self.wolf
+
     def get_user_count(self):
         return self.user_count
+
+    def get_users_list(self):
+        return self.users_list
 
     def __str__(self):
         # Creating a string that describes the game state
@@ -72,7 +84,6 @@ game = Game()
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
-max_users = 3
 
 
 @app.route('/')
@@ -82,7 +93,8 @@ def index():
 
 @socketio.on('connect')
 def handle_connect():
-    print('Client connected')
+    session_id = request.sid  # the warnning is an issue in the IDE
+    print('Client connected, session:', session_id)
     message = write_by_protocol("undefined user", 'Welcome, user!')
     logging.debug(f"Sending To Client: {message}")
     emit('server_event', {'message': message})
@@ -101,26 +113,44 @@ def handle_client_event(data):
     # sort to functions by data
     if protocol_versioned_data[0] == "registration request" and game.get_state() == "registration":
         handle_registrations(protocol_versioned_data)
-    if protocol_versioned_data[0] == "chat message" and game.get_state() == "day":
-        handle_chat_messages(protocol_versioned_data)
+    # if protocol_versioned_data[0] == "chat message" and game.get_state() == "day":
 
 
 def handle_registrations(data_in_list):
-    flag = game.add_user(data_in_list[3])
+    session_id = request.sid  # the warnning is an issue in the IDE
+    flag = game.add_user(data_in_list[3], session_id)
     logging.debug(f"Did user manage to connect: {flag}")
     logging.debug(f"Game current overall state: {game}")
     if flag:
         message = write_by_protocol(data_in_list[3], 'success')
         emit('server_event', {'message': message})
-        if game.get_user_count() == max_users:
-            game.set_state("day")
+        if game.get_user_count() == Game.MAX_USERS:
+            start_game()
     else:
         message = write_by_protocol("undefined user", 'fail, already exists')
         emit('server_event', {'message': message})
 
 
-def handle_chat_messages(data_in_list):
-    return True
+def start_game():
+    set_wolf_stage()
+    game.set_state("start game")
+    message = write_by_protocol("broadcast", "the game begins")
+    emit('server_event', {'message': message}, broadcast=True)
+
+
+def emit_to_user(user, message):
+    if user:
+        emit('server_event', {'message': message}, to=user.get_session_id())
+    else:
+        print("User not found")
+
+
+def set_wolf_stage():
+    game.set_state("set wolf")
+    game.set_wolf()
+    wolf = game.get_wolf()
+    message = write_by_protocol(wolf.get_user_id(), "you are the wolf")
+    emit_to_user(wolf, message)
 
 
 def read_by_protocol(data):
