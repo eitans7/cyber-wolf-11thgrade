@@ -1,6 +1,10 @@
 var socket;
 var user;
 var amIWolf = false;
+
+const timerDuration = 5000; // Timer duration in milliseconds (5000ms = 5 seconds)
+const timerEventName = 'timerCompleted';
+
 document.addEventListener('DOMContentLoaded', (event) => {
     socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port);
 
@@ -35,6 +39,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     humanTitleDisplay(user + ", אתה בן אדם");
                 }
                 chatInputDisplay();
+                startTimer(timerDuration, timerEventName);
             }
         }
         if (protocolVersionedData[0] == "day"){
@@ -91,6 +96,33 @@ function displayMessage(username, message){
     document.getElementById("chat_box_id").appendChild(messageElement);
 }
 
+// Define the timer function
+function startTimer(duration, eventName) {
+    const endTime = Date.now() + duration;
+    const event = new Event(eventName);
+
+    const interval = setInterval(() => {
+        const remainingTime = endTime - Date.now();
+        if (remainingTime <= 0) {
+            clearInterval(interval);
+            document.dispatchEvent(event);
+            document.getElementById('time_id').textContent = 'נגמר הזמן!';
+        } else {
+            document.getElementById('time_id').textContent = `זמן שנותר: ${Math.ceil(remainingTime / 1000)} שניות`;
+        }
+    }, 1000);
+}
+
+// Example usage
+// Add an event listener for the custom event
+document.addEventListener(timerEventName, () => {
+    console.log('Timer is over! Event has been triggered.');
+});
+
+function restartTimer() {
+    startTimer(timerDuration, timerEventName);
+}
+
 function writeByProtocol(state, content) {
     const delimiter = '#$#';
     return state + delimiter + user + delimiter + content.length + delimiter + content;
@@ -138,4 +170,3 @@ function humanTitleDisplay(content) {
 function chatInputDisplay(){
     document.getElementById('chat_input_id').style.display = 'block'; // Change display from 'none' to 'block' to show it
 }
-
