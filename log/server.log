@@ -2814,3 +2814,1337 @@ DEBUG | 2024-05-17 10:08:59,507 | Game current overall state: Game State: regist
 DEBUG | 2024-05-17 10:09:17,557 | Received From Client: ['registration request', 'undefined', '5', 'דניאל']
 DEBUG | 2024-05-17 10:09:17,557 | Did user manage to connect: True
 DEBUG | 2024-05-17 10:09:17,557 | Game current overall state: Game State: registration, User Count: 3, Users: ['איתן', 'יותם', 'דניאל'], Wolf: No wolf assigned
+WARNING | 2024-05-24 10:59:51,145 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 10:59:52,014 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 10:59:52,015 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 10:59:52,015 |  * Restarting with stat
+WARNING | 2024-05-24 10:59:52,383 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 10:59:52,383 |  * Debugger is active!
+INFO | 2024-05-24 10:59:52,385 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 11:00:08,665 | 127.0.0.1 - - [24/May/2024 11:00:08] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:00:08,789 | 127.0.0.1 - - [24/May/2024 11:00:08] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 11:00:08,794 | 127.0.0.1 - - [24/May/2024 11:00:08] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:00:08,814 | 127.0.0.1 - - [24/May/2024 11:00:08] "GET /socket.io/?EIO=4&transport=polling&t=O-fdKfh HTTP/1.1" 200 -
+INFO | 2024-05-24 11:00:08,818 | 127.0.0.1 - - [24/May/2024 11:00:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+DEBUG | 2024-05-24 11:00:08,822 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:00:08,823 | 127.0.0.1 - - [24/May/2024 11:00:08] "POST /socket.io/?EIO=4&transport=polling&t=O-fdKfn&sid=7k8W8Ej99u5YPLgEAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:00:08,825 | 127.0.0.1 - - [24/May/2024 11:00:08] "GET /socket.io/?EIO=4&transport=polling&t=O-fdKfo&sid=7k8W8Ej99u5YPLgEAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:00:08,828 | 127.0.0.1 - - [24/May/2024 11:00:08] "GET /socket.io/?EIO=4&transport=polling&t=O-fdKfw&sid=7k8W8Ej99u5YPLgEAAAA HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:00:15,839 | Received From Client: ['registration request', 'undefined', '4', 'איתן']
+DEBUG | 2024-05-24 11:00:15,840 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:00:15,840 | Game current overall state: Game State: registration, User Count: 1, Users: ['איתן'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:00:18,831 | 127.0.0.1 - - [24/May/2024 11:00:18] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:00:18,851 | 127.0.0.1 - - [24/May/2024 11:00:18] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:00:18,851 | 127.0.0.1 - - [24/May/2024 11:00:18] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:00:18,862 | 127.0.0.1 - - [24/May/2024 11:00:18] "GET /socket.io/?EIO=4&transport=polling&t=O-fdN6h HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:00:18,875 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:00:18,876 | 127.0.0.1 - - [24/May/2024 11:00:18] "POST /socket.io/?EIO=4&transport=polling&t=O-fdN6v&sid=cp5uoMuCQzc68v9LAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:00:18,879 | 127.0.0.1 - - [24/May/2024 11:00:18] "GET /socket.io/?EIO=4&transport=polling&t=O-fdN6w&sid=cp5uoMuCQzc68v9LAAAC HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:00:22,427 | Received From Client: ['registration request', 'undefined', '4', 'איתן']
+DEBUG | 2024-05-24 11:00:22,427 | Did user manage to connect: False
+DEBUG | 2024-05-24 11:00:22,427 | Game current overall state: Game State: registration, User Count: 1, Users: ['איתן'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 11:00:28,576 | Received From Client: ['registration request', 'undefined', '5', 'איציק']
+DEBUG | 2024-05-24 11:00:28,576 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:00:28,576 | Game current overall state: Game State: registration, User Count: 2, Users: ['איתן', 'איציק'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:00:31,507 | 127.0.0.1 - - [24/May/2024 11:00:31] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:00:31,527 | 127.0.0.1 - - [24/May/2024 11:00:31] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:00:31,529 | 127.0.0.1 - - [24/May/2024 11:00:31] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:00:31,552 | 127.0.0.1 - - [24/May/2024 11:00:31] "GET /socket.io/?EIO=4&transport=polling&t=O-fdQCz HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:00:31,558 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:00:31,558 | 127.0.0.1 - - [24/May/2024 11:00:31] "POST /socket.io/?EIO=4&transport=polling&t=O-fdQD3&sid=Ak0AwJqHaCpyDaY3AAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:00:31,560 | 127.0.0.1 - - [24/May/2024 11:00:31] "GET /socket.io/?EIO=4&transport=polling&t=O-fdQD5&sid=Ak0AwJqHaCpyDaY3AAAE HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:00:37,850 | Received From Client: ['registration request', 'undefined', '5', 'דניאל']
+DEBUG | 2024-05-24 11:00:37,851 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:00:37,851 | Game current overall state: Game State: registration, User Count: 3, Users: ['איתן', 'איציק', 'דניאל'], Wolf: No wolf assigned
+WARNING | 2024-05-24 11:03:36,142 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 11:03:36,993 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 11:03:36,993 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 11:03:36,993 |  * Restarting with stat
+WARNING | 2024-05-24 11:03:37,414 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 11:03:37,414 |  * Debugger is active!
+INFO | 2024-05-24 11:03:37,416 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 11:03:37,434 | 127.0.0.1 - - [24/May/2024 11:03:37] "GET /socket.io/?EIO=4&transport=polling&t=O-fe6Z4 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:03:37,438 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:03:37,438 | 127.0.0.1 - - [24/May/2024 11:03:37] "POST /socket.io/?EIO=4&transport=polling&t=O-fe7bR&sid=aLCNX-GrGbpT9GyJAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:37,442 | 127.0.0.1 - - [24/May/2024 11:03:37] "GET /socket.io/?EIO=4&transport=polling&t=O-fe7bS&sid=aLCNX-GrGbpT9GyJAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:40,479 | 127.0.0.1 - - [24/May/2024 11:03:40] "GET /socket.io/?EIO=4&transport=polling&t=O-fe8Kw HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:03:40,489 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:03:40,490 | 127.0.0.1 - - [24/May/2024 11:03:40] "POST /socket.io/?EIO=4&transport=polling&t=O-fe8L4&sid=y3Z6H-FlZLp-9pdvAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:40,492 | 127.0.0.1 - - [24/May/2024 11:03:40] "GET /socket.io/?EIO=4&transport=polling&t=O-fe8L6&sid=y3Z6H-FlZLp-9pdvAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:41,189 | 127.0.0.1 - - [24/May/2024 11:03:41] "GET /socket.io/?EIO=4&transport=polling&t=O-fe8W2 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:03:41,192 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:03:41,192 | 127.0.0.1 - - [24/May/2024 11:03:41] "POST /socket.io/?EIO=4&transport=polling&t=O-fe8W6&sid=0siolQFufjGB3-9cAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:41,195 | 127.0.0.1 - - [24/May/2024 11:03:41] "GET /socket.io/?EIO=4&transport=polling&t=O-fe8W7&sid=0siolQFufjGB3-9cAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:43,550 | 127.0.0.1 - - [24/May/2024 11:03:43] "GET /socket.io/?EIO=4&transport=websocket&sid=aLCNX-GrGbpT9GyJAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:43,938 | 127.0.0.1 - - [24/May/2024 11:03:43] "GET /socket.io/?EIO=4&transport=websocket&sid=0siolQFufjGB3-9cAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:44,280 | 127.0.0.1 - - [24/May/2024 11:03:44] "GET /socket.io/?EIO=4&transport=websocket&sid=y3Z6H-FlZLp-9pdvAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:45,226 | 127.0.0.1 - - [24/May/2024 11:03:45] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:45,318 | 127.0.0.1 - - [24/May/2024 11:03:45] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:03:45,319 | 127.0.0.1 - - [24/May/2024 11:03:45] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:45,335 | 127.0.0.1 - - [24/May/2024 11:03:45] "GET /socket.io/?EIO=4&transport=polling&t=O-fe9Wp HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:03:45,339 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:03:45,339 | 127.0.0.1 - - [24/May/2024 11:03:45] "POST /socket.io/?EIO=4&transport=polling&t=O-fe9Wu&sid=vPF5Vf3JtGyAdYREAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:45,347 | 127.0.0.1 - - [24/May/2024 11:03:45] "GET /socket.io/?EIO=4&transport=polling&t=O-fe9Wv&sid=vPF5Vf3JtGyAdYREAAAG HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:03:49,913 | Received From Client: ['registration request', 'undefined', '3', 'th,']
+DEBUG | 2024-05-24 11:03:49,914 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:03:49,915 | Game current overall state: Game State: registration, User Count: 1, Users: ['th,'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:03:53,095 | 127.0.0.1 - - [24/May/2024 11:03:53] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:53,113 | 127.0.0.1 - - [24/May/2024 11:03:53] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:03:53,114 | 127.0.0.1 - - [24/May/2024 11:03:53] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:03:53,136 | 127.0.0.1 - - [24/May/2024 11:03:53] "GET /socket.io/?EIO=4&transport=polling&t=O-feBQi HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:03:53,141 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:03:53,141 | 127.0.0.1 - - [24/May/2024 11:03:53] "POST /socket.io/?EIO=4&transport=polling&t=O-feBQo&sid=kuyzdtILxvlEMyn8AAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:53,143 | 127.0.0.1 - - [24/May/2024 11:03:53] "GET /socket.io/?EIO=4&transport=polling&t=O-feBQp&sid=kuyzdtILxvlEMyn8AAAI HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:03:55,324 | Received From Client: ['registration request', 'undefined', '1', 'h']
+DEBUG | 2024-05-24 11:03:55,324 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:03:55,324 | Game current overall state: Game State: registration, User Count: 2, Users: ['th,', 'h'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:03:57,914 | 127.0.0.1 - - [24/May/2024 11:03:57] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:57,931 | 127.0.0.1 - - [24/May/2024 11:03:57] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:03:57,932 | 127.0.0.1 - - [24/May/2024 11:03:57] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:03:57,955 | 127.0.0.1 - - [24/May/2024 11:03:57] "GET /socket.io/?EIO=4&transport=polling&t=O-feCc0 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:03:57,959 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:03:57,960 | 127.0.0.1 - - [24/May/2024 11:03:57] "POST /socket.io/?EIO=4&transport=polling&t=O-feCc5&sid=os5rW8icoZ7q6DTYAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:57,962 | 127.0.0.1 - - [24/May/2024 11:03:57] "GET /socket.io/?EIO=4&transport=polling&t=O-feCc6&sid=os5rW8icoZ7q6DTYAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 11:03:57,966 | 127.0.0.1 - - [24/May/2024 11:03:57] "GET /socket.io/?EIO=4&transport=polling&t=O-feCcC&sid=os5rW8icoZ7q6DTYAAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:04:00,567 | Received From Client: ['registration request', 'undefined', '2', 'kb']
+DEBUG | 2024-05-24 11:04:00,567 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:04:00,567 | Game current overall state: Game State: registration, User Count: 3, Users: ['th,', 'h', 'kb'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 11:04:05,150 | Received From Client: ['send message', 'kb', '3', 'vhh']
+INFO | 2024-05-24 11:04:27,157 | 127.0.0.1 - - [24/May/2024 11:04:27] "GET /socket.io/?EIO=4&transport=websocket&sid=vPF5Vf3JtGyAdYREAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:04:27,492 | 127.0.0.1 - - [24/May/2024 11:04:27] "GET /socket.io/?EIO=4&transport=websocket&sid=kuyzdtILxvlEMyn8AAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:04:27,892 | 127.0.0.1 - - [24/May/2024 11:04:27] "GET /socket.io/?EIO=4&transport=websocket&sid=os5rW8icoZ7q6DTYAAAK HTTP/1.1" 200 -
+WARNING | 2024-05-24 11:09:44,491 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 11:09:45,353 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 11:09:45,353 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 11:09:45,353 |  * Restarting with stat
+WARNING | 2024-05-24 11:09:45,766 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 11:09:45,766 |  * Debugger is active!
+INFO | 2024-05-24 11:09:45,768 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 11:09:47,156 | 127.0.0.1 - - [24/May/2024 11:09:47] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:09:47,254 | 127.0.0.1 - - [24/May/2024 11:09:47] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:09:47,256 | 127.0.0.1 - - [24/May/2024 11:09:47] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:09:47,274 | 127.0.0.1 - - [24/May/2024 11:09:47] "GET /socket.io/?EIO=4&transport=polling&t=O-ffXu7 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:09:47,279 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:09:47,280 | 127.0.0.1 - - [24/May/2024 11:09:47] "POST /socket.io/?EIO=4&transport=polling&t=O-ffXuC&sid=7RU86Yop9LBO5MwaAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:09:47,281 | 127.0.0.1 - - [24/May/2024 11:09:47] "GET /socket.io/?EIO=4&transport=polling&t=O-ffXuE&sid=7RU86Yop9LBO5MwaAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:09:47,287 | 127.0.0.1 - - [24/May/2024 11:09:47] "GET /socket.io/?EIO=4&transport=polling&t=O-ffXuL&sid=7RU86Yop9LBO5MwaAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:10:15,953 | 127.0.0.1 - - [24/May/2024 11:10:15] "GET /socket.io/?EIO=4&transport=websocket&sid=7RU86Yop9LBO5MwaAAAA HTTP/1.1" 200 -
+WARNING | 2024-05-24 11:14:54,934 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 11:14:55,799 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 11:14:55,799 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 11:14:55,799 |  * Restarting with stat
+WARNING | 2024-05-24 11:14:56,173 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 11:14:56,174 |  * Debugger is active!
+INFO | 2024-05-24 11:14:56,175 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 11:14:58,213 | 127.0.0.1 - - [24/May/2024 11:14:58] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:14:58,343 | 127.0.0.1 - - [24/May/2024 11:14:58] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 11:14:58,349 | 127.0.0.1 - - [24/May/2024 11:14:58] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:14:58,371 | 127.0.0.1 - - [24/May/2024 11:14:58] "GET /socket.io/?EIO=4&transport=polling&t=O-fgjqv HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:14:58,376 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:14:58,376 | 127.0.0.1 - - [24/May/2024 11:14:58] "POST /socket.io/?EIO=4&transport=polling&t=O-fgjr5&sid=gB3_NNKlKb3fsudvAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:14:58,378 | 127.0.0.1 - - [24/May/2024 11:14:58] "GET /socket.io/?EIO=4&transport=polling&t=O-fgjr6&sid=gB3_NNKlKb3fsudvAAAA HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:15:01,557 | Received From Client: ['registration request', 'undefined', '2', 'hh']
+DEBUG | 2024-05-24 11:15:01,557 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:15:01,557 | Game current overall state: Game State: registration, User Count: 1, Users: ['hh'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:15:03,941 | 127.0.0.1 - - [24/May/2024 11:15:03] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:15:03,956 | 127.0.0.1 - - [24/May/2024 11:15:03] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:15:03,958 | 127.0.0.1 - - [24/May/2024 11:15:03] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:15:03,972 | 127.0.0.1 - - [24/May/2024 11:15:03] "GET /socket.io/?EIO=4&transport=polling&t=O-fglCX HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:15:03,984 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:15:03,985 | 127.0.0.1 - - [24/May/2024 11:15:03] "POST /socket.io/?EIO=4&transport=polling&t=O-fglCj&sid=LuxQLUsk28mdKjxoAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:15:03,986 | 127.0.0.1 - - [24/May/2024 11:15:03] "GET /socket.io/?EIO=4&transport=polling&t=O-fglCk&sid=LuxQLUsk28mdKjxoAAAC HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:15:06,599 | Received From Client: ['registration request', 'undefined', '1', 'j']
+DEBUG | 2024-05-24 11:15:06,599 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:15:06,599 | Game current overall state: Game State: registration, User Count: 2, Users: ['hh', 'j'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:15:09,495 | 127.0.0.1 - - [24/May/2024 11:15:09] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:15:09,512 | 127.0.0.1 - - [24/May/2024 11:15:09] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:15:09,513 | 127.0.0.1 - - [24/May/2024 11:15:09] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:15:09,527 | 127.0.0.1 - - [24/May/2024 11:15:09] "GET /socket.io/?EIO=4&transport=polling&t=O-fgmZK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:15:09,540 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:15:09,541 | 127.0.0.1 - - [24/May/2024 11:15:09] "POST /socket.io/?EIO=4&transport=polling&t=O-fgmZY&sid=OMKQwuK1497zhSlhAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:15:09,543 | 127.0.0.1 - - [24/May/2024 11:15:09] "GET /socket.io/?EIO=4&transport=polling&t=O-fgmZa&sid=OMKQwuK1497zhSlhAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:15:09,548 | 127.0.0.1 - - [24/May/2024 11:15:09] "GET /socket.io/?EIO=4&transport=polling&t=O-fgmZg&sid=OMKQwuK1497zhSlhAAAE HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:15:11,680 | Received From Client: ['registration request', 'undefined', '1', 'j']
+DEBUG | 2024-05-24 11:15:11,681 | Did user manage to connect: False
+DEBUG | 2024-05-24 11:15:11,681 | Game current overall state: Game State: registration, User Count: 2, Users: ['hh', 'j'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 11:15:16,094 | Received From Client: ['registration request', 'undefined', '1', 'y']
+DEBUG | 2024-05-24 11:15:16,094 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:15:16,094 | Game current overall state: Game State: registration, User Count: 3, Users: ['hh', 'j', 'y'], Wolf: No wolf assigned
+WARNING | 2024-05-24 11:17:59,037 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 11:17:59,890 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 11:17:59,890 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 11:17:59,890 |  * Restarting with stat
+WARNING | 2024-05-24 11:18:00,274 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 11:18:00,274 |  * Debugger is active!
+INFO | 2024-05-24 11:18:00,276 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 11:18:01,186 | 127.0.0.1 - - [24/May/2024 11:18:01] "GET /socket.io/?EIO=4&transport=polling&t=O-fhQTW HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:01,190 | 127.0.0.1 - - [24/May/2024 11:18:01] "GET /socket.io/?EIO=4&transport=polling&t=O-fhQTW HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:18:01,192 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:18:01,192 | 127.0.0.1 - - [24/May/2024 11:18:01] "POST /socket.io/?EIO=4&transport=polling&t=O-fhQTb&sid=-jDESKH3C1_ndSNTAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:01,197 | 127.0.0.1 - - [24/May/2024 11:18:01] "GET /socket.io/?EIO=4&transport=polling&t=O-fhQTc&sid=-jDESKH3C1_ndSNTAAAA HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:18:01,199 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:18:01,199 | 127.0.0.1 - - [24/May/2024 11:18:01] "POST /socket.io/?EIO=4&transport=polling&t=O-fhQTg&sid=ePHnKIOsd-HhK8RyAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:01,200 | 127.0.0.1 - - [24/May/2024 11:18:01] "GET /socket.io/?EIO=4&transport=polling&t=O-fhQTi&sid=ePHnKIOsd-HhK8RyAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:01,216 | 127.0.0.1 - - [24/May/2024 11:18:01] "GET /socket.io/?EIO=4&transport=polling&t=O-fhQTo&sid=ePHnKIOsd-HhK8RyAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:02,232 | 127.0.0.1 - - [24/May/2024 11:18:02] "GET /socket.io/?EIO=4&transport=polling&t=O-fhQjm HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:18:02,243 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:18:02,244 | 127.0.0.1 - - [24/May/2024 11:18:02] "POST /socket.io/?EIO=4&transport=polling&t=O-fhQjy&sid=S79P8utui95qgFSGAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:02,250 | 127.0.0.1 - - [24/May/2024 11:18:02] "GET /socket.io/?EIO=4&transport=polling&t=O-fhQj_&sid=S79P8utui95qgFSGAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:06,168 | 127.0.0.1 - - [24/May/2024 11:18:06] "GET /socket.io/?EIO=4&transport=websocket&sid=-jDESKH3C1_ndSNTAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:06,761 | 127.0.0.1 - - [24/May/2024 11:18:06] "GET /socket.io/?EIO=4&transport=websocket&sid=ePHnKIOsd-HhK8RyAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:07,341 | 127.0.0.1 - - [24/May/2024 11:18:07] "GET /socket.io/?EIO=4&transport=websocket&sid=S79P8utui95qgFSGAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:08,880 | 127.0.0.1 - - [24/May/2024 11:18:08] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:08,969 | 127.0.0.1 - - [24/May/2024 11:18:08] "GET /static/clientstyle.css HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:08,969 | 127.0.0.1 - - [24/May/2024 11:18:08] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:08,986 | 127.0.0.1 - - [24/May/2024 11:18:08] "GET /socket.io/?EIO=4&transport=polling&t=O-fhSNN HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:18:08,990 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:18:08,991 | 127.0.0.1 - - [24/May/2024 11:18:08] "POST /socket.io/?EIO=4&transport=polling&t=O-fhSNR&sid=e0LVPO9m5vFI6o5zAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:08,994 | 127.0.0.1 - - [24/May/2024 11:18:08] "GET /socket.io/?EIO=4&transport=polling&t=O-fhSNT&sid=e0LVPO9m5vFI6o5zAAAG HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:18:12,171 | Received From Client: ['registration request', 'undefined', '2', 'ff']
+DEBUG | 2024-05-24 11:18:12,171 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:18:12,172 | Game current overall state: Game State: registration, User Count: 1, Users: ['ff'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:18:14,695 | 127.0.0.1 - - [24/May/2024 11:18:14] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:14,710 | 127.0.0.1 - - [24/May/2024 11:18:14] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:18:14,711 | 127.0.0.1 - - [24/May/2024 11:18:14] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:18:14,735 | 127.0.0.1 - - [24/May/2024 11:18:14] "GET /socket.io/?EIO=4&transport=polling&t=O-fhTnC HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:18:14,740 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:18:14,740 | 127.0.0.1 - - [24/May/2024 11:18:14] "POST /socket.io/?EIO=4&transport=polling&t=O-fhTnI&sid=costBCm23owdRQ0aAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:14,742 | 127.0.0.1 - - [24/May/2024 11:18:14] "GET /socket.io/?EIO=4&transport=polling&t=O-fhTnJ&sid=costBCm23owdRQ0aAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:14,753 | 127.0.0.1 - - [24/May/2024 11:18:14] "GET /socket.io/?EIO=4&transport=polling&t=O-fhTnN&sid=costBCm23owdRQ0aAAAI HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:18:17,258 | Received From Client: ['registration request', 'undefined', '1', 'e']
+DEBUG | 2024-05-24 11:18:17,258 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:18:17,258 | Game current overall state: Game State: registration, User Count: 2, Users: ['ff', 'e'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:18:19,865 | 127.0.0.1 - - [24/May/2024 11:18:19] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:19,881 | 127.0.0.1 - - [24/May/2024 11:18:19] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:18:19,883 | 127.0.0.1 - - [24/May/2024 11:18:19] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:18:19,907 | 127.0.0.1 - - [24/May/2024 11:18:19] "GET /socket.io/?EIO=4&transport=polling&t=O-fhV20 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:18:19,912 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:18:19,912 | 127.0.0.1 - - [24/May/2024 11:18:19] "POST /socket.io/?EIO=4&transport=polling&t=O-fhV25&sid=QXyhCSoJdhqqB-qpAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 11:18:19,915 | 127.0.0.1 - - [24/May/2024 11:18:19] "GET /socket.io/?EIO=4&transport=polling&t=O-fhV27&sid=QXyhCSoJdhqqB-qpAAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:18:22,476 | Received From Client: ['registration request', 'undefined', '1', 't']
+DEBUG | 2024-05-24 11:18:22,476 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:18:22,476 | Game current overall state: Game State: registration, User Count: 3, Users: ['ff', 'e', 't'], Wolf: No wolf assigned
+WARNING | 2024-05-24 11:20:30,721 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 11:20:31,571 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 11:20:31,572 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 11:20:31,572 |  * Restarting with stat
+WARNING | 2024-05-24 11:20:31,942 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 11:20:31,942 |  * Debugger is active!
+INFO | 2024-05-24 11:20:31,944 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 11:20:31,960 | 127.0.0.1 - - [24/May/2024 11:20:31] "GET /socket.io/?EIO=4&transport=polling&t=O-fh-rm HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:31,964 | 127.0.0.1 - - [24/May/2024 11:20:31] "GET /socket.io/?EIO=4&transport=polling&t=O-fh-rm HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:20:31,966 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:20:31,966 | 127.0.0.1 - - [24/May/2024 11:20:31] "POST /socket.io/?EIO=4&transport=polling&t=O-fh_HR&sid=t1rhIohrnINuIvq9AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:31,970 | 127.0.0.1 - - [24/May/2024 11:20:31] "GET /socket.io/?EIO=4&transport=polling&t=O-fh_HR.0&sid=t1rhIohrnINuIvq9AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:31,972 | 127.0.0.1 - - [24/May/2024 11:20:31] "GET /socket.io/?EIO=4&transport=polling&t=O-fh-rm HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:20:31,976 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:20:31,976 | 127.0.0.1 - - [24/May/2024 11:20:31] "POST /socket.io/?EIO=4&transport=polling&t=O-fh_HW&sid=zWTAI0nVLHwNwD2hAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:31,978 | 127.0.0.1 - - [24/May/2024 11:20:31] "GET /socket.io/?EIO=4&transport=polling&t=O-fh_HX&sid=zWTAI0nVLHwNwD2hAAAB HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:20:31,980 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:20:31,981 | 127.0.0.1 - - [24/May/2024 11:20:31] "POST /socket.io/?EIO=4&transport=polling&t=O-fh_Hd&sid=CdWTu6Z1otg3lNe8AAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:31,983 | 127.0.0.1 - - [24/May/2024 11:20:31] "GET /socket.io/?EIO=4&transport=polling&t=O-fh_He&sid=CdWTu6Z1otg3lNe8AAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:31,986 | 127.0.0.1 - - [24/May/2024 11:20:31] "GET /socket.io/?EIO=4&transport=polling&t=O-fh_Hi&sid=zWTAI0nVLHwNwD2hAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:32,001 | 127.0.0.1 - - [24/May/2024 11:20:32] "GET /socket.io/?EIO=4&transport=polling&t=O-fh_Ho&sid=CdWTu6Z1otg3lNe8AAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:36,115 | 127.0.0.1 - - [24/May/2024 11:20:36] "GET /socket.io/?EIO=4&transport=websocket&sid=zWTAI0nVLHwNwD2hAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:36,666 | 127.0.0.1 - - [24/May/2024 11:20:36] "GET /socket.io/?EIO=4&transport=websocket&sid=CdWTu6Z1otg3lNe8AAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:37,244 | 127.0.0.1 - - [24/May/2024 11:20:37] "GET /socket.io/?EIO=4&transport=websocket&sid=t1rhIohrnINuIvq9AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:38,522 | 127.0.0.1 - - [24/May/2024 11:20:38] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:38,605 | 127.0.0.1 - - [24/May/2024 11:20:38] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:20:38,608 | 127.0.0.1 - - [24/May/2024 11:20:38] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:38,622 | 127.0.0.1 - - [24/May/2024 11:20:38] "GET /socket.io/?EIO=4&transport=polling&t=O-fi0vR HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:20:38,626 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:20:38,626 | 127.0.0.1 - - [24/May/2024 11:20:38] "POST /socket.io/?EIO=4&transport=polling&t=O-fi0vW&sid=RbwLI6E4E27GyL7NAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:38,627 | 127.0.0.1 - - [24/May/2024 11:20:38] "GET /socket.io/?EIO=4&transport=polling&t=O-fi0vX&sid=RbwLI6E4E27GyL7NAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:38,638 | 127.0.0.1 - - [24/May/2024 11:20:38] "GET /socket.io/?EIO=4&transport=polling&t=O-fi0vb&sid=RbwLI6E4E27GyL7NAAAG HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:20:41,598 | Received From Client: ['registration request', 'undefined', '2', 'hh']
+DEBUG | 2024-05-24 11:20:41,598 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:20:41,598 | Game current overall state: Game State: registration, User Count: 1, Users: ['hh'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:20:44,284 | 127.0.0.1 - - [24/May/2024 11:20:44] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:44,302 | 127.0.0.1 - - [24/May/2024 11:20:44] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:20:44,303 | 127.0.0.1 - - [24/May/2024 11:20:44] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:20:44,325 | 127.0.0.1 - - [24/May/2024 11:20:44] "GET /socket.io/?EIO=4&transport=polling&t=O-fi2IY HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:20:44,330 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:20:44,330 | 127.0.0.1 - - [24/May/2024 11:20:44] "POST /socket.io/?EIO=4&transport=polling&t=O-fi2Ie&sid=sabggGYc25i_ld7pAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:44,333 | 127.0.0.1 - - [24/May/2024 11:20:44] "GET /socket.io/?EIO=4&transport=polling&t=O-fi2If&sid=sabggGYc25i_ld7pAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:44,337 | 127.0.0.1 - - [24/May/2024 11:20:44] "GET /socket.io/?EIO=4&transport=polling&t=O-fi2Il&sid=sabggGYc25i_ld7pAAAI HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:20:47,132 | Received From Client: ['registration request', 'undefined', '1', 'e']
+DEBUG | 2024-05-24 11:20:47,132 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:20:47,132 | Game current overall state: Game State: registration, User Count: 2, Users: ['hh', 'e'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:20:50,307 | 127.0.0.1 - - [24/May/2024 11:20:50] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:50,324 | 127.0.0.1 - - [24/May/2024 11:20:50] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:20:50,325 | 127.0.0.1 - - [24/May/2024 11:20:50] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:20:50,346 | 127.0.0.1 - - [24/May/2024 11:20:50] "GET /socket.io/?EIO=4&transport=polling&t=O-fi3me HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:20:50,354 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:20:50,354 | 127.0.0.1 - - [24/May/2024 11:20:50] "POST /socket.io/?EIO=4&transport=polling&t=O-fi3ml&sid=pY34nh67UZRBJVFmAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 11:20:50,362 | 127.0.0.1 - - [24/May/2024 11:20:50] "GET /socket.io/?EIO=4&transport=polling&t=O-fi3mm&sid=pY34nh67UZRBJVFmAAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:20:54,456 | Received From Client: ['registration request', 'undefined', '2', 'ff']
+DEBUG | 2024-05-24 11:20:54,456 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:20:54,456 | Game current overall state: Game State: registration, User Count: 3, Users: ['hh', 'e', 'ff'], Wolf: No wolf assigned
+WARNING | 2024-05-24 11:25:21,725 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 11:25:22,568 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 11:25:22,568 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 11:25:22,568 |  * Restarting with stat
+WARNING | 2024-05-24 11:25:22,938 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 11:25:22,938 |  * Debugger is active!
+INFO | 2024-05-24 11:25:22,940 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 11:25:22,957 | 127.0.0.1 - - [24/May/2024 11:25:22] "GET /socket.io/?EIO=4&transport=polling&t=O-fj687 HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:22,960 | 127.0.0.1 - - [24/May/2024 11:25:22] "GET /socket.io/?EIO=4&transport=polling&t=O-fj687 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:25:22,963 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:25:22,964 | 127.0.0.1 - - [24/May/2024 11:25:22] "POST /socket.io/?EIO=4&transport=polling&t=O-fj6KE&sid=kr9k9zgS67VX44lyAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:22,966 | 127.0.0.1 - - [24/May/2024 11:25:22] "GET /socket.io/?EIO=4&transport=polling&t=O-fj6KF&sid=kr9k9zgS67VX44lyAAAA HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:25:22,967 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:25:22,968 | 127.0.0.1 - - [24/May/2024 11:25:22] "POST /socket.io/?EIO=4&transport=polling&t=O-fj6KH&sid=EvcpjHyLGErxsrqpAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:22,969 | 127.0.0.1 - - [24/May/2024 11:25:22] "GET /socket.io/?EIO=4&transport=polling&t=O-fj6KI&sid=EvcpjHyLGErxsrqpAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:22,993 | 127.0.0.1 - - [24/May/2024 11:25:22] "GET /socket.io/?EIO=4&transport=polling&t=O-fj6KR&sid=EvcpjHyLGErxsrqpAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:24,199 | 127.0.0.1 - - [24/May/2024 11:25:24] "GET /socket.io/?EIO=4&transport=polling&t=O-fj6dV HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:25:24,207 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:25:24,207 | 127.0.0.1 - - [24/May/2024 11:25:24] "POST /socket.io/?EIO=4&transport=polling&t=O-fj6dg&sid=ILOTxEEUl1sp2STMAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:24,210 | 127.0.0.1 - - [24/May/2024 11:25:24] "GET /socket.io/?EIO=4&transport=polling&t=O-fj6dj&sid=ILOTxEEUl1sp2STMAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:28,443 | 127.0.0.1 - - [24/May/2024 11:25:28] "GET /socket.io/?EIO=4&transport=websocket&sid=kr9k9zgS67VX44lyAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:28,984 | 127.0.0.1 - - [24/May/2024 11:25:28] "GET /socket.io/?EIO=4&transport=websocket&sid=ILOTxEEUl1sp2STMAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:29,470 | 127.0.0.1 - - [24/May/2024 11:25:29] "GET /socket.io/?EIO=4&transport=websocket&sid=EvcpjHyLGErxsrqpAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:30,585 | 127.0.0.1 - - [24/May/2024 11:25:30] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:30,675 | 127.0.0.1 - - [24/May/2024 11:25:30] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:30,677 | 127.0.0.1 - - [24/May/2024 11:25:30] "GET /static/clientstyle.css HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:30,692 | 127.0.0.1 - - [24/May/2024 11:25:30] "GET /socket.io/?EIO=4&transport=polling&t=O-fj8D1 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:25:30,695 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:25:30,696 | 127.0.0.1 - - [24/May/2024 11:25:30] "POST /socket.io/?EIO=4&transport=polling&t=O-fj8D5&sid=maLJ9l63erU-Ra95AAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:30,698 | 127.0.0.1 - - [24/May/2024 11:25:30] "GET /socket.io/?EIO=4&transport=polling&t=O-fj8D6&sid=maLJ9l63erU-Ra95AAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:33,114 | 127.0.0.1 - - [24/May/2024 11:25:33] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:33,129 | 127.0.0.1 - - [24/May/2024 11:25:33] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:25:33,134 | 127.0.0.1 - - [24/May/2024 11:25:33] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:25:33,152 | 127.0.0.1 - - [24/May/2024 11:25:33] "GET /socket.io/?EIO=4&transport=polling&t=O-fj8pS HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:25:33,158 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:25:33,158 | 127.0.0.1 - - [24/May/2024 11:25:33] "POST /socket.io/?EIO=4&transport=polling&t=O-fj8pY&sid=KvfcTFEIxrtVk77KAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:33,161 | 127.0.0.1 - - [24/May/2024 11:25:33] "GET /socket.io/?EIO=4&transport=polling&t=O-fj8pa&sid=KvfcTFEIxrtVk77KAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:35,113 | 127.0.0.1 - - [24/May/2024 11:25:35] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:35,133 | 127.0.0.1 - - [24/May/2024 11:25:35] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:25:35,136 | 127.0.0.1 - - [24/May/2024 11:25:35] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:25:35,147 | 127.0.0.1 - - [24/May/2024 11:25:35] "GET /socket.io/?EIO=4&transport=polling&t=O-fj9Ie HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:25:35,160 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:25:35,161 | 127.0.0.1 - - [24/May/2024 11:25:35] "POST /socket.io/?EIO=4&transport=polling&t=O-fj9It&sid=cvRkUHLu5RgaRUDfAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 11:25:35,164 | 127.0.0.1 - - [24/May/2024 11:25:35] "GET /socket.io/?EIO=4&transport=polling&t=O-fj9Iu&sid=cvRkUHLu5RgaRUDfAAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:25:39,884 | Received From Client: ['registration request', 'undefined', '3', 'fff']
+DEBUG | 2024-05-24 11:25:39,884 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:25:39,884 | Game current overall state: Game State: registration, User Count: 1, Users: ['fff'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 11:25:43,388 | Received From Client: ['registration request', 'undefined', '2', 'ff']
+DEBUG | 2024-05-24 11:25:43,388 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:25:43,388 | Game current overall state: Game State: registration, User Count: 2, Users: ['fff', 'ff'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 11:25:46,613 | Received From Client: ['registration request', 'undefined', '1', 'f']
+DEBUG | 2024-05-24 11:25:46,614 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:25:46,614 | Game current overall state: Game State: registration, User Count: 3, Users: ['fff', 'ff', 'f'], Wolf: No wolf assigned
+WARNING | 2024-05-24 11:29:25,727 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 11:29:26,580 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 11:29:26,580 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 11:29:26,580 |  * Restarting with stat
+WARNING | 2024-05-24 11:29:26,995 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 11:29:26,995 |  * Debugger is active!
+INFO | 2024-05-24 11:29:26,997 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 11:29:28,063 | 127.0.0.1 - - [24/May/2024 11:29:28] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:29:28,155 | 127.0.0.1 - - [24/May/2024 11:29:28] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 11:29:28,156 | 127.0.0.1 - - [24/May/2024 11:29:28] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:29:28,172 | 127.0.0.1 - - [24/May/2024 11:29:28] "GET /socket.io/?EIO=4&transport=polling&t=O-fk2Bd HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:29:28,177 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:29:28,177 | 127.0.0.1 - - [24/May/2024 11:29:28] "POST /socket.io/?EIO=4&transport=polling&t=O-fk2Bk&sid=O0dDpWx4f8kMTPCYAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:29:28,179 | 127.0.0.1 - - [24/May/2024 11:29:28] "GET /socket.io/?EIO=4&transport=polling&t=O-fk2Bl&sid=O0dDpWx4f8kMTPCYAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:29:28,183 | 127.0.0.1 - - [24/May/2024 11:29:28] "GET /socket.io/?EIO=4&transport=polling&t=O-fk2Br&sid=O0dDpWx4f8kMTPCYAAAA HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:29:32,900 | Received From Client: ['registration request', 'undefined', '1', 'd']
+DEBUG | 2024-05-24 11:29:32,900 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:29:32,900 | Game current overall state: Game State: registration, User Count: 1, Users: ['d'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:29:35,328 | 127.0.0.1 - - [24/May/2024 11:29:35] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:29:35,346 | 127.0.0.1 - - [24/May/2024 11:29:35] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:29:35,348 | 127.0.0.1 - - [24/May/2024 11:29:35] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:29:35,368 | 127.0.0.1 - - [24/May/2024 11:29:35] "GET /socket.io/?EIO=4&transport=polling&t=O-fk3y5 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:29:35,372 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:29:35,373 | 127.0.0.1 - - [24/May/2024 11:29:35] "POST /socket.io/?EIO=4&transport=polling&t=O-fk3yB&sid=5d_vNPLOXQ-eOSfvAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:29:35,375 | 127.0.0.1 - - [24/May/2024 11:29:35] "GET /socket.io/?EIO=4&transport=polling&t=O-fk3yC&sid=5d_vNPLOXQ-eOSfvAAAC HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:29:38,583 | Received From Client: ['registration request', 'undefined', '2', 'dd']
+DEBUG | 2024-05-24 11:29:38,583 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:29:38,583 | Game current overall state: Game State: registration, User Count: 2, Users: ['d', 'dd'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:29:41,150 | 127.0.0.1 - - [24/May/2024 11:29:41] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:29:41,166 | 127.0.0.1 - - [24/May/2024 11:29:41] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:29:41,167 | 127.0.0.1 - - [24/May/2024 11:29:41] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:29:41,191 | 127.0.0.1 - - [24/May/2024 11:29:41] "GET /socket.io/?EIO=4&transport=polling&t=O-fk5N5 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:29:41,198 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:29:41,198 | 127.0.0.1 - - [24/May/2024 11:29:41] "POST /socket.io/?EIO=4&transport=polling&t=O-fk5NB&sid=ypqejUZB9f-vQmRhAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:29:41,201 | 127.0.0.1 - - [24/May/2024 11:29:41] "GET /socket.io/?EIO=4&transport=polling&t=O-fk5ND&sid=ypqejUZB9f-vQmRhAAAE HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:29:43,700 | Received From Client: ['registration request', 'undefined', '3', 'ddd']
+DEBUG | 2024-05-24 11:29:43,700 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:29:43,700 | Game current overall state: Game State: registration, User Count: 3, Users: ['d', 'dd', 'ddd'], Wolf: No wolf assigned
+WARNING | 2024-05-24 11:34:22,172 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 11:34:23,016 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 11:34:23,016 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 11:34:23,016 |  * Restarting with stat
+WARNING | 2024-05-24 11:34:23,412 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 11:34:23,413 |  * Debugger is active!
+INFO | 2024-05-24 11:34:23,415 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 11:34:23,432 | 127.0.0.1 - - [24/May/2024 11:34:23] "GET /socket.io/?EIO=4&transport=polling&t=O-fl9En HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:34:23,436 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:34:23,437 | 127.0.0.1 - - [24/May/2024 11:34:23] "POST /socket.io/?EIO=4&transport=polling&t=O-flAHA&sid=JOcRdWHvUkiZ8MkgAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:23,440 | 127.0.0.1 - - [24/May/2024 11:34:23] "GET /socket.io/?EIO=4&transport=polling&t=O-flAHB&sid=JOcRdWHvUkiZ8MkgAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:27,103 | 127.0.0.1 - - [24/May/2024 11:34:27] "GET /socket.io/?EIO=4&transport=websocket&sid=JOcRdWHvUkiZ8MkgAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:27,196 | 127.0.0.1 - - [24/May/2024 11:34:27] "GET /socket.io/?EIO=4&transport=polling&t=O-flBBw HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:27,199 | 127.0.0.1 - - [24/May/2024 11:34:27] "GET /socket.io/?EIO=4&transport=polling&t=O-flBBw HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:34:27,200 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:34:27,200 | 127.0.0.1 - - [24/May/2024 11:34:27] "POST /socket.io/?EIO=4&transport=polling&t=O-flBBz&sid=7sVJYGfVpfyR34aMAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:27,202 | 127.0.0.1 - - [24/May/2024 11:34:27] "GET /socket.io/?EIO=4&transport=polling&t=O-flBB_&sid=7sVJYGfVpfyR34aMAAAC HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:34:27,205 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:34:27,206 | 127.0.0.1 - - [24/May/2024 11:34:27] "POST /socket.io/?EIO=4&transport=polling&t=O-flBC1&sid=6CfWt-rspmabl5nFAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:27,207 | 127.0.0.1 - - [24/May/2024 11:34:27] "GET /socket.io/?EIO=4&transport=polling&t=O-flBC2&sid=6CfWt-rspmabl5nFAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:27,208 | 127.0.0.1 - - [24/May/2024 11:34:27] "GET /socket.io/?EIO=4&transport=polling&t=O-flBC5&sid=7sVJYGfVpfyR34aMAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:27,219 | 127.0.0.1 - - [24/May/2024 11:34:27] "GET /socket.io/?EIO=4&transport=polling&t=O-flBC9&sid=6CfWt-rspmabl5nFAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:27,434 | 127.0.0.1 - - [24/May/2024 11:34:27] "GET /socket.io/?EIO=4&transport=websocket&sid=6CfWt-rspmabl5nFAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:27,751 | 127.0.0.1 - - [24/May/2024 11:34:27] "GET /socket.io/?EIO=4&transport=websocket&sid=7sVJYGfVpfyR34aMAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:28,766 | 127.0.0.1 - - [24/May/2024 11:34:28] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:28,851 | 127.0.0.1 - - [24/May/2024 11:34:28] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:34:28,854 | 127.0.0.1 - - [24/May/2024 11:34:28] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:28,866 | 127.0.0.1 - - [24/May/2024 11:34:28] "GET /socket.io/?EIO=4&transport=polling&t=O-flBc0 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:34:28,870 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:34:28,870 | 127.0.0.1 - - [24/May/2024 11:34:28] "POST /socket.io/?EIO=4&transport=polling&t=O-flBc5&sid=wnvSdfFseJoVLUNFAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:28,873 | 127.0.0.1 - - [24/May/2024 11:34:28] "GET /socket.io/?EIO=4&transport=polling&t=O-flBc6&sid=wnvSdfFseJoVLUNFAAAG HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:34:31,152 | Received From Client: ['registration request', 'undefined', '1', 'j']
+DEBUG | 2024-05-24 11:34:31,152 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:34:31,152 | Game current overall state: Game State: registration, User Count: 1, Users: ['j'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:34:32,788 | 127.0.0.1 - - [24/May/2024 11:34:32] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:32,804 | 127.0.0.1 - - [24/May/2024 11:34:32] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:34:32,805 | 127.0.0.1 - - [24/May/2024 11:34:32] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:34:32,825 | 127.0.0.1 - - [24/May/2024 11:34:32] "GET /socket.io/?EIO=4&transport=polling&t=O-flCZs HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:34:32,831 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:34:32,832 | 127.0.0.1 - - [24/May/2024 11:34:32] "POST /socket.io/?EIO=4&transport=polling&t=O-flCZy&sid=IEIJNgFETtp36NBiAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:32,834 | 127.0.0.1 - - [24/May/2024 11:34:32] "GET /socket.io/?EIO=4&transport=polling&t=O-flCZz&sid=IEIJNgFETtp36NBiAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:32,838 | 127.0.0.1 - - [24/May/2024 11:34:32] "GET /socket.io/?EIO=4&transport=polling&t=O-flCa4&sid=IEIJNgFETtp36NBiAAAI HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:34:35,482 | Received From Client: ['registration request', 'undefined', '2', 'kk']
+DEBUG | 2024-05-24 11:34:35,482 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:34:35,482 | Game current overall state: Game State: registration, User Count: 2, Users: ['j', 'kk'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:34:37,870 | 127.0.0.1 - - [24/May/2024 11:34:37] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:37,889 | 127.0.0.1 - - [24/May/2024 11:34:37] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:34:37,891 | 127.0.0.1 - - [24/May/2024 11:34:37] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:34:37,911 | 127.0.0.1 - - [24/May/2024 11:34:37] "GET /socket.io/?EIO=4&transport=polling&t=O-flDpL HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:34:37,916 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:34:37,916 | 127.0.0.1 - - [24/May/2024 11:34:37] "POST /socket.io/?EIO=4&transport=polling&t=O-flDpQ&sid=jSt7dzJw7sU_84SIAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 11:34:37,919 | 127.0.0.1 - - [24/May/2024 11:34:37] "GET /socket.io/?EIO=4&transport=polling&t=O-flDpR&sid=jSt7dzJw7sU_84SIAAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:34:42,231 | Received From Client: ['registration request', 'undefined', '2', 'jj']
+DEBUG | 2024-05-24 11:34:42,231 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:34:42,232 | Game current overall state: Game State: registration, User Count: 3, Users: ['j', 'kk', 'jj'], Wolf: No wolf assigned
+WARNING | 2024-05-24 11:43:04,821 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 11:43:05,676 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 11:43:05,676 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 11:43:05,676 |  * Restarting with stat
+WARNING | 2024-05-24 11:43:06,064 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 11:43:06,065 |  * Debugger is active!
+INFO | 2024-05-24 11:43:06,068 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 11:43:11,307 | 127.0.0.1 - - [24/May/2024 11:43:11] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:43:11,395 | 127.0.0.1 - - [24/May/2024 11:43:11] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:43:11,396 | 127.0.0.1 - - [24/May/2024 11:43:11] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:43:11,412 | 127.0.0.1 - - [24/May/2024 11:43:11] "GET /socket.io/?EIO=4&transport=polling&t=O-fnBAn HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:43:11,415 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:43:11,417 | 127.0.0.1 - - [24/May/2024 11:43:11] "POST /socket.io/?EIO=4&transport=polling&t=O-fnBAs&sid=ZDpp9H_YK-p8Vid2AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:43:11,417 | 127.0.0.1 - - [24/May/2024 11:43:11] "GET /socket.io/?EIO=4&transport=polling&t=O-fnBAt&sid=ZDpp9H_YK-p8Vid2AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:43:13,705 | 127.0.0.1 - - [24/May/2024 11:43:13] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:43:13,723 | 127.0.0.1 - - [24/May/2024 11:43:13] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:43:13,725 | 127.0.0.1 - - [24/May/2024 11:43:13] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:43:13,745 | 127.0.0.1 - - [24/May/2024 11:43:13] "GET /socket.io/?EIO=4&transport=polling&t=O-fnBlD HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:43:13,750 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:43:13,751 | 127.0.0.1 - - [24/May/2024 11:43:13] "POST /socket.io/?EIO=4&transport=polling&t=O-fnBlJ&sid=hQRqnmO4_LGn4a5AAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:43:13,755 | 127.0.0.1 - - [24/May/2024 11:43:13] "GET /socket.io/?EIO=4&transport=polling&t=O-fnBlK&sid=hQRqnmO4_LGn4a5AAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:43:16,143 | 127.0.0.1 - - [24/May/2024 11:43:16] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:43:16,158 | 127.0.0.1 - - [24/May/2024 11:43:16] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:43:16,161 | 127.0.0.1 - - [24/May/2024 11:43:16] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:43:16,184 | 127.0.0.1 - - [24/May/2024 11:43:16] "GET /socket.io/?EIO=4&transport=polling&t=O-fnCLL HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:43:16,192 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:43:16,192 | 127.0.0.1 - - [24/May/2024 11:43:16] "POST /socket.io/?EIO=4&transport=polling&t=O-fnCLS&sid=v6M8xpiOc1zsJk8lAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:43:16,193 | 127.0.0.1 - - [24/May/2024 11:43:16] "GET /socket.io/?EIO=4&transport=polling&t=O-fnCLT&sid=v6M8xpiOc1zsJk8lAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:43:16,197 | 127.0.0.1 - - [24/May/2024 11:43:16] "GET /socket.io/?EIO=4&transport=polling&t=O-fnCLa&sid=v6M8xpiOc1zsJk8lAAAE HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:43:20,465 | Received From Client: ['registration request', 'undefined', '2', 'אא']
+DEBUG | 2024-05-24 11:43:20,465 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:43:20,465 | Game current overall state: Game State: registration, User Count: 1, Users: ['אא'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 11:43:24,371 | Received From Client: ['registration request', 'undefined', '2', 'קק']
+DEBUG | 2024-05-24 11:43:24,371 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:43:24,372 | Game current overall state: Game State: registration, User Count: 2, Users: ['אא', 'קק'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 11:43:28,554 | Received From Client: ['registration request', 'undefined', '2', 'רר']
+DEBUG | 2024-05-24 11:43:28,555 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:43:28,555 | Game current overall state: Game State: registration, User Count: 3, Users: ['אא', 'קק', 'רר'], Wolf: No wolf assigned
+WARNING | 2024-05-24 11:49:05,451 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 11:49:06,383 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 11:49:06,383 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 11:49:06,383 |  * Restarting with stat
+WARNING | 2024-05-24 11:49:06,757 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 11:49:06,758 |  * Debugger is active!
+INFO | 2024-05-24 11:49:06,762 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 11:49:09,513 | 127.0.0.1 - - [24/May/2024 11:49:09] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:49:09,648 | 127.0.0.1 - - [24/May/2024 11:49:09] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:49:09,650 | 127.0.0.1 - - [24/May/2024 11:49:09] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 11:49:09,665 | 127.0.0.1 - - [24/May/2024 11:49:09] "GET /socket.io/?EIO=4&transport=polling&t=O-foYeT HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:49:09,669 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:49:09,670 | 127.0.0.1 - - [24/May/2024 11:49:09] "POST /socket.io/?EIO=4&transport=polling&t=O-foYeY&sid=OFb5CSxTa3iytR55AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:49:09,671 | 127.0.0.1 - - [24/May/2024 11:49:09] "GET /socket.io/?EIO=4&transport=polling&t=O-foYeZ&sid=OFb5CSxTa3iytR55AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:49:11,402 | 127.0.0.1 - - [24/May/2024 11:49:11] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:49:11,418 | 127.0.0.1 - - [24/May/2024 11:49:11] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:49:11,421 | 127.0.0.1 - - [24/May/2024 11:49:11] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:49:11,440 | 127.0.0.1 - - [24/May/2024 11:49:11] "GET /socket.io/?EIO=4&transport=polling&t=O-foZ4C HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:49:11,445 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:49:11,446 | 127.0.0.1 - - [24/May/2024 11:49:11] "POST /socket.io/?EIO=4&transport=polling&t=O-foZ4J&sid=QZscEOVBhBJvkCj_AAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:49:11,448 | 127.0.0.1 - - [24/May/2024 11:49:11] "GET /socket.io/?EIO=4&transport=polling&t=O-foZ4K&sid=QZscEOVBhBJvkCj_AAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:49:13,182 | 127.0.0.1 - - [24/May/2024 11:49:13] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:49:13,197 | 127.0.0.1 - - [24/May/2024 11:49:13] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:49:13,198 | 127.0.0.1 - - [24/May/2024 11:49:13] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:49:13,219 | 127.0.0.1 - - [24/May/2024 11:49:13] "GET /socket.io/?EIO=4&transport=polling&t=O-foZW1 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:49:13,224 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:49:13,224 | 127.0.0.1 - - [24/May/2024 11:49:13] "POST /socket.io/?EIO=4&transport=polling&t=O-foZW5&sid=S48zx7YZhF9pH1nnAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:49:13,226 | 127.0.0.1 - - [24/May/2024 11:49:13] "GET /socket.io/?EIO=4&transport=polling&t=O-foZW7&sid=S48zx7YZhF9pH1nnAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 11:49:13,231 | 127.0.0.1 - - [24/May/2024 11:49:13] "GET /socket.io/?EIO=4&transport=polling&t=O-foZWD&sid=S48zx7YZhF9pH1nnAAAE HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:49:19,576 | Received From Client: ['registration request', 'undefined', '1', 'f']
+DEBUG | 2024-05-24 11:49:19,576 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:49:19,577 | Game current overall state: Game State: registration, User Count: 1, Users: ['f'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 11:49:23,313 | Received From Client: ['registration request', 'undefined', '2', 'ff']
+DEBUG | 2024-05-24 11:49:23,313 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:49:23,313 | Game current overall state: Game State: registration, User Count: 2, Users: ['f', 'ff'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 11:49:28,234 | Received From Client: ['registration request', 'undefined', '3', 'edd']
+DEBUG | 2024-05-24 11:49:28,234 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:49:28,234 | Game current overall state: Game State: registration, User Count: 3, Users: ['f', 'ff', 'edd'], Wolf: No wolf assigned
+WARNING | 2024-05-24 11:53:14,765 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 11:53:15,630 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 11:53:15,630 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 11:53:15,630 |  * Restarting with stat
+WARNING | 2024-05-24 11:53:16,024 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 11:53:16,024 |  * Debugger is active!
+INFO | 2024-05-24 11:53:16,026 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 11:53:16,043 | 127.0.0.1 - - [24/May/2024 11:53:16] "GET /socket.io/?EIO=4&transport=polling&t=O-fpUar HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:16,046 | 127.0.0.1 - - [24/May/2024 11:53:16] "GET /socket.io/?EIO=4&transport=polling&t=O-fpUar HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:53:16,048 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:53:16,048 | 127.0.0.1 - - [24/May/2024 11:53:16] "POST /socket.io/?EIO=4&transport=polling&t=O-fpUoD&sid=CPONgh-aDwEDvbSaAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:16,052 | 127.0.0.1 - - [24/May/2024 11:53:16] "GET /socket.io/?EIO=4&transport=polling&t=O-fpUoE&sid=CPONgh-aDwEDvbSaAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:16,053 | 127.0.0.1 - - [24/May/2024 11:53:16] "GET /socket.io/?EIO=4&transport=polling&t=O-fpUar HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:53:16,056 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:53:16,057 | 127.0.0.1 - - [24/May/2024 11:53:16] "POST /socket.io/?EIO=4&transport=polling&t=O-fpUoI&sid=nleLCwsmbbHCqi50AAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:16,058 | 127.0.0.1 - - [24/May/2024 11:53:16] "GET /socket.io/?EIO=4&transport=polling&t=O-fpUoJ&sid=nleLCwsmbbHCqi50AAAB HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:53:16,062 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:53:16,063 | 127.0.0.1 - - [24/May/2024 11:53:16] "POST /socket.io/?EIO=4&transport=polling&t=O-fpUoO&sid=se-8E2I0MOKTvfNwAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:16,063 | 127.0.0.1 - - [24/May/2024 11:53:16] "GET /socket.io/?EIO=4&transport=polling&t=O-fpUoP&sid=se-8E2I0MOKTvfNwAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:16,087 | 127.0.0.1 - - [24/May/2024 11:53:16] "GET /socket.io/?EIO=4&transport=polling&t=O-fpUoa&sid=se-8E2I0MOKTvfNwAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:21,143 | 127.0.0.1 - - [24/May/2024 11:53:21] "GET /socket.io/?EIO=4&transport=websocket&sid=nleLCwsmbbHCqi50AAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:21,690 | 127.0.0.1 - - [24/May/2024 11:53:21] "GET /socket.io/?EIO=4&transport=websocket&sid=CPONgh-aDwEDvbSaAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:22,246 | 127.0.0.1 - - [24/May/2024 11:53:22] "GET /socket.io/?EIO=4&transport=websocket&sid=se-8E2I0MOKTvfNwAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:24,634 | 127.0.0.1 - - [24/May/2024 11:53:24] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:24,724 | 127.0.0.1 - - [24/May/2024 11:53:24] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:24,724 | 127.0.0.1 - - [24/May/2024 11:53:24] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:53:24,740 | 127.0.0.1 - - [24/May/2024 11:53:24] "GET /socket.io/?EIO=4&transport=polling&t=O-fpWw2 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:53:24,744 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:53:24,744 | 127.0.0.1 - - [24/May/2024 11:53:24] "POST /socket.io/?EIO=4&transport=polling&t=O-fpWw6&sid=y9HHidnQ1gGf4cexAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:24,747 | 127.0.0.1 - - [24/May/2024 11:53:24] "GET /socket.io/?EIO=4&transport=polling&t=O-fpWw7&sid=y9HHidnQ1gGf4cexAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:27,042 | 127.0.0.1 - - [24/May/2024 11:53:27] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:27,060 | 127.0.0.1 - - [24/May/2024 11:53:27] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:53:27,061 | 127.0.0.1 - - [24/May/2024 11:53:27] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:53:27,085 | 127.0.0.1 - - [24/May/2024 11:53:27] "GET /socket.io/?EIO=4&transport=polling&t=O-fpXUf HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:53:27,089 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:53:27,089 | 127.0.0.1 - - [24/May/2024 11:53:27] "POST /socket.io/?EIO=4&transport=polling&t=O-fpXUk&sid=Zdzu3sWHvbh3hNGVAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:27,092 | 127.0.0.1 - - [24/May/2024 11:53:27] "GET /socket.io/?EIO=4&transport=polling&t=O-fpXUl&sid=Zdzu3sWHvbh3hNGVAAAI HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:53:30,295 | Received From Client: ['registration request', 'undefined', '1', 'f']
+DEBUG | 2024-05-24 11:53:30,296 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:53:30,296 | Game current overall state: Game State: registration, User Count: 1, Users: ['f'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 11:53:33,578 | Received From Client: ['registration request', 'undefined', '1', 'e']
+DEBUG | 2024-05-24 11:53:33,579 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:53:33,579 | Game current overall state: Game State: registration, User Count: 2, Users: ['f', 'e'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:53:35,787 | 127.0.0.1 - - [24/May/2024 11:53:35] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:35,804 | 127.0.0.1 - - [24/May/2024 11:53:35] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:53:35,809 | 127.0.0.1 - - [24/May/2024 11:53:35] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:53:35,818 | 127.0.0.1 - - [24/May/2024 11:53:35] "GET /socket.io/?EIO=4&transport=polling&t=O-fpZd8 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:53:35,830 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:53:35,831 | 127.0.0.1 - - [24/May/2024 11:53:35] "POST /socket.io/?EIO=4&transport=polling&t=O-fpZdJ&sid=Lpo1v6cQTqHqKyrlAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 11:53:35,832 | 127.0.0.1 - - [24/May/2024 11:53:35] "GET /socket.io/?EIO=4&transport=polling&t=O-fpZdK&sid=Lpo1v6cQTqHqKyrlAAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:53:38,145 | Received From Client: ['registration request', 'undefined', '1', 'c']
+DEBUG | 2024-05-24 11:53:38,146 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:53:38,146 | Game current overall state: Game State: registration, User Count: 3, Users: ['f', 'e', 'c'], Wolf: No wolf assigned
+WARNING | 2024-05-24 11:54:36,645 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 11:54:37,500 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 11:54:37,500 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 11:54:37,500 |  * Restarting with stat
+WARNING | 2024-05-24 11:54:37,898 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 11:54:37,899 |  * Debugger is active!
+INFO | 2024-05-24 11:54:37,901 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 11:54:41,225 | 127.0.0.1 - - [24/May/2024 11:54:41] "GET /socket.io/?EIO=4&transport=polling&t=O-fppb6 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:54:41,229 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:54:41,229 | 127.0.0.1 - - [24/May/2024 11:54:41] "POST /socket.io/?EIO=4&transport=polling&t=O-fppbA&sid=7IEa7_ig7KnBueXqAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:41,233 | 127.0.0.1 - - [24/May/2024 11:54:41] "GET /socket.io/?EIO=4&transport=polling&t=O-fppbB&sid=7IEa7_ig7KnBueXqAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:42,194 | 127.0.0.1 - - [24/May/2024 11:54:42] "GET /socket.io/?EIO=4&transport=polling&t=O-fppqB HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:42,197 | 127.0.0.1 - - [24/May/2024 11:54:42] "GET /socket.io/?EIO=4&transport=polling&t=O-fppqA HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:54:42,204 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:54:42,204 | 127.0.0.1 - - [24/May/2024 11:54:42] "POST /socket.io/?EIO=4&transport=polling&t=O-fppqO&sid=LSr3kx8g6R1spnT4AAAC HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:54:42,207 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:54:42,207 | 127.0.0.1 - - [24/May/2024 11:54:42] "POST /socket.io/?EIO=4&transport=polling&t=O-fppqO&sid=7n0AraKZ-T0LlMxEAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:42,211 | 127.0.0.1 - - [24/May/2024 11:54:42] "GET /socket.io/?EIO=4&transport=polling&t=O-fppqP&sid=LSr3kx8g6R1spnT4AAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:42,213 | 127.0.0.1 - - [24/May/2024 11:54:42] "GET /socket.io/?EIO=4&transport=polling&t=O-fppqQ&sid=7n0AraKZ-T0LlMxEAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:42,216 | 127.0.0.1 - - [24/May/2024 11:54:42] "GET /socket.io/?EIO=4&transport=polling&t=O-fppqb&sid=LSr3kx8g6R1spnT4AAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:42,239 | 127.0.0.1 - - [24/May/2024 11:54:42] "GET /socket.io/?EIO=4&transport=polling&t=O-fppqe&sid=7n0AraKZ-T0LlMxEAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:43,700 | 127.0.0.1 - - [24/May/2024 11:54:43] "GET /socket.io/?EIO=4&transport=websocket&sid=LSr3kx8g6R1spnT4AAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:44,243 | 127.0.0.1 - - [24/May/2024 11:54:44] "GET /socket.io/?EIO=4&transport=websocket&sid=7n0AraKZ-T0LlMxEAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:44,885 | 127.0.0.1 - - [24/May/2024 11:54:44] "GET /socket.io/?EIO=4&transport=websocket&sid=7IEa7_ig7KnBueXqAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:46,464 | 127.0.0.1 - - [24/May/2024 11:54:46] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:46,553 | 127.0.0.1 - - [24/May/2024 11:54:46] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:46,553 | 127.0.0.1 - - [24/May/2024 11:54:46] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:54:46,568 | 127.0.0.1 - - [24/May/2024 11:54:46] "GET /socket.io/?EIO=4&transport=polling&t=O-fpqub HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:54:46,571 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:54:46,572 | 127.0.0.1 - - [24/May/2024 11:54:46] "POST /socket.io/?EIO=4&transport=polling&t=O-fpqug&sid=LAXVT76cCPaG1Sp6AAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:46,573 | 127.0.0.1 - - [24/May/2024 11:54:46] "GET /socket.io/?EIO=4&transport=polling&t=O-fpquh&sid=LAXVT76cCPaG1Sp6AAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:46,580 | 127.0.0.1 - - [24/May/2024 11:54:46] "GET /socket.io/?EIO=4&transport=polling&t=O-fpqun&sid=LAXVT76cCPaG1Sp6AAAG HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:54:50,856 | Received From Client: ['registration request', 'undefined', '2', 'ff']
+DEBUG | 2024-05-24 11:54:50,856 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:54:50,856 | Game current overall state: Game State: registration, User Count: 1, Users: ['ff'], Wolf: No wolf assigned
+INFO | 2024-05-24 11:54:54,408 | 127.0.0.1 - - [24/May/2024 11:54:54] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:54,420 | 127.0.0.1 - - [24/May/2024 11:54:54] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:54:54,421 | 127.0.0.1 - - [24/May/2024 11:54:54] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:54:54,439 | 127.0.0.1 - - [24/May/2024 11:54:54] "GET /socket.io/?EIO=4&transport=polling&t=O-fpspZ HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:54:54,444 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:54:54,445 | 127.0.0.1 - - [24/May/2024 11:54:54] "POST /socket.io/?EIO=4&transport=polling&t=O-fpspf&sid=2IrFdbnwqRax9FrSAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:54,447 | 127.0.0.1 - - [24/May/2024 11:54:54] "GET /socket.io/?EIO=4&transport=polling&t=O-fpspg&sid=2IrFdbnwqRax9FrSAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:57,063 | 127.0.0.1 - - [24/May/2024 11:54:57] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:57,081 | 127.0.0.1 - - [24/May/2024 11:54:57] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:54:57,086 | 127.0.0.1 - - [24/May/2024 11:54:57] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:54:57,106 | 127.0.0.1 - - [24/May/2024 11:54:57] "GET /socket.io/?EIO=4&transport=polling&t=O-fptTE HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:54:57,112 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:54:57,112 | 127.0.0.1 - - [24/May/2024 11:54:57] "POST /socket.io/?EIO=4&transport=polling&t=O-fptTL&sid=Qm2oF43-a6TwB323AAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 11:54:57,115 | 127.0.0.1 - - [24/May/2024 11:54:57] "GET /socket.io/?EIO=4&transport=polling&t=O-fptTN&sid=Qm2oF43-a6TwB323AAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:54:59,225 | Received From Client: ['registration request', 'undefined', '1', 'f']
+DEBUG | 2024-05-24 11:54:59,226 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:54:59,226 | Game current overall state: Game State: registration, User Count: 2, Users: ['ff', 'f'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 11:55:03,715 | Received From Client: ['registration request', 'undefined', '2', 'dd']
+DEBUG | 2024-05-24 11:55:03,715 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:55:03,715 | Game current overall state: Game State: registration, User Count: 3, Users: ['ff', 'f', 'dd'], Wolf: No wolf assigned
+WARNING | 2024-05-24 11:57:21,464 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 11:57:22,361 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 11:57:22,362 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 11:57:22,362 |  * Restarting with stat
+WARNING | 2024-05-24 11:57:22,719 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 11:57:22,720 |  * Debugger is active!
+INFO | 2024-05-24 11:57:22,721 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 11:57:24,163 | 127.0.0.1 - - [24/May/2024 11:57:24] "GET /socket.io/?EIO=4&transport=polling&t=O-fqRM_ HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:57:24,166 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:57:24,167 | 127.0.0.1 - - [24/May/2024 11:57:24] "POST /socket.io/?EIO=4&transport=polling&t=O-fqRN4&sid=PcZt0JAdgJA-2C2yAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:24,170 | 127.0.0.1 - - [24/May/2024 11:57:24] "GET /socket.io/?EIO=4&transport=polling&t=O-fqRN5&sid=PcZt0JAdgJA-2C2yAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:24,191 | 127.0.0.1 - - [24/May/2024 11:57:24] "GET /socket.io/?EIO=4&transport=polling&t=O-fqRNS HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:24,193 | 127.0.0.1 - - [24/May/2024 11:57:24] "GET /socket.io/?EIO=4&transport=polling&t=O-fqRNS HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:57:24,195 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:57:24,195 | 127.0.0.1 - - [24/May/2024 11:57:24] "POST /socket.io/?EIO=4&transport=polling&t=O-fqRNW&sid=dAgM9e4CZ3DHSZ1uAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:24,198 | 127.0.0.1 - - [24/May/2024 11:57:24] "GET /socket.io/?EIO=4&transport=polling&t=O-fqRNX&sid=dAgM9e4CZ3DHSZ1uAAAC HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:57:24,199 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:57:24,200 | 127.0.0.1 - - [24/May/2024 11:57:24] "POST /socket.io/?EIO=4&transport=polling&t=O-fqRNa&sid=Mj0S2elrYVZodogSAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:24,201 | 127.0.0.1 - - [24/May/2024 11:57:24] "GET /socket.io/?EIO=4&transport=polling&t=O-fqRNa.0&sid=Mj0S2elrYVZodogSAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:24,203 | 127.0.0.1 - - [24/May/2024 11:57:24] "GET /socket.io/?EIO=4&transport=polling&t=O-fqRNd&sid=dAgM9e4CZ3DHSZ1uAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:24,227 | 127.0.0.1 - - [24/May/2024 11:57:24] "GET /socket.io/?EIO=4&transport=polling&t=O-fqRNi&sid=Mj0S2elrYVZodogSAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:27,484 | 127.0.0.1 - - [24/May/2024 11:57:27] "GET /socket.io/?EIO=4&transport=websocket&sid=Mj0S2elrYVZodogSAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:27,969 | 127.0.0.1 - - [24/May/2024 11:57:27] "GET /socket.io/?EIO=4&transport=websocket&sid=dAgM9e4CZ3DHSZ1uAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:28,520 | 127.0.0.1 - - [24/May/2024 11:57:28] "GET /socket.io/?EIO=4&transport=websocket&sid=PcZt0JAdgJA-2C2yAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:29,552 | 127.0.0.1 - - [24/May/2024 11:57:29] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:29,643 | 127.0.0.1 - - [24/May/2024 11:57:29] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:57:29,644 | 127.0.0.1 - - [24/May/2024 11:57:29] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:29,659 | 127.0.0.1 - - [24/May/2024 11:57:29] "GET /socket.io/?EIO=4&transport=polling&t=O-fqSiv HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:57:29,662 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:57:29,662 | 127.0.0.1 - - [24/May/2024 11:57:29] "POST /socket.io/?EIO=4&transport=polling&t=O-fqSiz&sid=l6qCIQJLTsLfROVSAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:29,664 | 127.0.0.1 - - [24/May/2024 11:57:29] "GET /socket.io/?EIO=4&transport=polling&t=O-fqSi-&sid=l6qCIQJLTsLfROVSAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:29,666 | 127.0.0.1 - - [24/May/2024 11:57:29] "GET /socket.io/?EIO=4&transport=polling&t=O-fqSj1&sid=l6qCIQJLTsLfROVSAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:32,073 | 127.0.0.1 - - [24/May/2024 11:57:32] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:32,089 | 127.0.0.1 - - [24/May/2024 11:57:32] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:57:32,091 | 127.0.0.1 - - [24/May/2024 11:57:32] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:57:32,113 | 127.0.0.1 - - [24/May/2024 11:57:32] "GET /socket.io/?EIO=4&transport=polling&t=O-fqTJD HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:57:32,117 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:57:32,118 | 127.0.0.1 - - [24/May/2024 11:57:32] "POST /socket.io/?EIO=4&transport=polling&t=O-fqTJJ&sid=xGxLDQi62Kg16aMNAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:32,120 | 127.0.0.1 - - [24/May/2024 11:57:32] "GET /socket.io/?EIO=4&transport=polling&t=O-fqTJK&sid=xGxLDQi62Kg16aMNAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:34,200 | 127.0.0.1 - - [24/May/2024 11:57:34] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:34,217 | 127.0.0.1 - - [24/May/2024 11:57:34] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:57:34,219 | 127.0.0.1 - - [24/May/2024 11:57:34] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 11:57:34,243 | 127.0.0.1 - - [24/May/2024 11:57:34] "GET /socket.io/?EIO=4&transport=polling&t=O-fqTqV HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:57:34,247 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 11:57:34,247 | 127.0.0.1 - - [24/May/2024 11:57:34] "POST /socket.io/?EIO=4&transport=polling&t=O-fqTqa&sid=YCetytaxMOn1pueUAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 11:57:34,250 | 127.0.0.1 - - [24/May/2024 11:57:34] "GET /socket.io/?EIO=4&transport=polling&t=O-fqTqb&sid=YCetytaxMOn1pueUAAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 11:57:38,174 | Received From Client: ['registration request', 'undefined', '1', 'f']
+DEBUG | 2024-05-24 11:57:38,174 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:57:38,174 | Game current overall state: Game State: registration, User Count: 1, Users: ['f'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 11:57:41,102 | Received From Client: ['registration request', 'undefined', '1', 'e']
+DEBUG | 2024-05-24 11:57:41,102 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:57:41,102 | Game current overall state: Game State: registration, User Count: 2, Users: ['f', 'e'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 11:57:44,457 | Received From Client: ['registration request', 'undefined', '2', 'ff']
+DEBUG | 2024-05-24 11:57:44,458 | Did user manage to connect: True
+DEBUG | 2024-05-24 11:57:44,458 | Game current overall state: Game State: registration, User Count: 3, Users: ['f', 'e', 'ff'], Wolf: No wolf assigned
+WARNING | 2024-05-24 12:01:36,839 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 12:01:37,701 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 12:01:37,701 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 12:01:37,701 |  * Restarting with stat
+WARNING | 2024-05-24 12:01:38,084 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 12:01:38,085 |  * Debugger is active!
+INFO | 2024-05-24 12:01:38,087 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 12:01:41,503 | 127.0.0.1 - - [24/May/2024 12:01:41] "GET /socket.io/?EIO=4&transport=polling&t=O-frQBu HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:01:41,514 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:01:41,515 | 127.0.0.1 - - [24/May/2024 12:01:41] "POST /socket.io/?EIO=4&transport=polling&t=O-frQC3&sid=hSr24amGsmFO1IE3AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:41,523 | 127.0.0.1 - - [24/May/2024 12:01:41] "GET /socket.io/?EIO=4&transport=polling&t=O-frQC6&sid=hSr24amGsmFO1IE3AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:42,194 | 127.0.0.1 - - [24/May/2024 12:01:42] "GET /socket.io/?EIO=4&transport=polling&t=O-frQMm HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:01:42,197 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:01:42,197 | 127.0.0.1 - - [24/May/2024 12:01:42] "POST /socket.io/?EIO=4&transport=polling&t=O-frQMp&sid=HOlaAGLKumgBBmYHAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:42,199 | 127.0.0.1 - - [24/May/2024 12:01:42] "GET /socket.io/?EIO=4&transport=polling&t=O-frQMq&sid=HOlaAGLKumgBBmYHAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:42,201 | 127.0.0.1 - - [24/May/2024 12:01:42] "GET /socket.io/?EIO=4&transport=polling&t=O-frQMu&sid=HOlaAGLKumgBBmYHAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:43,191 | 127.0.0.1 - - [24/May/2024 12:01:43] "GET /socket.io/?EIO=4&transport=polling&t=O-frQcH HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:01:43,197 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:01:43,198 | 127.0.0.1 - - [24/May/2024 12:01:43] "POST /socket.io/?EIO=4&transport=polling&t=O-frQcQ&sid=BsgJWlubqa-s3KonAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:43,201 | 127.0.0.1 - - [24/May/2024 12:01:43] "GET /socket.io/?EIO=4&transport=polling&t=O-frQcR&sid=BsgJWlubqa-s3KonAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:43,234 | 127.0.0.1 - - [24/May/2024 12:01:43] "GET /socket.io/?EIO=4&transport=websocket&sid=hSr24amGsmFO1IE3AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:43,708 | 127.0.0.1 - - [24/May/2024 12:01:43] "GET /socket.io/?EIO=4&transport=websocket&sid=BsgJWlubqa-s3KonAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:44,270 | 127.0.0.1 - - [24/May/2024 12:01:44] "GET /socket.io/?EIO=4&transport=websocket&sid=HOlaAGLKumgBBmYHAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:45,818 | 127.0.0.1 - - [24/May/2024 12:01:45] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:45,904 | 127.0.0.1 - - [24/May/2024 12:01:45] "GET /static/clientstyle.css HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:45,905 | 127.0.0.1 - - [24/May/2024 12:01:45] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:45,921 | 127.0.0.1 - - [24/May/2024 12:01:45] "GET /socket.io/?EIO=4&transport=polling&t=O-frRG- HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:01:45,927 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:01:45,927 | 127.0.0.1 - - [24/May/2024 12:01:45] "POST /socket.io/?EIO=4&transport=polling&t=O-frRH4&sid=FgZTibxO3uu9G9w_AAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:45,929 | 127.0.0.1 - - [24/May/2024 12:01:45] "GET /socket.io/?EIO=4&transport=polling&t=O-frRH5&sid=FgZTibxO3uu9G9w_AAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:47,545 | 127.0.0.1 - - [24/May/2024 12:01:47] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:47,562 | 127.0.0.1 - - [24/May/2024 12:01:47] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:01:47,563 | 127.0.0.1 - - [24/May/2024 12:01:47] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:01:47,585 | 127.0.0.1 - - [24/May/2024 12:01:47] "GET /socket.io/?EIO=4&transport=polling&t=O-frRg- HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:01:47,590 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:01:47,590 | 127.0.0.1 - - [24/May/2024 12:01:47] "POST /socket.io/?EIO=4&transport=polling&t=O-frRh3&sid=GuoAuL5iVMNH_UQQAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:47,593 | 127.0.0.1 - - [24/May/2024 12:01:47] "GET /socket.io/?EIO=4&transport=polling&t=O-frRh4&sid=GuoAuL5iVMNH_UQQAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:49,625 | 127.0.0.1 - - [24/May/2024 12:01:49] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:49,640 | 127.0.0.1 - - [24/May/2024 12:01:49] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:01:49,640 | 127.0.0.1 - - [24/May/2024 12:01:49] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:01:49,665 | 127.0.0.1 - - [24/May/2024 12:01:49] "GET /socket.io/?EIO=4&transport=polling&t=O-frSBU HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:01:49,670 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:01:49,671 | 127.0.0.1 - - [24/May/2024 12:01:49] "POST /socket.io/?EIO=4&transport=polling&t=O-frSBa&sid=Wxlvgl_x7AYAIZbsAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 12:01:49,673 | 127.0.0.1 - - [24/May/2024 12:01:49] "GET /socket.io/?EIO=4&transport=polling&t=O-frSBb&sid=Wxlvgl_x7AYAIZbsAAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:01:53,572 | Received From Client: ['registration request', 'undefined', '2', 'dd']
+DEBUG | 2024-05-24 12:01:53,572 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:01:53,572 | Game current overall state: Game State: registration, User Count: 1, Users: ['dd'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:01:56,793 | Received From Client: ['registration request', 'undefined', '1', 'd']
+DEBUG | 2024-05-24 12:01:56,793 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:01:56,793 | Game current overall state: Game State: registration, User Count: 2, Users: ['dd', 'd'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:02:00,027 | Received From Client: ['registration request', 'undefined', '1', 'f']
+DEBUG | 2024-05-24 12:02:00,027 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:02:00,028 | Game current overall state: Game State: registration, User Count: 3, Users: ['dd', 'd', 'f'], Wolf: No wolf assigned
+WARNING | 2024-05-24 12:03:58,147 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 12:03:59,007 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 12:03:59,007 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 12:03:59,008 |  * Restarting with stat
+WARNING | 2024-05-24 12:03:59,385 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 12:03:59,386 |  * Debugger is active!
+INFO | 2024-05-24 12:03:59,387 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 12:04:00,482 | 127.0.0.1 - - [24/May/2024 12:04:00] "GET /socket.io/?EIO=4&transport=polling&t=O-fry7V HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:04:00,486 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:04:00,486 | 127.0.0.1 - - [24/May/2024 12:04:00] "POST /socket.io/?EIO=4&transport=polling&t=O-fry7a&sid=h3EVdYxhhkBnz6e6AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:00,489 | 127.0.0.1 - - [24/May/2024 12:04:00] "GET /socket.io/?EIO=4&transport=polling&t=O-fry7b&sid=h3EVdYxhhkBnz6e6AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:01,196 | 127.0.0.1 - - [24/May/2024 12:04:01] "GET /socket.io/?EIO=4&transport=polling&t=O-fryIb HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:04:01,202 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:04:01,203 | 127.0.0.1 - - [24/May/2024 12:04:01] "POST /socket.io/?EIO=4&transport=polling&t=O-fryIm&sid=uHDSQIe_adSKpb1AAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:01,204 | 127.0.0.1 - - [24/May/2024 12:04:01] "GET /socket.io/?EIO=4&transport=polling&t=O-fryIn&sid=uHDSQIe_adSKpb1AAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:03,189 | 127.0.0.1 - - [24/May/2024 12:04:03] "GET /socket.io/?EIO=4&transport=polling&t=O-fryno HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:04:03,195 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:04:03,196 | 127.0.0.1 - - [24/May/2024 12:04:03] "POST /socket.io/?EIO=4&transport=polling&t=O-frynu&sid=Mm5bdjoMjzTOHCOPAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:03,198 | 127.0.0.1 - - [24/May/2024 12:04:03] "GET /socket.io/?EIO=4&transport=polling&t=O-frynv&sid=Mm5bdjoMjzTOHCOPAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:04,671 | 127.0.0.1 - - [24/May/2024 12:04:04] "GET /socket.io/?EIO=4&transport=websocket&sid=h3EVdYxhhkBnz6e6AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:05,271 | 127.0.0.1 - - [24/May/2024 12:04:05] "GET /socket.io/?EIO=4&transport=websocket&sid=uHDSQIe_adSKpb1AAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:05,818 | 127.0.0.1 - - [24/May/2024 12:04:05] "GET /socket.io/?EIO=4&transport=websocket&sid=Mm5bdjoMjzTOHCOPAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:06,944 | 127.0.0.1 - - [24/May/2024 12:04:06] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:07,031 | 127.0.0.1 - - [24/May/2024 12:04:07] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:07,032 | 127.0.0.1 - - [24/May/2024 12:04:07] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:04:07,048 | 127.0.0.1 - - [24/May/2024 12:04:07] "GET /socket.io/?EIO=4&transport=polling&t=O-frzk5 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:04:07,054 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:04:07,054 | 127.0.0.1 - - [24/May/2024 12:04:07] "POST /socket.io/?EIO=4&transport=polling&t=O-frzkB&sid=71KoBFbMZ6XNgejkAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:07,055 | 127.0.0.1 - - [24/May/2024 12:04:07] "GET /socket.io/?EIO=4&transport=polling&t=O-frzkC&sid=71KoBFbMZ6XNgejkAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:07,059 | 127.0.0.1 - - [24/May/2024 12:04:07] "GET /socket.io/?EIO=4&transport=polling&t=O-frzkH&sid=71KoBFbMZ6XNgejkAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:09,097 | 127.0.0.1 - - [24/May/2024 12:04:09] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:09,116 | 127.0.0.1 - - [24/May/2024 12:04:09] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:04:09,117 | 127.0.0.1 - - [24/May/2024 12:04:09] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:04:09,140 | 127.0.0.1 - - [24/May/2024 12:04:09] "GET /socket.io/?EIO=4&transport=polling&t=O-fr-En HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:04:09,144 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:04:09,144 | 127.0.0.1 - - [24/May/2024 12:04:09] "POST /socket.io/?EIO=4&transport=polling&t=O-fr-Es&sid=odUz0maVmKZVdlBWAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:09,146 | 127.0.0.1 - - [24/May/2024 12:04:09] "GET /socket.io/?EIO=4&transport=polling&t=O-fr-Et&sid=odUz0maVmKZVdlBWAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:11,359 | 127.0.0.1 - - [24/May/2024 12:04:11] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:11,375 | 127.0.0.1 - - [24/May/2024 12:04:11] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:04:11,378 | 127.0.0.1 - - [24/May/2024 12:04:11] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:04:11,401 | 127.0.0.1 - - [24/May/2024 12:04:11] "GET /socket.io/?EIO=4&transport=polling&t=O-fr-o6 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:04:11,405 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:04:11,405 | 127.0.0.1 - - [24/May/2024 12:04:11] "POST /socket.io/?EIO=4&transport=polling&t=O-fr-oC&sid=5BjX_omjH4t6TTiYAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 12:04:11,407 | 127.0.0.1 - - [24/May/2024 12:04:11] "GET /socket.io/?EIO=4&transport=polling&t=O-fr-oD&sid=5BjX_omjH4t6TTiYAAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:04:13,802 | Received From Client: ['registration request', 'undefined', '1', 'j']
+DEBUG | 2024-05-24 12:04:13,802 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:04:13,802 | Game current overall state: Game State: registration, User Count: 1, Users: ['j'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:04:17,579 | Received From Client: ['registration request', 'undefined', '2', 'yy']
+DEBUG | 2024-05-24 12:04:17,580 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:04:17,580 | Game current overall state: Game State: registration, User Count: 2, Users: ['j', 'yy'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:04:21,298 | Received From Client: ['registration request', 'undefined', '2', 'ff']
+DEBUG | 2024-05-24 12:04:21,298 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:04:21,299 | Game current overall state: Game State: registration, User Count: 3, Users: ['j', 'yy', 'ff'], Wolf: No wolf assigned
+INFO | 2024-05-24 12:04:38,410 | 127.0.0.1 - - [24/May/2024 12:04:38] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+WARNING | 2024-05-24 12:06:43,288 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 12:06:44,135 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 12:06:44,135 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 12:06:44,135 |  * Restarting with stat
+WARNING | 2024-05-24 12:06:44,502 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 12:06:44,503 |  * Debugger is active!
+INFO | 2024-05-24 12:06:44,504 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 12:06:45,444 | 127.0.0.1 - - [24/May/2024 12:06:45] "GET /socket.io/?EIO=4&transport=polling&t=O-fsaO_ HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:06:45,448 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:06:45,449 | 127.0.0.1 - - [24/May/2024 12:06:45] "POST /socket.io/?EIO=4&transport=polling&t=O-fsaP5&sid=lSQaxSAiZilLpz72AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:45,451 | 127.0.0.1 - - [24/May/2024 12:06:45] "GET /socket.io/?EIO=4&transport=polling&t=O-fsaP6&sid=lSQaxSAiZilLpz72AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:46,191 | 127.0.0.1 - - [24/May/2024 12:06:46] "GET /socket.io/?EIO=4&transport=polling&t=O-fsaae HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:46,198 | 127.0.0.1 - - [24/May/2024 12:06:46] "GET /socket.io/?EIO=4&transport=polling&t=O-fsaae HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:06:46,205 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:06:46,208 | 127.0.0.1 - - [24/May/2024 12:06:46] "POST /socket.io/?EIO=4&transport=polling&t=O-fsaap&sid=V9sWdKoJTPguE5CNAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:46,209 | 127.0.0.1 - - [24/May/2024 12:06:46] "GET /socket.io/?EIO=4&transport=polling&t=O-fsaar&sid=V9sWdKoJTPguE5CNAAAC HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:06:46,214 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:06:46,215 | 127.0.0.1 - - [24/May/2024 12:06:46] "POST /socket.io/?EIO=4&transport=polling&t=O-fsaa-&sid=AsymfckQSi2iAkQOAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:46,217 | 127.0.0.1 - - [24/May/2024 12:06:46] "GET /socket.io/?EIO=4&transport=polling&t=O-fsab0&sid=AsymfckQSi2iAkQOAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:46,225 | 127.0.0.1 - - [24/May/2024 12:06:46] "GET /socket.io/?EIO=4&transport=polling&t=O-fsabF&sid=AsymfckQSi2iAkQOAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:48,834 | 127.0.0.1 - - [24/May/2024 12:06:48] "GET /socket.io/?EIO=4&transport=websocket&sid=AsymfckQSi2iAkQOAAAD HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:49,420 | 127.0.0.1 - - [24/May/2024 12:06:49] "GET /socket.io/?EIO=4&transport=websocket&sid=V9sWdKoJTPguE5CNAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:50,006 | 127.0.0.1 - - [24/May/2024 12:06:50] "GET /socket.io/?EIO=4&transport=websocket&sid=lSQaxSAiZilLpz72AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:51,043 | 127.0.0.1 - - [24/May/2024 12:06:51] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:51,126 | 127.0.0.1 - - [24/May/2024 12:06:51] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:06:51,127 | 127.0.0.1 - - [24/May/2024 12:06:51] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:51,142 | 127.0.0.1 - - [24/May/2024 12:06:51] "GET /socket.io/?EIO=4&transport=polling&t=O-fsbo3 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:06:51,146 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:06:51,147 | 127.0.0.1 - - [24/May/2024 12:06:51] "POST /socket.io/?EIO=4&transport=polling&t=O-fsbo9&sid=uxv19jiWIXSQUXKWAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:51,148 | 127.0.0.1 - - [24/May/2024 12:06:51] "GET /socket.io/?EIO=4&transport=polling&t=O-fsboA&sid=uxv19jiWIXSQUXKWAAAG HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:06:55,330 | Received From Client: ['registration request', 'undefined', '2', 'tt']
+DEBUG | 2024-05-24 12:06:55,330 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:06:55,330 | Game current overall state: Game State: registration, User Count: 1, Users: ['tt'], Wolf: No wolf assigned
+INFO | 2024-05-24 12:06:58,363 | 127.0.0.1 - - [24/May/2024 12:06:58] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:58,383 | 127.0.0.1 - - [24/May/2024 12:06:58] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:06:58,385 | 127.0.0.1 - - [24/May/2024 12:06:58] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:06:58,408 | 127.0.0.1 - - [24/May/2024 12:06:58] "GET /socket.io/?EIO=4&transport=polling&t=O-fsdZb HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:06:58,413 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:06:58,413 | 127.0.0.1 - - [24/May/2024 12:06:58] "POST /socket.io/?EIO=4&transport=polling&t=O-fsdZh&sid=KhcGOj38_mWmewegAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 12:06:58,415 | 127.0.0.1 - - [24/May/2024 12:06:58] "GET /socket.io/?EIO=4&transport=polling&t=O-fsdZi&sid=KhcGOj38_mWmewegAAAI HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:07:00,503 | Received From Client: ['registration request', 'undefined', '1', 't']
+DEBUG | 2024-05-24 12:07:00,504 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:07:00,504 | Game current overall state: Game State: registration, User Count: 2, Users: ['tt', 't'], Wolf: No wolf assigned
+INFO | 2024-05-24 12:07:03,190 | 127.0.0.1 - - [24/May/2024 12:07:03] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:07:03,209 | 127.0.0.1 - - [24/May/2024 12:07:03] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:07:03,213 | 127.0.0.1 - - [24/May/2024 12:07:03] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:07:03,235 | 127.0.0.1 - - [24/May/2024 12:07:03] "GET /socket.io/?EIO=4&transport=polling&t=O-fsel0 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:07:03,240 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:07:03,241 | 127.0.0.1 - - [24/May/2024 12:07:03] "POST /socket.io/?EIO=4&transport=polling&t=O-fsel6&sid=-mQSP81oSwW1fKElAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 12:07:03,243 | 127.0.0.1 - - [24/May/2024 12:07:03] "GET /socket.io/?EIO=4&transport=polling&t=O-fsel7&sid=-mQSP81oSwW1fKElAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 12:07:03,247 | 127.0.0.1 - - [24/May/2024 12:07:03] "GET /socket.io/?EIO=4&transport=polling&t=O-fselD&sid=-mQSP81oSwW1fKElAAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:07:05,724 | Received From Client: ['registration request', 'undefined', '1', 's']
+DEBUG | 2024-05-24 12:07:05,724 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:07:05,724 | Game current overall state: Game State: registration, User Count: 3, Users: ['tt', 't', 's'], Wolf: No wolf assigned
+INFO | 2024-05-24 12:07:18,776 | 127.0.0.1 - - [24/May/2024 12:07:18] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+WARNING | 2024-05-24 12:09:46,216 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 12:09:47,077 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 12:09:47,077 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 12:09:47,077 |  * Restarting with stat
+WARNING | 2024-05-24 12:09:47,434 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 12:09:47,435 |  * Debugger is active!
+INFO | 2024-05-24 12:09:47,436 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 12:09:56,720 | 127.0.0.1 - - [24/May/2024 12:09:56] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:09:56,859 | 127.0.0.1 - - [24/May/2024 12:09:56] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:09:56,863 | 127.0.0.1 - - [24/May/2024 12:09:56] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 12:09:56,876 | 127.0.0.1 - - [24/May/2024 12:09:56] "GET /socket.io/?EIO=4&transport=polling&t=O-ftJ89 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:09:56,880 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:09:56,880 | 127.0.0.1 - - [24/May/2024 12:09:56] "POST /socket.io/?EIO=4&transport=polling&t=O-ftJ8D&sid=e_kvmd3iT1iC3kpYAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:09:56,882 | 127.0.0.1 - - [24/May/2024 12:09:56] "GET /socket.io/?EIO=4&transport=polling&t=O-ftJ8E&sid=e_kvmd3iT1iC3kpYAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:09:59,108 | 127.0.0.1 - - [24/May/2024 12:09:59] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:09:59,122 | 127.0.0.1 - - [24/May/2024 12:09:59] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:09:59,122 | 127.0.0.1 - - [24/May/2024 12:09:59] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:09:59,144 | 127.0.0.1 - - [24/May/2024 12:09:59] "GET /socket.io/?EIO=4&transport=polling&t=O-ftJhb HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:09:59,148 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:09:59,148 | 127.0.0.1 - - [24/May/2024 12:09:59] "POST /socket.io/?EIO=4&transport=polling&t=O-ftJhg&sid=RKLg_ZW12FA-decyAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:09:59,151 | 127.0.0.1 - - [24/May/2024 12:09:59] "GET /socket.io/?EIO=4&transport=polling&t=O-ftJhh&sid=RKLg_ZW12FA-decyAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:09:59,154 | 127.0.0.1 - - [24/May/2024 12:09:59] "GET /socket.io/?EIO=4&transport=polling&t=O-ftJhn&sid=RKLg_ZW12FA-decyAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:10:01,084 | 127.0.0.1 - - [24/May/2024 12:10:01] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:10:01,103 | 127.0.0.1 - - [24/May/2024 12:10:01] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:10:01,104 | 127.0.0.1 - - [24/May/2024 12:10:01] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:10:01,130 | 127.0.0.1 - - [24/May/2024 12:10:01] "GET /socket.io/?EIO=4&transport=polling&t=O-ftKAe HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:10:01,135 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:10:01,136 | 127.0.0.1 - - [24/May/2024 12:10:01] "POST /socket.io/?EIO=4&transport=polling&t=O-ftKAj&sid=oj0cLAzW2kcT9lHjAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:10:01,138 | 127.0.0.1 - - [24/May/2024 12:10:01] "GET /socket.io/?EIO=4&transport=polling&t=O-ftKAk&sid=oj0cLAzW2kcT9lHjAAAE HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:10:03,473 | Received From Client: ['registration request', 'undefined', '2', 'ff']
+DEBUG | 2024-05-24 12:10:03,473 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:10:03,473 | Game current overall state: Game State: registration, User Count: 1, Users: ['ff'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:10:07,547 | Received From Client: ['registration request', 'undefined', '1', 'w']
+DEBUG | 2024-05-24 12:10:07,547 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:10:07,547 | Game current overall state: Game State: registration, User Count: 2, Users: ['ff', 'w'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:10:10,707 | Received From Client: ['registration request', 'undefined', '1', 'q']
+DEBUG | 2024-05-24 12:10:10,707 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:10:10,707 | Game current overall state: Game State: registration, User Count: 3, Users: ['ff', 'w', 'q'], Wolf: No wolf assigned
+INFO | 2024-05-24 12:10:20,426 | 127.0.0.1 - - [24/May/2024 12:10:20] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+WARNING | 2024-05-24 12:21:13,101 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 12:21:13,954 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 12:21:13,954 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 12:21:13,954 |  * Restarting with stat
+WARNING | 2024-05-24 12:21:14,340 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 12:21:14,341 |  * Debugger is active!
+INFO | 2024-05-24 12:21:14,342 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 12:21:14,360 | 127.0.0.1 - - [24/May/2024 12:21:14] "GET /socket.io/?EIO=4&transport=polling&t=O-fvt_- HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:14,361 | 127.0.0.1 - - [24/May/2024 12:21:14] "GET /socket.io/?EIO=4&transport=polling&t=O-fvt_z HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:14,361 | 127.0.0.1 - - [24/May/2024 12:21:14] "GET /socket.io/?EIO=4&transport=polling&t=O-fvuVE HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:21:14,365 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:21:14,366 | 127.0.0.1 - - [24/May/2024 12:21:14] "POST /socket.io/?EIO=4&transport=polling&t=O-fvuXw&sid=_CH4UbHDUkitm5PKAAAA HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:21:14,367 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:21:14,368 | 127.0.0.1 - - [24/May/2024 12:21:14] "POST /socket.io/?EIO=4&transport=polling&t=O-fvuXx&sid=cU9uISqABpSZfLy5AAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:14,372 | 127.0.0.1 - - [24/May/2024 12:21:14] "GET /socket.io/?EIO=4&transport=polling&t=O-fvuXy&sid=_CH4UbHDUkitm5PKAAAA HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:21:14,372 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:21:14,372 | 127.0.0.1 - - [24/May/2024 12:21:14] "POST /socket.io/?EIO=4&transport=polling&t=O-fvuXx&sid=7s5xOso0KFVyAHoKAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:14,376 | 127.0.0.1 - - [24/May/2024 12:21:14] "GET /socket.io/?EIO=4&transport=polling&t=O-fvuXy&sid=cU9uISqABpSZfLy5AAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:14,377 | 127.0.0.1 - - [24/May/2024 12:21:14] "GET /socket.io/?EIO=4&transport=polling&t=O-fvuXz&sid=7s5xOso0KFVyAHoKAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:14,383 | 127.0.0.1 - - [24/May/2024 12:21:14] "GET /socket.io/?EIO=4&transport=polling&t=O-fvuYA&sid=cU9uISqABpSZfLy5AAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:14,400 | 127.0.0.1 - - [24/May/2024 12:21:14] "GET /socket.io/?EIO=4&transport=polling&t=O-fvuYD&sid=7s5xOso0KFVyAHoKAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:20,482 | 127.0.0.1 - - [24/May/2024 12:21:20] "GET /socket.io/?EIO=4&transport=websocket&sid=7s5xOso0KFVyAHoKAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:21,008 | 127.0.0.1 - - [24/May/2024 12:21:21] "GET /socket.io/?EIO=4&transport=websocket&sid=_CH4UbHDUkitm5PKAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:21,618 | 127.0.0.1 - - [24/May/2024 12:21:21] "GET /socket.io/?EIO=4&transport=websocket&sid=cU9uISqABpSZfLy5AAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:25,876 | 127.0.0.1 - - [24/May/2024 12:21:25] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:25,964 | 127.0.0.1 - - [24/May/2024 12:21:25] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:25,964 | 127.0.0.1 - - [24/May/2024 12:21:25] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:21:25,980 | 127.0.0.1 - - [24/May/2024 12:21:25] "GET /socket.io/?EIO=4&transport=polling&t=O-fvxNQ HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:21:25,985 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:21:25,985 | 127.0.0.1 - - [24/May/2024 12:21:25] "POST /socket.io/?EIO=4&transport=polling&t=O-fvxNV&sid=DbCUKaGBjrwL_Sy0AAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:25,988 | 127.0.0.1 - - [24/May/2024 12:21:25] "GET /socket.io/?EIO=4&transport=polling&t=O-fvxNW&sid=DbCUKaGBjrwL_Sy0AAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:27,647 | 127.0.0.1 - - [24/May/2024 12:21:27] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:27,665 | 127.0.0.1 - - [24/May/2024 12:21:27] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:21:27,666 | 127.0.0.1 - - [24/May/2024 12:21:27] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:21:27,688 | 127.0.0.1 - - [24/May/2024 12:21:27] "GET /socket.io/?EIO=4&transport=polling&t=O-fvxo5 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:21:27,692 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:21:27,693 | 127.0.0.1 - - [24/May/2024 12:21:27] "POST /socket.io/?EIO=4&transport=polling&t=O-fvxoA&sid=y5SdBcPqowqLGzrXAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:27,695 | 127.0.0.1 - - [24/May/2024 12:21:27] "GET /socket.io/?EIO=4&transport=polling&t=O-fvxoB&sid=y5SdBcPqowqLGzrXAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:30,008 | 127.0.0.1 - - [24/May/2024 12:21:30] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:30,026 | 127.0.0.1 - - [24/May/2024 12:21:30] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:21:30,031 | 127.0.0.1 - - [24/May/2024 12:21:30] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:21:30,053 | 127.0.0.1 - - [24/May/2024 12:21:30] "GET /socket.io/?EIO=4&transport=polling&t=O-fvyN2 HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:21:30,058 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:21:30,058 | 127.0.0.1 - - [24/May/2024 12:21:30] "POST /socket.io/?EIO=4&transport=polling&t=O-fvyN8&sid=_7fl1fxIWZcUliDJAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 12:21:30,061 | 127.0.0.1 - - [24/May/2024 12:21:30] "GET /socket.io/?EIO=4&transport=polling&t=O-fvyN9&sid=_7fl1fxIWZcUliDJAAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:21:33,562 | Received From Client: ['registration request', 'undefined', '4', 'sdcf']
+DEBUG | 2024-05-24 12:21:33,562 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:21:33,562 | Game current overall state: Game State: registration, User Count: 1, Users: ['sdcf'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:21:37,253 | Received From Client: ['registration request', 'undefined', '4', 'sdsd']
+DEBUG | 2024-05-24 12:21:37,253 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:21:37,253 | Game current overall state: Game State: registration, User Count: 2, Users: ['sdcf', 'sdsd'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:21:41,086 | Received From Client: ['registration request', 'undefined', '4', 'sdsd']
+DEBUG | 2024-05-24 12:21:41,087 | Did user manage to connect: False
+DEBUG | 2024-05-24 12:21:41,087 | Game current overall state: Game State: registration, User Count: 2, Users: ['sdcf', 'sdsd'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:21:46,513 | Received From Client: ['registration request', 'undefined', '5', 'tgtrg']
+DEBUG | 2024-05-24 12:21:46,514 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:21:46,514 | Game current overall state: Game State: registration, User Count: 3, Users: ['sdcf', 'sdsd', 'tgtrg'], Wolf: No wolf assigned
+INFO | 2024-05-24 12:21:59,312 | 127.0.0.1 - - [24/May/2024 12:21:59] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+WARNING | 2024-05-24 12:23:13,445 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 12:23:14,336 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 12:23:14,336 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 12:23:14,336 |  * Restarting with stat
+WARNING | 2024-05-24 12:23:14,707 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 12:23:14,708 |  * Debugger is active!
+INFO | 2024-05-24 12:23:14,709 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 12:23:15,194 | 127.0.0.1 - - [24/May/2024 12:23:15] "GET /socket.io/?EIO=4&transport=polling&t=O-fwM1o HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:15,195 | 127.0.0.1 - - [24/May/2024 12:23:15] "GET /socket.io/?EIO=4&transport=polling&t=O-fwM1n HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:23:15,201 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:23:15,202 | 127.0.0.1 - - [24/May/2024 12:23:15] "POST /socket.io/?EIO=4&transport=polling&t=O-fwM1z&sid=FNU1CVK2TO2iilX9AAAA HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:23:15,206 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:23:15,206 | 127.0.0.1 - - [24/May/2024 12:23:15] "POST /socket.io/?EIO=4&transport=polling&t=O-fwM1z&sid=CmWp1KM4R0hzimEHAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:15,207 | 127.0.0.1 - - [24/May/2024 12:23:15] "GET /socket.io/?EIO=4&transport=polling&t=O-fwM1-&sid=FNU1CVK2TO2iilX9AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:15,210 | 127.0.0.1 - - [24/May/2024 12:23:15] "GET /socket.io/?EIO=4&transport=polling&t=O-fwM1-&sid=CmWp1KM4R0hzimEHAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:15,220 | 127.0.0.1 - - [24/May/2024 12:23:15] "GET /socket.io/?EIO=4&transport=polling&t=O-fwM2I&sid=CmWp1KM4R0hzimEHAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:16,211 | 127.0.0.1 - - [24/May/2024 12:23:16] "GET /socket.io/?EIO=4&transport=polling&t=O-fwMHZ HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:23:16,218 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:23:16,219 | 127.0.0.1 - - [24/May/2024 12:23:16] "POST /socket.io/?EIO=4&transport=polling&t=O-fwMHu&sid=_6ZSUUt72AK8SYmKAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:16,220 | 127.0.0.1 - - [24/May/2024 12:23:16] "GET /socket.io/?EIO=4&transport=polling&t=O-fwMHv&sid=_6ZSUUt72AK8SYmKAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:21,070 | 127.0.0.1 - - [24/May/2024 12:23:21] "GET /socket.io/?EIO=4&transport=websocket&sid=_6ZSUUt72AK8SYmKAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:22,905 | 127.0.0.1 - - [24/May/2024 12:23:22] "GET /socket.io/?EIO=4&transport=websocket&sid=CmWp1KM4R0hzimEHAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:23,564 | 127.0.0.1 - - [24/May/2024 12:23:23] "GET /socket.io/?EIO=4&transport=websocket&sid=FNU1CVK2TO2iilX9AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:26,918 | 127.0.0.1 - - [24/May/2024 12:23:26] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:27,009 | 127.0.0.1 - - [24/May/2024 12:23:27] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:23:27,010 | 127.0.0.1 - - [24/May/2024 12:23:27] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:23:27,026 | 127.0.0.1 - - [24/May/2024 12:23:27] "GET /socket.io/?EIO=4&transport=polling&t=O-fwOwm HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:23:27,030 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:23:27,030 | 127.0.0.1 - - [24/May/2024 12:23:27] "POST /socket.io/?EIO=4&transport=polling&t=O-fwOwq&sid=Fd2rncsSbNCN4HJ6AAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:27,033 | 127.0.0.1 - - [24/May/2024 12:23:27] "GET /socket.io/?EIO=4&transport=polling&t=O-fwOwr&sid=Fd2rncsSbNCN4HJ6AAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:28,935 | 127.0.0.1 - - [24/May/2024 12:23:28] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:28,953 | 127.0.0.1 - - [24/May/2024 12:23:28] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:23:28,954 | 127.0.0.1 - - [24/May/2024 12:23:28] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:23:28,977 | 127.0.0.1 - - [24/May/2024 12:23:28] "GET /socket.io/?EIO=4&transport=polling&t=O-fwPPF HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:23:28,982 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:23:28,983 | 127.0.0.1 - - [24/May/2024 12:23:28] "POST /socket.io/?EIO=4&transport=polling&t=O-fwPPK&sid=KqCSbhEHbFJo0FatAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:28,985 | 127.0.0.1 - - [24/May/2024 12:23:28] "GET /socket.io/?EIO=4&transport=polling&t=O-fwPPL&sid=KqCSbhEHbFJo0FatAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:30,694 | 127.0.0.1 - - [24/May/2024 12:23:30] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:30,712 | 127.0.0.1 - - [24/May/2024 12:23:30] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:23:30,717 | 127.0.0.1 - - [24/May/2024 12:23:30] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:23:30,737 | 127.0.0.1 - - [24/May/2024 12:23:30] "GET /socket.io/?EIO=4&transport=polling&t=O-fwPqk HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:23:30,742 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:23:30,742 | 127.0.0.1 - - [24/May/2024 12:23:30] "POST /socket.io/?EIO=4&transport=polling&t=O-fwPqp&sid=2_IEJu8TmlWHYVFcAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 12:23:30,745 | 127.0.0.1 - - [24/May/2024 12:23:30] "GET /socket.io/?EIO=4&transport=polling&t=O-fwPqq&sid=2_IEJu8TmlWHYVFcAAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:23:33,278 | Received From Client: ['registration request', 'undefined', '2', 'dc']
+DEBUG | 2024-05-24 12:23:33,278 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:23:33,278 | Game current overall state: Game State: registration, User Count: 1, Users: ['dc'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:23:37,558 | Received From Client: ['registration request', 'undefined', '2', 'fg']
+DEBUG | 2024-05-24 12:23:37,558 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:23:37,558 | Game current overall state: Game State: registration, User Count: 2, Users: ['dc', 'fg'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:23:41,235 | Received From Client: ['registration request', 'undefined', '3', 'eee']
+DEBUG | 2024-05-24 12:23:41,235 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:23:41,235 | Game current overall state: Game State: registration, User Count: 3, Users: ['dc', 'fg', 'eee'], Wolf: No wolf assigned
+INFO | 2024-05-24 12:23:51,061 | 127.0.0.1 - - [24/May/2024 12:23:51] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+WARNING | 2024-05-24 12:25:26,977 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 12:25:27,862 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 12:25:27,862 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 12:25:27,862 |  * Restarting with stat
+WARNING | 2024-05-24 12:25:28,230 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 12:25:28,231 |  * Debugger is active!
+INFO | 2024-05-24 12:25:28,232 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 12:25:28,253 | 127.0.0.1 - - [24/May/2024 12:25:28] "GET /socket.io/?EIO=4&transport=polling&t=O-fwsV_ HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:28,257 | 127.0.0.1 - - [24/May/2024 12:25:28] "GET /socket.io/?EIO=4&transport=polling&t=O-fwsV_ HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:25:28,258 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:25:28,258 | 127.0.0.1 - - [24/May/2024 12:25:28] "POST /socket.io/?EIO=4&transport=polling&t=O-fwsW_&sid=eSYAJY8fp2M9yO6cAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:28,262 | 127.0.0.1 - - [24/May/2024 12:25:28] "GET /socket.io/?EIO=4&transport=polling&t=O-fwsX0&sid=eSYAJY8fp2M9yO6cAAAA HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:25:28,263 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:25:28,263 | 127.0.0.1 - - [24/May/2024 12:25:28] "POST /socket.io/?EIO=4&transport=polling&t=O-fwsX4&sid=Q1RIHDOxme2R3tGJAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:28,264 | 127.0.0.1 - - [24/May/2024 12:25:28] "GET /socket.io/?EIO=4&transport=polling&t=O-fwsX4.0&sid=Q1RIHDOxme2R3tGJAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:28,274 | 127.0.0.1 - - [24/May/2024 12:25:28] "GET /socket.io/?EIO=4&transport=polling&t=O-fwsXB&sid=Q1RIHDOxme2R3tGJAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:29,197 | 127.0.0.1 - - [24/May/2024 12:25:29] "GET /socket.io/?EIO=4&transport=polling&t=O-fwslc HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:25:29,200 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:25:29,201 | 127.0.0.1 - - [24/May/2024 12:25:29] "POST /socket.io/?EIO=4&transport=polling&t=O-fwslk&sid=BFA2t2Y9gM2m9R9QAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:29,206 | 127.0.0.1 - - [24/May/2024 12:25:29] "GET /socket.io/?EIO=4&transport=polling&t=O-fwsll&sid=BFA2t2Y9gM2m9R9QAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:33,394 | 127.0.0.1 - - [24/May/2024 12:25:33] "GET /socket.io/?EIO=4&transport=websocket&sid=eSYAJY8fp2M9yO6cAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:33,976 | 127.0.0.1 - - [24/May/2024 12:25:33] "GET /socket.io/?EIO=4&transport=websocket&sid=Q1RIHDOxme2R3tGJAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:36,078 | 127.0.0.1 - - [24/May/2024 12:25:36] "GET /socket.io/?EIO=4&transport=websocket&sid=BFA2t2Y9gM2m9R9QAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:38,235 | 127.0.0.1 - - [24/May/2024 12:25:38] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:38,319 | 127.0.0.1 - - [24/May/2024 12:25:38] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:25:38,320 | 127.0.0.1 - - [24/May/2024 12:25:38] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:25:38,336 | 127.0.0.1 - - [24/May/2024 12:25:38] "GET /socket.io/?EIO=4&transport=polling&t=O-fwu-U HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:25:38,340 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:25:38,340 | 127.0.0.1 - - [24/May/2024 12:25:38] "POST /socket.io/?EIO=4&transport=polling&t=O-fwu-Z&sid=0Ij6L1j2JMQ9cHViAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:38,343 | 127.0.0.1 - - [24/May/2024 12:25:38] "GET /socket.io/?EIO=4&transport=polling&t=O-fwu-Z.0&sid=0Ij6L1j2JMQ9cHViAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:38,346 | 127.0.0.1 - - [24/May/2024 12:25:38] "GET /socket.io/?EIO=4&transport=polling&t=O-fwu-f&sid=0Ij6L1j2JMQ9cHViAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:40,731 | 127.0.0.1 - - [24/May/2024 12:25:40] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:40,750 | 127.0.0.1 - - [24/May/2024 12:25:40] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:25:40,752 | 127.0.0.1 - - [24/May/2024 12:25:40] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:25:40,766 | 127.0.0.1 - - [24/May/2024 12:25:40] "GET /socket.io/?EIO=4&transport=polling&t=O-fwvaS HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:25:40,780 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:25:40,781 | 127.0.0.1 - - [24/May/2024 12:25:40] "POST /socket.io/?EIO=4&transport=polling&t=O-fwvag&sid=FSsUbuYq2oUv40MiAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:40,783 | 127.0.0.1 - - [24/May/2024 12:25:40] "GET /socket.io/?EIO=4&transport=polling&t=O-fwvah&sid=FSsUbuYq2oUv40MiAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:40,788 | 127.0.0.1 - - [24/May/2024 12:25:40] "GET /socket.io/?EIO=4&transport=polling&t=O-fwvao&sid=FSsUbuYq2oUv40MiAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:42,932 | 127.0.0.1 - - [24/May/2024 12:25:42] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:42,947 | 127.0.0.1 - - [24/May/2024 12:25:42] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:25:42,948 | 127.0.0.1 - - [24/May/2024 12:25:42] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:25:42,971 | 127.0.0.1 - - [24/May/2024 12:25:42] "GET /socket.io/?EIO=4&transport=polling&t=O-fww6u HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:25:42,976 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:25:42,977 | 127.0.0.1 - - [24/May/2024 12:25:42] "POST /socket.io/?EIO=4&transport=polling&t=O-fww6z&sid=r_Xnjxxx6t-EJeaBAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 12:25:42,979 | 127.0.0.1 - - [24/May/2024 12:25:42] "GET /socket.io/?EIO=4&transport=polling&t=O-fww6-&sid=r_Xnjxxx6t-EJeaBAAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:25:45,802 | Received From Client: ['registration request', 'undefined', '3', 'www']
+DEBUG | 2024-05-24 12:25:45,802 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:25:45,802 | Game current overall state: Game State: registration, User Count: 1, Users: ['www'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:25:49,267 | Received From Client: ['registration request', 'undefined', '3', 'rrr']
+DEBUG | 2024-05-24 12:25:49,267 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:25:49,267 | Game current overall state: Game State: registration, User Count: 2, Users: ['www', 'rrr'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:25:53,498 | Received From Client: ['registration request', 'undefined', '2', 'tt']
+DEBUG | 2024-05-24 12:25:53,498 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:25:53,498 | Game current overall state: Game State: registration, User Count: 3, Users: ['www', 'rrr', 'tt'], Wolf: No wolf assigned
+INFO | 2024-05-24 12:26:06,272 | 127.0.0.1 - - [24/May/2024 12:26:06] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+WARNING | 2024-05-24 12:28:19,388 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 12:28:20,250 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 12:28:20,250 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 12:28:20,250 |  * Restarting with stat
+WARNING | 2024-05-24 12:28:20,637 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 12:28:20,637 |  * Debugger is active!
+INFO | 2024-05-24 12:28:20,639 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 12:28:20,656 | 127.0.0.1 - - [24/May/2024 12:28:20] "GET /socket.io/?EIO=4&transport=polling&t=O-fxWVQ HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:20,659 | 127.0.0.1 - - [24/May/2024 12:28:20] "GET /socket.io/?EIO=4&transport=polling&t=O-fxWVP HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:20,661 | 127.0.0.1 - - [24/May/2024 12:28:20] "GET /socket.io/?EIO=4&transport=polling&t=O-fxWVQ HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:28:20,665 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:28:20,666 | 127.0.0.1 - - [24/May/2024 12:28:20] "POST /socket.io/?EIO=4&transport=polling&t=O-fxWco&sid=dxiewaTRBVKk8ebHAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:20,666 | 127.0.0.1 - - [24/May/2024 12:28:20] "GET /socket.io/?EIO=4&transport=polling&t=O-fxWco.0&sid=dxiewaTRBVKk8ebHAAAA HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:28:20,673 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:28:20,674 | 127.0.0.1 - - [24/May/2024 12:28:20] "POST /socket.io/?EIO=4&transport=polling&t=O-fxWcr&sid=-CJSl1jAy7b5Ai0AAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:20,675 | 127.0.0.1 - - [24/May/2024 12:28:20] "GET /socket.io/?EIO=4&transport=polling&t=O-fxWcs&sid=-CJSl1jAy7b5Ai0AAAAB HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:28:20,679 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:28:20,679 | 127.0.0.1 - - [24/May/2024 12:28:20] "POST /socket.io/?EIO=4&transport=polling&t=O-fxWc_&sid=WP02ZCi2a03FsMjoAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:20,693 | 127.0.0.1 - - [24/May/2024 12:28:20] "GET /socket.io/?EIO=4&transport=polling&t=O-fxWd0&sid=WP02ZCi2a03FsMjoAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:20,697 | 127.0.0.1 - - [24/May/2024 12:28:20] "GET /socket.io/?EIO=4&transport=polling&t=O-fxWdN&sid=WP02ZCi2a03FsMjoAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:23,919 | 127.0.0.1 - - [24/May/2024 12:28:23] "GET /socket.io/?EIO=4&transport=websocket&sid=-CJSl1jAy7b5Ai0AAAAB HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:24,400 | 127.0.0.1 - - [24/May/2024 12:28:24] "GET /socket.io/?EIO=4&transport=websocket&sid=WP02ZCi2a03FsMjoAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:24,967 | 127.0.0.1 - - [24/May/2024 12:28:24] "GET /socket.io/?EIO=4&transport=websocket&sid=dxiewaTRBVKk8ebHAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:26,027 | 127.0.0.1 - - [24/May/2024 12:28:26] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:26,122 | 127.0.0.1 - - [24/May/2024 12:28:26] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:28:26,122 | 127.0.0.1 - - [24/May/2024 12:28:26] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:26,138 | 127.0.0.1 - - [24/May/2024 12:28:26] "GET /socket.io/?EIO=4&transport=polling&t=O-fxXyN HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:28:26,142 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:28:26,143 | 127.0.0.1 - - [24/May/2024 12:28:26] "POST /socket.io/?EIO=4&transport=polling&t=O-fxXyS&sid=MhBDQ8uRN6a5ekzKAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:26,148 | 127.0.0.1 - - [24/May/2024 12:28:26] "GET /socket.io/?EIO=4&transport=polling&t=O-fxXyT&sid=MhBDQ8uRN6a5ekzKAAAG HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:28,347 | 127.0.0.1 - - [24/May/2024 12:28:28] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:28,362 | 127.0.0.1 - - [24/May/2024 12:28:28] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:28:28,363 | 127.0.0.1 - - [24/May/2024 12:28:28] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:28:28,386 | 127.0.0.1 - - [24/May/2024 12:28:28] "GET /socket.io/?EIO=4&transport=polling&t=O-fxYVU HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:28:28,392 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:28:28,393 | 127.0.0.1 - - [24/May/2024 12:28:28] "POST /socket.io/?EIO=4&transport=polling&t=O-fxYVb&sid=H_JwS-P6hT-1rDZFAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:28,394 | 127.0.0.1 - - [24/May/2024 12:28:28] "GET /socket.io/?EIO=4&transport=polling&t=O-fxYVc&sid=H_JwS-P6hT-1rDZFAAAI HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:30,431 | 127.0.0.1 - - [24/May/2024 12:28:30] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:30,460 | 127.0.0.1 - - [24/May/2024 12:28:30] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:28:30,469 | 127.0.0.1 - - [24/May/2024 12:28:30] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:28:30,478 | 127.0.0.1 - - [24/May/2024 12:28:30] "GET /socket.io/?EIO=4&transport=polling&t=O-fxZ0A HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:28:30,482 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:28:30,482 | 127.0.0.1 - - [24/May/2024 12:28:30] "POST /socket.io/?EIO=4&transport=polling&t=O-fxZ0G&sid=IB3mR_h_R5PImkmvAAAK HTTP/1.1" 200 -
+INFO | 2024-05-24 12:28:30,486 | 127.0.0.1 - - [24/May/2024 12:28:30] "GET /socket.io/?EIO=4&transport=polling&t=O-fxZ0H&sid=IB3mR_h_R5PImkmvAAAK HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:28:33,678 | Received From Client: ['registration request', 'undefined', '1', 'f']
+DEBUG | 2024-05-24 12:28:33,678 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:28:33,678 | Game current overall state: Game State: registration, User Count: 1, Users: ['f'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:28:38,264 | Received From Client: ['registration request', 'undefined', '1', 'd']
+DEBUG | 2024-05-24 12:28:38,265 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:28:38,265 | Game current overall state: Game State: registration, User Count: 2, Users: ['f', 'd'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:28:42,429 | Received From Client: ['registration request', 'undefined', '1', 'w']
+DEBUG | 2024-05-24 12:28:42,429 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:28:42,429 | Game current overall state: Game State: registration, User Count: 3, Users: ['f', 'd', 'w'], Wolf: No wolf assigned
+INFO | 2024-05-24 12:28:56,544 | 127.0.0.1 - - [24/May/2024 12:28:56] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+WARNING | 2024-05-24 12:33:30,292 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 12:33:31,141 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 12:33:31,141 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 12:33:31,141 |  * Restarting with stat
+WARNING | 2024-05-24 12:33:31,493 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 12:33:31,494 |  * Debugger is active!
+INFO | 2024-05-24 12:33:31,496 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 12:33:42,485 | 127.0.0.1 - - [24/May/2024 12:33:42] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:33:42,626 | 127.0.0.1 - - [24/May/2024 12:33:42] "GET /static/clientstyle.css HTTP/1.1" 200 -
+INFO | 2024-05-24 12:33:42,643 | 127.0.0.1 - - [24/May/2024 12:33:42] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:33:42,649 | 127.0.0.1 - - [24/May/2024 12:33:42] "GET /socket.io/?EIO=4&transport=polling&t=O-fylDs HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:33:42,654 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:33:42,655 | 127.0.0.1 - - [24/May/2024 12:33:42] "POST /socket.io/?EIO=4&transport=polling&t=O-fylDx&sid=ZUabgOLuiaS-0iO1AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:33:42,657 | 127.0.0.1 - - [24/May/2024 12:33:42] "GET /socket.io/?EIO=4&transport=polling&t=O-fylDy&sid=ZUabgOLuiaS-0iO1AAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:33:44,341 | 127.0.0.1 - - [24/May/2024 12:33:44] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:33:44,360 | 127.0.0.1 - - [24/May/2024 12:33:44] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:33:44,361 | 127.0.0.1 - - [24/May/2024 12:33:44] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:33:44,383 | 127.0.0.1 - - [24/May/2024 12:33:44] "GET /socket.io/?EIO=4&transport=polling&t=O-fyley HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:33:44,388 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:33:44,389 | 127.0.0.1 - - [24/May/2024 12:33:44] "POST /socket.io/?EIO=4&transport=polling&t=O-fylf1&sid=GoHSrN0A0rvVohbnAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:33:44,391 | 127.0.0.1 - - [24/May/2024 12:33:44] "GET /socket.io/?EIO=4&transport=polling&t=O-fylf2&sid=GoHSrN0A0rvVohbnAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:33:46,091 | 127.0.0.1 - - [24/May/2024 12:33:46] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:33:46,110 | 127.0.0.1 - - [24/May/2024 12:33:46] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:33:46,112 | 127.0.0.1 - - [24/May/2024 12:33:46] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:33:46,135 | 127.0.0.1 - - [24/May/2024 12:33:46] "GET /socket.io/?EIO=4&transport=polling&t=O-fym4K HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:33:46,142 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:33:46,142 | 127.0.0.1 - - [24/May/2024 12:33:46] "POST /socket.io/?EIO=4&transport=polling&t=O-fym4R&sid=dZ--P1v5LB8JWcMEAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:33:46,145 | 127.0.0.1 - - [24/May/2024 12:33:46] "GET /socket.io/?EIO=4&transport=polling&t=O-fym4T&sid=dZ--P1v5LB8JWcMEAAAE HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:33:53,436 | Received From Client: ['registration request', 'undefined', '2', 'ff']
+DEBUG | 2024-05-24 12:33:53,436 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:33:53,436 | Game current overall state: Game State: registration, User Count: 1, Users: ['ff'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:33:57,502 | Received From Client: ['registration request', 'undefined', '2', 'dd']
+DEBUG | 2024-05-24 12:33:57,502 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:33:57,502 | Game current overall state: Game State: registration, User Count: 2, Users: ['ff', 'dd'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:34:01,182 | Received From Client: ['registration request', 'undefined', '1', 'r']
+DEBUG | 2024-05-24 12:34:01,183 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:34:01,183 | Game current overall state: Game State: registration, User Count: 3, Users: ['ff', 'dd', 'r'], Wolf: No wolf assigned
+WARNING | 2024-05-24 12:39:09,133 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 12:39:09,979 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 12:39:09,979 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 12:39:09,979 |  * Restarting with stat
+WARNING | 2024-05-24 12:39:10,341 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 12:39:10,341 |  * Debugger is active!
+INFO | 2024-05-24 12:39:10,343 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 12:39:11,484 | 127.0.0.1 - - [24/May/2024 12:39:11] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:39:11,573 | 127.0.0.1 - - [24/May/2024 12:39:11] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 12:39:11,574 | 127.0.0.1 - - [24/May/2024 12:39:11] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:39:11,590 | 127.0.0.1 - - [24/May/2024 12:39:11] "GET /socket.io/?EIO=4&transport=polling&t=O-fz_XY HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:39:11,595 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:39:11,595 | 127.0.0.1 - - [24/May/2024 12:39:11] "POST /socket.io/?EIO=4&transport=polling&t=O-fz_Xe&sid=8fgcIPzsE7CALCJoAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:39:11,597 | 127.0.0.1 - - [24/May/2024 12:39:11] "GET /socket.io/?EIO=4&transport=polling&t=O-fz_Xf&sid=8fgcIPzsE7CALCJoAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:39:13,677 | 127.0.0.1 - - [24/May/2024 12:39:13] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:39:13,693 | 127.0.0.1 - - [24/May/2024 12:39:13] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:39:13,695 | 127.0.0.1 - - [24/May/2024 12:39:13] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:39:13,715 | 127.0.0.1 - - [24/May/2024 12:39:13] "GET /socket.io/?EIO=4&transport=polling&t=O-f-02n HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:39:13,720 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:39:13,720 | 127.0.0.1 - - [24/May/2024 12:39:13] "POST /socket.io/?EIO=4&transport=polling&t=O-f-02s&sid=qibHXu8Lajhup1g7AAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:39:13,722 | 127.0.0.1 - - [24/May/2024 12:39:13] "GET /socket.io/?EIO=4&transport=polling&t=O-f-02t&sid=qibHXu8Lajhup1g7AAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:39:15,929 | 127.0.0.1 - - [24/May/2024 12:39:15] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:39:15,944 | 127.0.0.1 - - [24/May/2024 12:39:15] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:39:15,946 | 127.0.0.1 - - [24/May/2024 12:39:15] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:39:15,966 | 127.0.0.1 - - [24/May/2024 12:39:15] "GET /socket.io/?EIO=4&transport=polling&t=O-f-0bx HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:39:15,971 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:39:15,972 | 127.0.0.1 - - [24/May/2024 12:39:15] "POST /socket.io/?EIO=4&transport=polling&t=O-f-0c0&sid=ktmMZaHnR6sQ_BJqAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:39:15,974 | 127.0.0.1 - - [24/May/2024 12:39:15] "GET /socket.io/?EIO=4&transport=polling&t=O-f-0c1&sid=ktmMZaHnR6sQ_BJqAAAE HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:39:19,445 | Received From Client: ['registration request', 'undefined', '2', 'ff']
+DEBUG | 2024-05-24 12:39:19,445 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:39:19,445 | Game current overall state: Game State: registration, User Count: 1, Users: ['ff'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:39:23,943 | Received From Client: ['registration request', 'undefined', '1', 'w']
+DEBUG | 2024-05-24 12:39:23,943 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:39:23,943 | Game current overall state: Game State: registration, User Count: 2, Users: ['ff', 'w'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:39:28,005 | Received From Client: ['registration request', 'undefined', '1', 'n']
+DEBUG | 2024-05-24 12:39:28,005 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:39:28,005 | Game current overall state: Game State: registration, User Count: 3, Users: ['ff', 'w', 'n'], Wolf: No wolf assigned
+WARNING | 2024-05-24 12:42:41,622 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 12:42:42,469 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 12:42:42,470 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 12:42:42,470 |  * Restarting with stat
+WARNING | 2024-05-24 12:42:42,847 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 12:42:42,847 |  * Debugger is active!
+INFO | 2024-05-24 12:42:42,849 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 12:42:46,830 | 127.0.0.1 - - [24/May/2024 12:42:46] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:42:46,961 | 127.0.0.1 - - [24/May/2024 12:42:46] "GET /static/clientstyle.css HTTP/1.1" 200 -
+INFO | 2024-05-24 12:42:46,962 | 127.0.0.1 - - [24/May/2024 12:42:46] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 12:42:46,979 | 127.0.0.1 - - [24/May/2024 12:42:46] "GET /socket.io/?EIO=4&transport=polling&t=O-f-q6_ HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:42:46,985 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:42:46,985 | 127.0.0.1 - - [24/May/2024 12:42:46] "POST /socket.io/?EIO=4&transport=polling&t=O-f-q75&sid=PKXNQSfuaXmfmHdtAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:42:46,986 | 127.0.0.1 - - [24/May/2024 12:42:46] "GET /socket.io/?EIO=4&transport=polling&t=O-f-q76&sid=PKXNQSfuaXmfmHdtAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:42:48,623 | 127.0.0.1 - - [24/May/2024 12:42:48] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:42:48,639 | 127.0.0.1 - - [24/May/2024 12:42:48] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:42:48,642 | 127.0.0.1 - - [24/May/2024 12:42:48] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:42:48,660 | 127.0.0.1 - - [24/May/2024 12:42:48] "GET /socket.io/?EIO=4&transport=polling&t=O-f-qXH HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:42:48,666 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:42:48,666 | 127.0.0.1 - - [24/May/2024 12:42:48] "POST /socket.io/?EIO=4&transport=polling&t=O-f-qXN&sid=z3tKoP41HP2GhZ0RAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:42:48,669 | 127.0.0.1 - - [24/May/2024 12:42:48] "GET /socket.io/?EIO=4&transport=polling&t=O-f-qXP&sid=z3tKoP41HP2GhZ0RAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:42:50,553 | 127.0.0.1 - - [24/May/2024 12:42:50] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:42:50,569 | 127.0.0.1 - - [24/May/2024 12:42:50] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:42:50,569 | 127.0.0.1 - - [24/May/2024 12:42:50] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:42:50,593 | 127.0.0.1 - - [24/May/2024 12:42:50] "GET /socket.io/?EIO=4&transport=polling&t=O-f-q_U HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:42:50,600 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:42:50,600 | 127.0.0.1 - - [24/May/2024 12:42:50] "POST /socket.io/?EIO=4&transport=polling&t=O-f-q_b&sid=sedWPJ0oITbHNiUcAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:42:50,602 | 127.0.0.1 - - [24/May/2024 12:42:50] "GET /socket.io/?EIO=4&transport=polling&t=O-f-q_c&sid=sedWPJ0oITbHNiUcAAAE HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:42:53,489 | Received From Client: ['registration request', 'undefined', '2', 'dd']
+DEBUG | 2024-05-24 12:42:53,489 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:42:53,489 | Game current overall state: Game State: registration, User Count: 1, Users: ['dd'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:42:57,669 | Received From Client: ['registration request', 'undefined', '1', 's']
+DEBUG | 2024-05-24 12:42:57,669 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:42:57,669 | Game current overall state: Game State: registration, User Count: 2, Users: ['dd', 's'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:43:03,136 | Received From Client: ['registration request', 'undefined', '2', 'dw']
+DEBUG | 2024-05-24 12:43:03,136 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:43:03,137 | Game current overall state: Game State: registration, User Count: 3, Users: ['dd', 's', 'dw'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:43:07,896 | Received From Client: ['send message', 'dw', '2', 'ff']
+INFO | 2024-05-24 12:43:16,646 | 127.0.0.1 - - [24/May/2024 12:43:16] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+WARNING | 2024-05-24 12:46:09,967 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 12:46:10,821 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 12:46:10,821 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 12:46:10,821 |  * Restarting with stat
+WARNING | 2024-05-24 12:46:11,199 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 12:46:11,199 |  * Debugger is active!
+INFO | 2024-05-24 12:46:11,201 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 12:46:14,059 | 127.0.0.1 - - [24/May/2024 12:46:14] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:46:14,143 | 127.0.0.1 - - [24/May/2024 12:46:14] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:46:14,145 | 127.0.0.1 - - [24/May/2024 12:46:14] "GET /static/clientscript.js HTTP/1.1" 200 -
+INFO | 2024-05-24 12:46:14,160 | 127.0.0.1 - - [24/May/2024 12:46:14] "GET /socket.io/?EIO=4&transport=polling&t=O-f_ciC HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:46:14,164 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:46:14,164 | 127.0.0.1 - - [24/May/2024 12:46:14] "POST /socket.io/?EIO=4&transport=polling&t=O-f_ciH&sid=iN6FJhp4z99iD5aVAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:46:14,166 | 127.0.0.1 - - [24/May/2024 12:46:14] "GET /socket.io/?EIO=4&transport=polling&t=O-f_ciI&sid=iN6FJhp4z99iD5aVAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:46:16,300 | 127.0.0.1 - - [24/May/2024 12:46:16] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:46:16,317 | 127.0.0.1 - - [24/May/2024 12:46:16] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:46:16,318 | 127.0.0.1 - - [24/May/2024 12:46:16] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:46:16,341 | 127.0.0.1 - - [24/May/2024 12:46:16] "GET /socket.io/?EIO=4&transport=polling&t=O-f_dEI HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:46:16,346 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:46:16,346 | 127.0.0.1 - - [24/May/2024 12:46:16] "POST /socket.io/?EIO=4&transport=polling&t=O-f_dEN&sid=Y13seFRcOsll2G0dAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:46:16,349 | 127.0.0.1 - - [24/May/2024 12:46:16] "GET /socket.io/?EIO=4&transport=polling&t=O-f_dEO&sid=Y13seFRcOsll2G0dAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:46:19,313 | 127.0.0.1 - - [24/May/2024 12:46:19] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:46:19,330 | 127.0.0.1 - - [24/May/2024 12:46:19] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:46:19,331 | 127.0.0.1 - - [24/May/2024 12:46:19] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:46:19,356 | 127.0.0.1 - - [24/May/2024 12:46:19] "GET /socket.io/?EIO=4&transport=polling&t=O-f_dzP HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:46:19,361 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:46:19,361 | 127.0.0.1 - - [24/May/2024 12:46:19] "POST /socket.io/?EIO=4&transport=polling&t=O-f_dzU&sid=Mx2JNWTlKu5sY8iCAAAE HTTP/1.1" 200 -
+INFO | 2024-05-24 12:46:19,364 | 127.0.0.1 - - [24/May/2024 12:46:19] "GET /socket.io/?EIO=4&transport=polling&t=O-f_dzV&sid=Mx2JNWTlKu5sY8iCAAAE HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:46:21,841 | Received From Client: ['registration request', 'undefined', '2', 'dd']
+DEBUG | 2024-05-24 12:46:21,841 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:46:21,841 | Game current overall state: Game State: registration, User Count: 1, Users: ['dd'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:46:25,717 | Received From Client: ['registration request', 'undefined', '1', 's']
+DEBUG | 2024-05-24 12:46:25,717 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:46:25,717 | Game current overall state: Game State: registration, User Count: 2, Users: ['dd', 's'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:46:28,866 | Received From Client: ['registration request', 'undefined', '1', 'e']
+DEBUG | 2024-05-24 12:46:28,866 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:46:28,867 | Game current overall state: Game State: registration, User Count: 3, Users: ['dd', 's', 'e'], Wolf: No wolf assigned
+INFO | 2024-05-24 12:46:45,879 | 127.0.0.1 - - [24/May/2024 12:46:45] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+WARNING | 2024-05-24 12:51:30,220 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+INFO | 2024-05-24 12:51:31,121 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.12:8000
+INFO | 2024-05-24 12:51:31,121 | [33mPress CTRL+C to quit[0m
+INFO | 2024-05-24 12:51:31,121 |  * Restarting with stat
+WARNING | 2024-05-24 12:51:31,481 | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+WARNING | 2024-05-24 12:51:31,482 |  * Debugger is active!
+INFO | 2024-05-24 12:51:31,484 |  * Debugger PIN: 890-987-633
+INFO | 2024-05-24 12:51:35,234 | 127.0.0.1 - - [24/May/2024 12:51:35] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:51:35,369 | 127.0.0.1 - - [24/May/2024 12:51:35] "GET /static/clientstyle.css HTTP/1.1" 200 -
+INFO | 2024-05-24 12:51:35,371 | 127.0.0.1 - - [24/May/2024 12:51:35] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:51:35,386 | 127.0.0.1 - - [24/May/2024 12:51:35] "GET /socket.io/?EIO=4&transport=polling&t=O-g0r7N HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:51:35,392 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:51:35,392 | 127.0.0.1 - - [24/May/2024 12:51:35] "POST /socket.io/?EIO=4&transport=polling&t=O-g0r7T&sid=V2nrx85htMuELq3AAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:51:35,395 | 127.0.0.1 - - [24/May/2024 12:51:35] "GET /socket.io/?EIO=4&transport=polling&t=O-g0r7V&sid=V2nrx85htMuELq3AAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:51:35,399 | 127.0.0.1 - - [24/May/2024 12:51:35] "GET /socket.io/?EIO=4&transport=polling&t=O-g0r7b&sid=V2nrx85htMuELq3AAAAA HTTP/1.1" 200 -
+INFO | 2024-05-24 12:51:37,331 | 127.0.0.1 - - [24/May/2024 12:51:37] "GET / HTTP/1.1" 200 -
+INFO | 2024-05-24 12:51:37,348 | 127.0.0.1 - - [24/May/2024 12:51:37] "[36mGET /static/clientstyle.css HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:51:37,348 | 127.0.0.1 - - [24/May/2024 12:51:37] "[36mGET /static/clientscript.js HTTP/1.1[0m" 304 -
+INFO | 2024-05-24 12:51:37,369 | 127.0.0.1 - - [24/May/2024 12:51:37] "GET /socket.io/?EIO=4&transport=polling&t=O-g0rcM HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:51:37,376 | Sending To Client: registration#$#undefined user#$#14#$#Welcome, user!
+INFO | 2024-05-24 12:51:37,376 | 127.0.0.1 - - [24/May/2024 12:51:37] "POST /socket.io/?EIO=4&transport=polling&t=O-g0rcT&sid=yUwgv3I4nXp7qaBdAAAC HTTP/1.1" 200 -
+INFO | 2024-05-24 12:51:37,378 | 127.0.0.1 - - [24/May/2024 12:51:37] "GET /socket.io/?EIO=4&transport=polling&t=O-g0rcV&sid=yUwgv3I4nXp7qaBdAAAC HTTP/1.1" 200 -
+DEBUG | 2024-05-24 12:51:41,054 | Received From Client: ['registration request', 'undefined', '3', 'frf']
+DEBUG | 2024-05-24 12:51:41,054 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:51:41,054 | Game current overall state: Game State: registration, User Count: 1, Users: ['frf'], Wolf: No wolf assigned
+DEBUG | 2024-05-24 12:51:45,056 | Received From Client: ['registration request', 'undefined', '2', 'ee']
+DEBUG | 2024-05-24 12:51:45,056 | Did user manage to connect: True
+DEBUG | 2024-05-24 12:51:45,056 | Game current overall state: Game State: registration, User Count: 2, Users: ['frf', 'ee'], Wolf: No wolf assigned

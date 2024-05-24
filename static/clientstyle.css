@@ -127,3 +127,43 @@ button {
     padding: 10px 20px;
     cursor: pointer;
 }
+
+.user-item {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+.user-item:hover {
+    background-color: #ddd;
+}
+
+.user-item.selected {
+    background-color: lightblue; /* Change to light blue */
+    border-color: #888;
+}
+
+#votes_id {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align children with space between */
+    flex-grow: 1;
+}
+
+#confirm_button_id {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#confirm_button_id button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px;
+    cursor: pointer; /* Pointer/hand icon */
+}
+
+#confirm_button_id button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

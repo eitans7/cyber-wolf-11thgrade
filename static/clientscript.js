@@ -107,6 +107,10 @@ function startTimer(duration, eventName) {
             clearInterval(interval);
             document.dispatchEvent(event);
             document.getElementById('time_id').textContent = 'נגמר הזמן!';
+            chatInputDisplay();
+            const users = ['User1', 'User2', 'User3'];
+            displayUsers(users);
+
         } else {
             document.getElementById('time_id').textContent = `זמן שנותר: ${Math.ceil(remainingTime / 1000)} שניות`;
         }
@@ -115,12 +119,67 @@ function startTimer(duration, eventName) {
 
 // Example usage
 // Add an event listener for the custom event
-document.addEventListener(timerEventName, () => {
-    console.log('Timer is over! Event has been triggered.');
-});
+//document.addEventListener(timerEventName, () => {
+//    console.log('Timer is over! Event has been triggered.');
+//});
 
 function restartTimer() {
     startTimer(timerDuration, timerEventName);
+}
+
+let selectedUser = null; // Variable to keep track of the currently selected user
+
+function displayUsers(users) {
+    const votesDiv = document.getElementById('votes_content_id');
+    votesDiv.innerHTML = ''; // Clear existing content
+
+    selectedUser = null; // Reset the selected user
+    let selectedUserElement = null; // Variable to keep track of the currently selected user
+
+    users.forEach(user => {
+        const userElement = document.createElement("p");
+        userElement.textContent = user;
+        userElement.classList.add('user-item');
+
+        // Add click event listener to handle selection
+        userElement.addEventListener('click', () => {
+            if (selectedUserElement) {
+                // Unselect the previously selected user
+                selectedUserElement.classList.remove('selected');
+                selectedUserElement.style.backgroundColor = ''; // Remove background color
+            }
+            // Select the new user
+            userElement.classList.add('selected');
+            userElement.style.backgroundColor = 'lightblue'; // Change background color to light blue
+            // Update the reference to the currently selected user
+            selectedUserElement = userElement;
+            selectedUser = user; // Update the selected user
+            document.getElementById('confirm_button_id').style.display = 'block'; // Show the confirm button
+        });
+
+        votesDiv.appendChild(userElement);
+    });
+}
+
+function confirmSelection() {
+    if (selectedUser) {
+        // Disable further selection
+        const userItems = document.querySelectorAll('.user-item');
+        userItems.forEach(item => {
+            item.style.pointerEvents = 'none'; // Disable click events
+        });
+
+        // Hide the confirm button
+        document.getElementById('confirm_button_id').style.display = 'none';
+
+        // Return the selected user
+        console.log('Selected user:', selectedUser);
+        // You can add any additional logic here, like sending the selected user to the server
+        return selectedUser;
+    } else {
+        console.error('No user selected');
+        return null;
+    }
 }
 
 function writeByProtocol(state, content) {
@@ -168,5 +227,11 @@ function humanTitleDisplay(content) {
 }
 
 function chatInputDisplay(){
-    document.getElementById('chat_input_id').style.display = 'block'; // Change display from 'none' to 'block' to show it
+    const chatInput = document.getElementById('chat_input_id');
+    if (chatInput.style.display === 'block') {
+        chatInput.style.display = 'none'; // Change display from 'block' to 'none' to hide it
+    } else {
+        chatInput.style.display = 'block'; // Change display from 'none' to 'block' to show it
+    }
 }
+
