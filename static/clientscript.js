@@ -1,8 +1,9 @@
 var socket;
 var user;
 var amIWolf = false;
+var alive = true
 
-const timerDuration = 5000; // Timer duration in milliseconds (5000ms = 5 seconds)
+const timerDuration = 15000; // Timer duration in milliseconds (5000ms = 5 seconds)
 const timerEventName = 'timerCompleted';
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -46,11 +47,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
         }
         if (protocolVersionedData[0] == "Day"){
-            handleReceivingMessages(protocolVersionedData[1], protocolVersionedData[3])
+            if (protocolVersionedData[3] == "It is Day"){
+                chatInputDisplay();
+                updateUiState("מצב: יום")
+                restartTimer()
+            }
+            else{
+                handleReceivingMessages(protocolVersionedData[1], protocolVersionedData[3])
+            }
         }
         if (protocolVersionedData[0] == "Night"){
             if (!amIWolf){
                 updateUiState("מצב: לילה")
+                if (protocolVersionedData[3] == "you have been killed"){
+                    alive = false
+                    humanTitleDisplay(user + ", הזאב הרג אותך");
+                }
             }
             if (amIWolf){
                 updateUiState("מצב: לילה, זמן להרוג")
@@ -139,9 +151,15 @@ function restartTimer() {
     startTimer(timerDuration, timerEventName);
 }
 
-let selectedUser = null; // Variable to keep track of the currently selected user
 
-// Function to create a user element
+let selectedUser = null; // Variable to keep track of the currently selected user
+let selectedUserElement = null; // Variable to keep track of the currently selected user element
+
+/**
+ * Creates a user element based on the user object.
+ * @param {Object} userObj - The user object containing username and isAlive status.
+ * @returns {HTMLElement} The created user element.
+ */
 function createUserElement(userObj) {
     const userElement = document.createElement("p");
     userElement.textContent = userObj.username;
@@ -150,6 +168,7 @@ function createUserElement(userObj) {
     if (userObj.isAlive) {
         userElement.addEventListener('click', () => handleUserSelection(userElement, userObj.username));
     } else {
+        // Disable the user element if not alive
         userElement.style.pointerEvents = 'none'; // Disable click events
         userElement.style.backgroundColor = 'darkgray'; // Set background color to dark gray
     }
@@ -157,7 +176,9 @@ function createUserElement(userObj) {
     return userElement;
 }
 
-// Function to handle user selection
+
+
+
 function handleUserSelection(userElement, username) {
     if (selectedUserElement) {
         // Unselect the previously selected user
@@ -176,6 +197,7 @@ function handleUserSelection(userElement, username) {
     document.getElementById('confirm_button_id').style.display = 'block'; // Show the confirm button
 }
 
+
 // Function to parse the users string into an array of user objects
 function parseUsersString(usersStr) {
     return usersStr.split(', ').map(entry => {
@@ -184,13 +206,12 @@ function parseUsersString(usersStr) {
     });
 }
 
-// Main function to display users
 function displayUsers(usersStr) {
     const votesDiv = document.getElementById('votes_content_id');
     votesDiv.innerHTML = ''; // Clear existing content
 
     selectedUser = null; // Reset the selected user
-    selectedUserElement = null; // Variable to keep track of the currently selected user
+    selectedUserElement = null; // Reset the selected user element
 
     const usersArray = parseUsersString(usersStr);
 
@@ -203,8 +224,8 @@ function displayUsers(usersStr) {
         const userElement = createUserElement(userObj);
         votesDiv.appendChild(userElement);
     });
-}
 
+}
 
 function confirmSelection() {
     if (selectedUser) {
@@ -219,7 +240,10 @@ function confirmSelection() {
 
         // Return the selected user
         console.log('Selected user:', selectedUser);
-        // You can add any additional logic here, like sending the selected user to the server
+        // send to server the selected user by the wolf
+        message = writeByProtocol("Kill By Wolf", selectedUser);
+        socket.emit('client_event', {data: message});
+        document.getElementById('votes_id').textContent = 'הצבעות';
         return selectedUser;
     } else {
         console.error('No user selected');
@@ -232,7 +256,7 @@ function updateUiState(state){
 }
 
 function wolf_kill_time(users){
-    displayUsers(users)
+     displayUsers(users)
 }
 
 function writeByProtocol(state, content) {
@@ -283,7 +307,8 @@ function chatInputDisplay(){
     const chatInput = document.getElementById('chat_input_id');
     if (chatInput.style.display === 'block') {
         chatInput.style.display = 'none'; // Change display from 'block' to 'none' to hide it
-    } else {
+    }
+    else if (chatInput.style.display === 'none' && alive){
         chatInput.style.display = 'block'; // Change display from 'none' to 'block' to show it
     }
 }

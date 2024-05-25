@@ -46,7 +46,7 @@ class User:
 
 
 class Game:
-    MAX_USERS = 5
+    MAX_USERS = 3
 
     def __init__(self):
         self.users_list = []
@@ -157,6 +157,21 @@ def handle_client_event(data):
                 message = write_by_protocol("broadcast", "It is Night")
                 emit('server_event', {'message': message}, broadcast=True)
                 wolf_kill_time()
+    if protocol_versioned_data[0] == "Kill By Wolf":
+        game.kill_user(protocol_versioned_data[3])
+        killed_user = None
+        for user in game.users_list:
+            if user.get_user_id() == protocol_versioned_data[3]:
+                killed_user = user
+        if killed_user:
+            content = write_by_protocol(killed_user.get_user_id(), "you have been killed")
+            emit_to_user(killed_user, content)
+        game.set_state("Day")
+        emit('server_event', {'message': write_by_protocol("broadcast", "It is Day")}, broadcast=True)
+
+        logging.debug(f"User killed by wolf: {protocol_versioned_data[3]}")
+        message = write_by_protocol("הודעת מערכת", f"הזאב רצח בלילה את {protocol_versioned_data[3]}")
+        emit('server_event', {'message': message}, broadcast=True)
 
 
 def handle_registrations(data_in_list):
