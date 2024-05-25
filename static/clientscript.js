@@ -2,7 +2,7 @@ var socket;
 var user;
 var amIWolf = false;
 
-const timerDuration = 20000; // Timer duration in milliseconds (5000ms = 5 seconds)
+const timerDuration = 5000; // Timer duration in milliseconds (5000ms = 5 seconds)
 const timerEventName = 'timerCompleted';
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
         if (protocolVersionedData[0] == "start game"){
             if (protocolVersionedData[3] == "the game begins"){
+                updateUiState("מצב: יום")
                 if (amIWolf == false){
                     humanTitleDisplay(user + ", אתה בן אדם");
                 }
@@ -48,7 +49,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
             handleReceivingMessages(protocolVersionedData[1], protocolVersionedData[3])
         }
         if (protocolVersionedData[0] == "Night"){
-            handleReceivingMessages(protocolVersionedData[1], protocolVersionedData[3])
+            if (!amIWolf){
+                updateUiState("מצב: לילה")
+            }
+            if (amIWolf){
+                updateUiState("מצב: לילה, זמן להרוג")
+                if (protocolVersionedData[3] != "It is Night"){
+                    wolf_kill_time(protocolVersionedData[3])
+                }
+            }
         }
     });
 });
@@ -132,37 +141,70 @@ function restartTimer() {
 
 let selectedUser = null; // Variable to keep track of the currently selected user
 
-function displayUsers(users) {
+// Function to create a user element
+function createUserElement(userObj) {
+    const userElement = document.createElement("p");
+    userElement.textContent = userObj.username;
+    userElement.classList.add('user-item');
+
+    if (userObj.isAlive) {
+        userElement.addEventListener('click', () => handleUserSelection(userElement, userObj.username));
+    } else {
+        userElement.style.pointerEvents = 'none'; // Disable click events
+        userElement.style.backgroundColor = 'darkgray'; // Set background color to dark gray
+    }
+
+    return userElement;
+}
+
+// Function to handle user selection
+function handleUserSelection(userElement, username) {
+    if (selectedUserElement) {
+        // Unselect the previously selected user
+        selectedUserElement.classList.remove('selected');
+        selectedUserElement.style.backgroundColor = ''; // Remove background color
+    }
+
+    // Select the new user
+    userElement.classList.add('selected');
+    userElement.style.backgroundColor = 'lightblue'; // Change background color to light blue
+
+    // Update the reference to the currently selected user
+    selectedUserElement = userElement;
+    selectedUser = username; // Update the selected user
+
+    document.getElementById('confirm_button_id').style.display = 'block'; // Show the confirm button
+}
+
+// Function to parse the users string into an array of user objects
+function parseUsersString(usersStr) {
+    return usersStr.split(', ').map(entry => {
+        const [username, isAlive] = entry.split(':');
+        return { username, isAlive: isAlive === 'True' };
+    });
+}
+
+// Main function to display users
+function displayUsers(usersStr) {
     const votesDiv = document.getElementById('votes_content_id');
     votesDiv.innerHTML = ''; // Clear existing content
 
     selectedUser = null; // Reset the selected user
-    let selectedUserElement = null; // Variable to keep track of the currently selected user
+    selectedUserElement = null; // Variable to keep track of the currently selected user
 
-    users.forEach(user => {
-        const userElement = document.createElement("p");
-        userElement.textContent = user;
-        userElement.classList.add('user-item');
+    const usersArray = parseUsersString(usersStr);
 
-        // Add click event listener to handle selection
-        userElement.addEventListener('click', () => {
-            if (selectedUserElement) {
-                // Unselect the previously selected user
-                selectedUserElement.classList.remove('selected');
-                selectedUserElement.style.backgroundColor = ''; // Remove background color
-            }
-            // Select the new user
-            userElement.classList.add('selected');
-            userElement.style.backgroundColor = 'lightblue'; // Change background color to light blue
-            // Update the reference to the currently selected user
-            selectedUserElement = userElement;
-            selectedUser = user; // Update the selected user
-            document.getElementById('confirm_button_id').style.display = 'block'; // Show the confirm button
-        });
+    usersArray.forEach(userObj => {
+        // Skip the current user
+        if (userObj.username === user) {
+            return;
+        }
 
+        const userElement = createUserElement(userObj);
         votesDiv.appendChild(userElement);
     });
 }
+
 
 function confirmSelection() {
     if (selectedUser) {
@@ -183,6 +225,14 @@ function confirmSelection() {
         console.error('No user selected');
         return null;
     }
+}
+
+function updateUiState(state){
+    document.getElementById('state_id').textContent = state;
+}
+
+function wolf_kill_time(users){
+    displayUsers(users)
 }
 
 function writeByProtocol(state, content) {

@@ -46,7 +46,7 @@ class User:
 
 
 class Game:
-    MAX_USERS = 2
+    MAX_USERS = 5
 
     def __init__(self):
         self.users_list = []
@@ -84,7 +84,11 @@ class Game:
         return self.user_count
 
     def get_users_list(self):
-        return self.users_list
+        return [{"username": user.get_user_id(), "is_alive": user.is_alive} for user in self.users_list]
+
+    def get_users_list_str(self):
+        users_list = self.get_users_list()
+        return ", ".join([f"{user['username']}:{user['is_alive']}" for user in users_list])
 
     def set_user_state(self, username, state):
         for user in self.users_list:
@@ -152,6 +156,7 @@ def handle_client_event(data):
             if game.get_state() == "Night":
                 message = write_by_protocol("broadcast", "It is Night")
                 emit('server_event', {'message': message}, broadcast=True)
+                wolf_kill_time()
 
 
 def handle_registrations(data_in_list):
@@ -194,6 +199,12 @@ def set_wolf_stage():
     wolf = game.get_wolf()
     message = write_by_protocol(wolf.get_user_id(), "you are the wolf")
     emit_to_user(wolf, message)
+
+
+def wolf_kill_time():
+    users_list = game.get_users_list_str()
+    message = write_by_protocol(game.get_wolf().get_user_id(), users_list)
+    emit_to_user(game.get_wolf(), message)
 
 
 def handle_chat_messages(protocol_versioned_data):
