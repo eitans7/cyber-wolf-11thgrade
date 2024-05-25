@@ -17,18 +17,28 @@ class User:
         self.session_id = session_id  # Store the session ID when the user connects
         self.user_type = "human"  # Could be 'human', 'wolf'.
         self.is_alive = is_alive  # Active/Inactive status
+        self.user_state = "registered"
 
     def set_user_type(self, user_type):
         self.user_type = user_type
 
-    def set_alive(self, is_alive):
-        self.is_alive = is_alive  # Update the user's active status
+    def kill(self):
+        self.is_alive = False  # Update the user's active status
+
+    def is_alive(self):
+        return self.is_alive
 
     def get_user_id(self):
         return self.user_id
 
     def get_session_id(self):
         return self.session_id
+
+    def get_user_state(self):
+        return self.user_state
+
+    def set_user_state(self, user_state):
+        self.user_state = user_state
 
     def __str__(self):
         # Returns a string representation of the user
@@ -43,6 +53,7 @@ class Game:
         self.user_count = 0
         self.state = "registration"
         self.wolf = None
+        self.alive_user_count = 0
 
     def add_user(self, new_username, sid):
         if self.state == "registration":
@@ -50,11 +61,14 @@ class Game:
                 current_user = User(new_username, sid)
                 self.users_list.append(current_user)
                 self.user_count += 1
+                self.alive_user_count += 1
                 return True
         return False
 
     def set_state(self, state):
         self.state = state
+        for user in self.users_list:
+            user.set_user_state(state)
 
     def get_state(self):
         return self.state
@@ -71,6 +85,23 @@ class Game:
 
     def get_users_list(self):
         return self.users_list
+
+    def set_user_state(self, username, state):
+        for user in self.users_list:
+            if user.get_user_id() == username:
+                user.set_user_state(state)
+        counter = 0
+        for user in self.users_list:
+            if user.get_user_state() == state and user.is_alive:
+                counter += 1
+        if counter == game.alive_user_count:
+            game.set_state(state)
+
+    def kill_user(self, username):
+        for user in self.users_list:
+            if user.get_user_id() == username:
+                user.kill()
+                self.alive_user_count -= 1
 
     def __str__(self):
         # Creating a string that describes the game state
@@ -115,6 +146,12 @@ def handle_client_event(data):
         handle_registrations(protocol_versioned_data)
     if protocol_versioned_data[0] == "send message":
         handle_chat_messages(protocol_versioned_data)
+    if protocol_versioned_data[0] == "Change State":
+        if protocol_versioned_data[3] == "Day Is Over":
+            day_is_over(protocol_versioned_data[1])
+            if game.get_state() == "Night":
+                message = write_by_protocol("broadcast", "It is Night")
+                emit('server_event', {'message': message}, broadcast=True)
 
 
 def handle_registrations(data_in_list):
@@ -137,7 +174,11 @@ def start_game():
     game.set_state("start game")
     message = write_by_protocol("broadcast", "the game begins")
     emit('server_event', {'message': message}, broadcast=True)
-    game.set_state("day")
+    game.set_state("Day")
+
+
+def day_is_over(username):
+    game.set_user_state(username, "Night")
 
 
 def emit_to_user(user, message):

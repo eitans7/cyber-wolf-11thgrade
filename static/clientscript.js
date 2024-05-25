@@ -2,7 +2,7 @@ var socket;
 var user;
 var amIWolf = false;
 
-const timerDuration = 5000; // Timer duration in milliseconds (5000ms = 5 seconds)
+const timerDuration = 20000; // Timer duration in milliseconds (5000ms = 5 seconds)
 const timerEventName = 'timerCompleted';
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -40,9 +40,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 }
                 chatInputDisplay();
                 startTimer(timerDuration, timerEventName);
+//            const users = ['User1', 'User2', 'User3'];
+//            displayUsers(users);
             }
         }
-        if (protocolVersionedData[0] == "day"){
+        if (protocolVersionedData[0] == "Day"){
+            handleReceivingMessages(protocolVersionedData[1], protocolVersionedData[3])
+        }
+        if (protocolVersionedData[0] == "Night"){
             handleReceivingMessages(protocolVersionedData[1], protocolVersionedData[3])
         }
     });
@@ -107,9 +112,7 @@ function startTimer(duration, eventName) {
             clearInterval(interval);
             document.dispatchEvent(event);
             document.getElementById('time_id').textContent = 'נגמר הזמן!';
-            chatInputDisplay();
-            const users = ['User1', 'User2', 'User3'];
-            displayUsers(users);
+            timeIsOver()
 
         } else {
             document.getElementById('time_id').textContent = `זמן שנותר: ${Math.ceil(remainingTime / 1000)} שניות`;
@@ -117,11 +120,11 @@ function startTimer(duration, eventName) {
     }, 1000);
 }
 
-// Example usage
-// Add an event listener for the custom event
-//document.addEventListener(timerEventName, () => {
-//    console.log('Timer is over! Event has been triggered.');
-//});
+function timeIsOver(){
+    chatInputDisplay();
+    message = writeByProtocol('Change State', "Day Is Over")
+    socket.emit('client_event', {data: message});
+}
 
 function restartTimer() {
     startTimer(timerDuration, timerEventName);
