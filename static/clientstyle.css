@@ -75,6 +75,12 @@ body, html {
     overflow-y: auto; /* For scrollable content */
     color: #FFF; /* Text color */
 }
+
+.system-message {
+    font-weight: bold;
+    color: yellow;
+}
+
 .chat_input_class {
     display: flex;
 }

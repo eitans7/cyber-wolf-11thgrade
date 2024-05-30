@@ -4,6 +4,7 @@ from flask_socketio import SocketIO, emit
 import random
 import logging
 import os
+from collections import Counter
 
 LOG_FORMAT = '%(levelname)s | %(asctime)s | %(message)s'
 LOG_LEVEL = logging.DEBUG
@@ -46,7 +47,7 @@ class User:
 
 
 class Game:
-    MAX_USERS = 3
+    MAX_USERS = 5
 
     def __init__(self):
         self.users_list = []
@@ -54,6 +55,7 @@ class Game:
         self.state = "registration"
         self.wolf = None
         self.alive_user_count = 0
+        self.votes = []
 
     def add_user(self, new_username, sid):
         if self.state == "registration":
@@ -126,6 +128,11 @@ def index():
     return render_template('client.html')  # Assumes an 'index.html' in the templates folder
 
 
+@app.route('/docs')
+def docs():
+    return render_template('documentation.html')
+
+
 @socketio.on('connect')
 def handle_connect():
     session_id = request.sid  # the warnning is an issue in the IDE
@@ -137,11 +144,26 @@ def handle_connect():
 
 @socketio.on('disconnect')
 def handle_disconnect():
-    print('Client disconnected')
+    sid = request.sid  # Get the session ID of the disconnected client
+    print(f'Client disconnected: {sid}')
+    username = ''
+    # Locate the user by session ID and mark them as dead
+    for user in game.users_list:
+        if user.get_session_id() == sid:
+            username = user.get_user_id()
+            game.kill_user(username)
+            print(f'User {user.get_user_id()} has been killed due to disconnection.')
+            break
+
+    message = write_by_protocol("הודעת מערכת", f"המשתמש {username} פרש מהמשחק.")
+    emit('server_event', {'message': message}, broadcast=True)
 
 
 @socketio.on('client_event')
 def handle_client_event(data):
+    if game.get_state() == "GameOver":
+        logging.debug("Game is over, stopping execution")
+        return
     message = data['data']
     protocol_versioned_data = read_by_protocol(message)
     logging.debug(f"Received From Client: {protocol_versioned_data}")
@@ -152,11 +174,19 @@ def handle_client_event(data):
         handle_chat_messages(protocol_versioned_data)
     if protocol_versioned_data[0] == "Change State":
         if protocol_versioned_data[3] == "Day Is Over":
-            day_is_over(protocol_versioned_data[1])
-            if game.get_state() == "Night":
-                message = write_by_protocol("broadcast", "It is Night")
-                emit('server_event', {'message': message}, broadcast=True)
-                wolf_kill_time()
+            if game.alive_user_count == game.MAX_USERS:
+                day_is_over(protocol_versioned_data[1])
+                if game.get_state() == "Night":
+                    message = write_by_protocol("broadcast", "It is Night")
+                    emit('server_event', {'message': message}, broadcast=True)
+                    wolf_kill_time()
+            else:
+                vote_state(protocol_versioned_data[1])
+                if game.get_state() == "Vote":
+                    message = write_by_protocol("broadcast", "Vote Time")
+                    emit('server_event', {'message': message}, broadcast=True)
+                    vote_time()
+
     if protocol_versioned_data[0] == "Kill By Wolf":
         game.kill_user(protocol_versioned_data[3])
         killed_user = None
@@ -167,11 +197,59 @@ def handle_client_event(data):
             content = write_by_protocol(killed_user.get_user_id(), "you have been killed")
             emit_to_user(killed_user, content)
         game.set_state("Day")
-        emit('server_event', {'message': write_by_protocol("broadcast", "It is Day")}, broadcast=True)
+        emit('server_event', {'message': write_by_protocol("broadcast",
+                                                           "It is Day")}, broadcast=True)
 
         logging.debug(f"User killed by wolf: {protocol_versioned_data[3]}")
         message = write_by_protocol("הודעת מערכת", f"הזאב רצח בלילה את {protocol_versioned_data[3]}")
         emit('server_event', {'message': message}, broadcast=True)
+        # check if wolf won
+        if game.alive_user_count == 2:
+            message = write_by_protocol("הודעת מערכת", f"הזאב ניצח. הזאב היה: {game.get_wolf().get_user_id()}")
+            emit('server_event', {'message': message}, broadcast=True)
+
+    if protocol_versioned_data[0] == "Voted To":
+        game.votes.append(protocol_versioned_data[3])
+        if len(game.votes) == game.alive_user_count:
+            counter = Counter(game.votes)
+            selected_user, appears_count = counter.most_common(1)[0]
+            if appears_count > game.alive_user_count/2:
+                game.kill_user(selected_user)
+                content = write_by_protocol(selected_user, "you have been eliminated")
+                selected_user_obj = None
+                for user in game.users_list:
+                    if user.get_user_id() == selected_user:
+                        selected_user_obj = user
+                emit_to_user(selected_user_obj, content)
+                # game.set_state("Day")
+                if game.get_wolf() == selected_user_obj:
+                    message = write_by_protocol("הודעת מערכת",
+                                                f"כל הכבוד, הקבוצה ניצחה והדיחה את הזאב : {selected_user}")
+                    emit('server_event', {'message': message}, broadcast=True)
+                    game.set_state("GameOver")
+                else:
+                    message = write_by_protocol("הודעת מערכת",
+                                                f"הקבוצה הדיחה בן אדם, המודח הוא : {selected_user}")
+                    emit('server_event', {'message': message}, broadcast=True)
+                    game.votes = []
+                    game.set_state("Night")
+                    if game.alive_user_count > 2:
+                        message = write_by_protocol("broadcast", "It is Night")
+                        emit('server_event', {'message': message}, broadcast=True)
+                        wolf_kill_time()
+                    if game.alive_user_count == 2:
+                        message = write_by_protocol("הודעת מערכת",
+                                                    f"הזאב ניצח. הזאב היה: {game.get_wolf().get_user_id()}")
+                        emit('server_event', {'message': message}, broadcast=True)
+                        game.set_state("GameOver")
+            else:
+                message = write_by_protocol("הודעת מערכת", f"הקבוצה לא הגיעה להסכמה על מועמד להדחה.")
+                emit('server_event', {'message': message}, broadcast=True)
+                game.votes = []
+                game.set_state("Night")
+                message = write_by_protocol("broadcast", "It is Night")
+                emit('server_event', {'message': message}, broadcast=True)
+                wolf_kill_time()
 
 
 def handle_registrations(data_in_list):
@@ -201,6 +279,10 @@ def day_is_over(username):
     game.set_user_state(username, "Night")
 
 
+def vote_state(username):
+    game.set_user_state(username, "Vote")
+
+
 def emit_to_user(user, message):
     if user:
         emit('server_event', {'message': message}, to=user.get_session_id())
@@ -220,6 +302,12 @@ def wolf_kill_time():
     users_list = game.get_users_list_str()
     message = write_by_protocol(game.get_wolf().get_user_id(), users_list)
     emit_to_user(game.get_wolf(), message)
+
+
+def vote_time():
+    users_list = game.get_users_list_str()
+    message = write_by_protocol("broadcast", users_list)
+    emit('server_event', {'message': message}, broadcast=True)
 
 
 def handle_chat_messages(protocol_versioned_data):

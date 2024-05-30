@@ -1,9 +1,9 @@
 var socket;
 var user;
 var amIWolf = false;
-var alive = true
+var alive = true;
 
-const timerDuration = 15000; // Timer duration in milliseconds (5000ms = 5 seconds)
+const timerDuration = 5000; // Timer duration in milliseconds (5000ms = 5 seconds)
 const timerEventName = 'timerCompleted';
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -42,15 +42,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 }
                 chatInputDisplay();
                 startTimer(timerDuration, timerEventName);
-//            const users = ['User1', 'User2', 'User3'];
-//            displayUsers(users);
             }
         }
-        if (protocolVersionedData[0] == "Day"){
+        if (protocolVersionedData[0] == "Day" || protocolVersionedData[1] == "הודעת מערכת"){
             if (protocolVersionedData[3] == "It is Day"){
                 chatInputDisplay();
                 updateUiState("מצב: יום")
                 restartTimer()
+            }
+            else if (protocolVersionedData[3].includes("כל הכבוד")){
+                humansWon()
+            }
+            else if (protocolVersionedData[3].includes("wolf had won")){
+                wolfWon()
             }
             else{
                 handleReceivingMessages(protocolVersionedData[1], protocolVersionedData[3])
@@ -60,7 +64,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             if (!amIWolf){
                 updateUiState("מצב: לילה")
                 if (protocolVersionedData[3] == "you have been killed"){
-                    alive = false
+                    console.log("killed by wolf set alive to false")
+                    alive = false;
                     humanTitleDisplay(user + ", הזאב הרג אותך");
                 }
             }
@@ -69,6 +74,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 if (protocolVersionedData[3] != "It is Night"){
                     wolf_kill_time(protocolVersionedData[3])
                 }
+            }
+        }
+        if (protocolVersionedData[0] == "Vote"){
+            if (protocolVersionedData[3] == "Vote Time"){
+                updateUiState("מצב: הצבעה")
+                handleReceivingMessages("הודעת מערכת", "הצביעו למי שאתם חושבים שהוא הזאב.")
+            }
+            else if(alive && protocolVersionedData[1] != "הודעת מערכת" &&  protocolVersionedData[3] != "you have been eliminated" ){
+                vote_time(protocolVersionedData[3])
+            }
+            if ( protocolVersionedData[3] == "you have been eliminated"){
+                humanTitleDisplay(user + ", הודחת בהצבעת הקבוצה");
+                console.log("killed by group. set alive to false")
+                alive = false;
             }
         }
     });
@@ -113,14 +132,29 @@ function handleReceivingMessages(username, message){
     displayMessage(username, message)
 }
 
-function displayMessage(username, message){
-    if (document.getElementById('chat_box_id').textContent.trim() == "כאן יופיעו הודעות"){
+// function displayMessage(username, message){
+//     if (document.getElementById('chat_box_id').textContent.trim() == "כאן יופיעו הודעות"){
+//         document.getElementById('chat_box_id').textContent = '';
+//     }
+//     const messageElement = document.createElement("p");
+//     messageElement.textContent = `${username}: ${message}`;
+//     document.getElementById("chat_box_id").appendChild(messageElement);
+// }
+
+function displayMessage(username, message) {
+    if (document.getElementById('chat_box_id').textContent.trim() == "כאן יופיעו הודעות") {
         document.getElementById('chat_box_id').textContent = '';
     }
     const messageElement = document.createElement("p");
-    messageElement.textContent = `${username}: ${message}`;
+    if (username.includes("הודעת מערכת")) {
+        messageElement.classList.add("system-message");
+        messageElement.textContent = `${username}: ${message}`;
+    } else {
+        messageElement.textContent = `${username}: ${message}`;
+    }
     document.getElementById("chat_box_id").appendChild(messageElement);
 }
+
 
 // Define the timer function
 function startTimer(duration, eventName) {
@@ -142,9 +176,11 @@ function startTimer(duration, eventName) {
 }
 
 function timeIsOver(){
-    chatInputDisplay();
-    message = writeByProtocol('Change State', "Day Is Over")
-    socket.emit('client_event', {data: message});
+    if (alive){
+        chatInputDisplay();
+        message = writeByProtocol('Change State', "Day Is Over")
+        socket.emit('client_event', {data: message});
+    }
 }
 
 function restartTimer() {
@@ -206,9 +242,12 @@ function parseUsersString(usersStr) {
     });
 }
 
+
+
 function displayUsers(usersStr) {
-    const votesDiv = document.getElementById('votes_content_id');
-    votesDiv.innerHTML = ''; // Clear existing content
+    let votesDiv = document.getElementById('votes_content_id');
+
+    votesDiv.textContent = ''; // Clear existing content
 
     selectedUser = null; // Reset the selected user
     selectedUserElement = null; // Reset the selected user element
@@ -224,8 +263,8 @@ function displayUsers(usersStr) {
         const userElement = createUserElement(userObj);
         votesDiv.appendChild(userElement);
     });
-
 }
+
 
 function confirmSelection() {
     if (selectedUser) {
@@ -240,14 +279,22 @@ function confirmSelection() {
 
         // Return the selected user
         console.log('Selected user:', selectedUser);
-        // send to server the selected user by the wolf
-        message = writeByProtocol("Kill By Wolf", selectedUser);
-        socket.emit('client_event', {data: message});
-        document.getElementById('votes_id').textContent = 'הצבעות';
-        return selectedUser;
+        if (document.getElementById('state_id').textContent == 'מצב: לילה, זמן להרוג'){
+            // send to server the selected user by the wolf
+            message = writeByProtocol("Kill By Wolf", selectedUser);
+            socket.emit('client_event', {data: message});
+            document.getElementById('votes_content_id').textContent = 'הצבעות';
+        }
+        else{
+            // send to server the selected user by the voter
+            message = writeByProtocol("Voted To", selectedUser);
+            socket.emit('client_event', {data: message});
+            document.getElementById('votes_content_id').textContent = 'הצבעות';
+        }
+        //return selectedUser;
     } else {
         console.error('No user selected');
-        return null;
+        //return null;
     }
 }
 
@@ -257,6 +304,18 @@ function updateUiState(state){
 
 function wolf_kill_time(users){
      displayUsers(users)
+}
+
+function vote_time(users){
+     displayUsers(users)
+}
+
+function humansWon(){
+     handleReceivingMessages("הודעת מערכת", "בני האדם ניצחו")
+}
+
+function wolfWon(){
+     handleReceivingMessages("הודעת מערכת", "הזאב ניצח")
 }
 
 function writeByProtocol(state, content) {
