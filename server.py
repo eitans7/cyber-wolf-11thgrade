@@ -1,4 +1,3 @@
-# server.py
 from flask import Flask, render_template, request
 from flask_socketio import SocketIO, emit
 import random
@@ -15,16 +14,16 @@ LOG_FILE = LOG_DIR + '/server.log'
 class User:
     def __init__(self, user_id, session_id, is_alive=True):
         self.user_id = user_id
-        self.session_id = session_id  # Store the session ID when the user connects
-        self.user_type = "human"  # Could be 'human', 'wolf'.
-        self.is_alive = is_alive  # Active/Inactive status
+        self.session_id = session_id
+        self.user_type = "human"
+        self.is_alive = is_alive
         self.user_state = "registered"
 
     def set_user_type(self, user_type):
         self.user_type = user_type
 
     def kill(self):
-        self.is_alive = False  # Update the user's active status
+        self.is_alive = False
 
     def is_alive(self):
         return self.is_alive
@@ -42,7 +41,6 @@ class User:
         self.user_state = user_state
 
     def __str__(self):
-        # Returns a string representation of the user
         return f"User ID: {self.user_id}, Type: {self.user_type}, Alive: {self.is_alive}"
 
 
@@ -58,6 +56,7 @@ class Game:
         self.votes = []
 
     def add_user(self, new_username, sid):
+        """Add a new user to the game during the registration phase."""
         if self.state == "registration":
             if not any(user.user_id == new_username for user in self.users_list):
                 current_user = User(new_username, sid)
@@ -68,31 +67,39 @@ class Game:
         return False
 
     def set_state(self, state):
+        """Set the current state of the game."""
         self.state = state
         for user in self.users_list:
             user.set_user_state(state)
 
     def get_state(self):
+        """Get the current state of the game."""
         return self.state
 
     def set_wolf(self):
+        """Randomly select a wolf among the users."""
         rand_index = random.randrange(len(self.users_list))
         self.wolf = self.users_list[rand_index]
 
     def get_wolf(self):
+        """Get the user who is the wolf."""
         return self.wolf
 
     def get_user_count(self):
+        """Get the total number of users in the game."""
         return self.user_count
 
     def get_users_list(self):
+        """Get a list of users with their status."""
         return [{"username": user.get_user_id(), "is_alive": user.is_alive} for user in self.users_list]
 
     def get_users_list_str(self):
+        """Get a string representation of the users list."""
         users_list = self.get_users_list()
         return ", ".join([f"{user['username']}:{user['is_alive']}" for user in users_list])
 
     def set_user_state(self, username, state):
+        """Set the state of a specific user."""
         for user in self.users_list:
             if user.get_user_id() == username:
                 user.set_user_state(state)
@@ -104,16 +111,16 @@ class Game:
             game.set_state(state)
 
     def kill_user(self, username):
+        """Mark a user as dead."""
         for user in self.users_list:
             if user.get_user_id() == username:
                 user.kill()
                 self.alive_user_count -= 1
 
     def __str__(self):
-        # Creating a string that describes the game state
         return (f"Game State: {self.state}, "
                 f"User Count: {self.user_count}, "
-                f"Users: {[user.user_id for user in self.users_list]}, "  # Assumes User objects has a user_id attribute
+                f"Users: {[user.user_id for user in self.users_list]}, "
                 f"Wolf: {self.wolf.user_id if self.wolf else 'No wolf assigned'}")
 
 
@@ -125,17 +132,20 @@ socketio = SocketIO(app)
 
 @app.route('/')
 def index():
-    return render_template('client.html')  # Assumes an 'index.html' in the templates folder
+    """Render the main game page."""
+    return render_template('client.html')
 
 
 @app.route('/docs')
 def docs():
+    """Render the documentation page."""
     return render_template('documentation.html')
 
 
 @socketio.on('connect')
 def handle_connect():
-    session_id = request.sid  # the warnning is an issue in the IDE
+    """Handle a new client connection."""
+    session_id = request.sid
     print('Client connected, session:', session_id)
     message = write_by_protocol("undefined user", 'Welcome, user!')
     logging.debug(f"Sending To Client: {message}")
@@ -144,10 +154,10 @@ def handle_connect():
 
 @socketio.on('disconnect')
 def handle_disconnect():
-    sid = request.sid  # Get the session ID of the disconnected client
+    """Handle a client disconnection."""
+    sid = request.sid
     print(f'Client disconnected: {sid}')
     username = ''
-    # Locate the user by session ID and mark them as dead
     for user in game.users_list:
         if user.get_session_id() == sid:
             username = user.get_user_id()
@@ -161,13 +171,13 @@ def handle_disconnect():
 
 @socketio.on('client_event')
 def handle_client_event(data):
+    """Handle events received from clients."""
     if game.get_state() == "GameOver":
         logging.debug("Game is over, stopping execution")
         return
     message = data['data']
     protocol_versioned_data = read_by_protocol(message)
     logging.debug(f"Received From Client: {protocol_versioned_data}")
-    # sort to functions by data
     if game.get_state() == "GameOver":
         return
     if protocol_versioned_data[0] == "registration request" and game.get_state() == "registration":
@@ -211,7 +221,6 @@ def handle_client_event(data):
         logging.debug(f"User killed by wolf: {protocol_versioned_data[3]}")
         message = write_by_protocol("הודעת מערכת", f"הזאב רצח בלילה את {protocol_versioned_data[3]}")
         emit('server_event', {'message': message}, broadcast=True)
-        # check if wolf won
 
     if protocol_versioned_data[0] == "Voted To":
         game.votes.append(protocol_versioned_data[3])
@@ -226,7 +235,6 @@ def handle_client_event(data):
                     if user.get_user_id() == selected_user:
                         selected_user_obj = user
                 emit_to_user(selected_user_obj, content)
-                # game.set_state("Day")
                 if game.get_wolf() == selected_user_obj:
                     message = write_by_protocol("הודעת מערכת",
                                                 f"כל הכבוד, הקבוצה ניצחה והדיחה את הזאב : {selected_user}")
@@ -259,7 +267,8 @@ def handle_client_event(data):
 
 
 def handle_registrations(data_in_list):
-    session_id = request.sid  # the warnning is an issue in the IDE
+    """Handle user registration requests."""
+    session_id = request.sid
     flag = game.add_user(data_in_list[3], session_id)
     logging.debug(f"Did user manage to connect: {flag}")
     logging.debug(f"Game current overall state: {game}")
@@ -274,6 +283,7 @@ def handle_registrations(data_in_list):
 
 
 def start_game():
+    """Start the game once the maximum number of users have registered."""
     set_wolf_stage()
     game.set_state("start game")
     message = write_by_protocol("broadcast", "the game begins")
@@ -282,14 +292,17 @@ def start_game():
 
 
 def day_is_over(username):
+    """Transition the game state to night after the day is over."""
     game.set_user_state(username, "Night")
 
 
 def vote_state(username):
+    """Transition the game state to vote after the day is over."""
     game.set_user_state(username, "Vote")
 
 
 def emit_to_user(user, message):
+    """Send a message to a specific user."""
     if user:
         emit('server_event', {'message': message}, to=user.get_session_id())
     else:
@@ -297,6 +310,7 @@ def emit_to_user(user, message):
 
 
 def set_wolf_stage():
+    """Select the wolf and notify them."""
     game.set_state("set wolf")
     game.set_wolf()
     wolf = game.get_wolf()
@@ -305,18 +319,21 @@ def set_wolf_stage():
 
 
 def wolf_kill_time():
+    """Send the wolf a list of users to choose from for killing."""
     users_list = game.get_users_list_str()
     message = write_by_protocol(game.get_wolf().get_user_id(), users_list)
     emit_to_user(game.get_wolf(), message)
 
 
 def vote_time():
+    """Announce that it is time for the users to vote."""
     users_list = game.get_users_list_str()
     message = write_by_protocol("broadcast", users_list)
     emit('server_event', {'message': message}, broadcast=True)
 
 
 def handle_chat_messages(protocol_versioned_data):
+    """Handle chat messages from users."""
     message = protocol_versioned_data[3]
     username = protocol_versioned_data[1]
     protocol_versioned_message = write_by_protocol(username, message)
@@ -324,6 +341,7 @@ def handle_chat_messages(protocol_versioned_data):
 
 
 def read_by_protocol(data):
+    """Parse the received data by the protocol."""
     recieved_list = data.split('#$#')
     if recieved_list[2] == str(len(recieved_list[3])):
         return recieved_list
@@ -332,6 +350,7 @@ def read_by_protocol(data):
 
 
 def write_by_protocol(user_id, message):
+    """Format the message according to the protocol."""
     delimiter = '#$#'
     return game.get_state() + delimiter + user_id + delimiter + str(len(message)) + delimiter + message
 

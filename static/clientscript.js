@@ -25,71 +25,67 @@ document.addEventListener('DOMContentLoaded', (event) => {
         let protocolVersionedData = readByProtocol(data); // Define and initialize here
         console.log('Received from server (protocol versioned):', protocolVersionedData);
         console.log('message from server:', protocolVersionedData[3])
-        //sort to functions by data
-        if (protocolVersionedData[0] == "registration"){
+        // Sort to functions by data
+        if (protocolVersionedData[0] == "registration") {
             registrationHandle(protocolVersionedData)
         }
-        if (protocolVersionedData[0] == "set wolf"){
-            if (protocolVersionedData[3] == 'you are the wolf'){
+        if (protocolVersionedData[0] == "set wolf") {
+            if (protocolVersionedData[3] == 'you are the wolf') {
                 amIWolf = true;
                 wolfTitleDisplay(user + ", אתה הוא הזאב");
             }
         }
-        if (protocolVersionedData[0] == "start game"){
-            if (protocolVersionedData[3] == "the game begins"){
+        if (protocolVersionedData[0] == "start game") {
+            if (protocolVersionedData[3] == "the game begins") {
                 updateUiState("מצב: יום")
-                if (amIWolf == false){
+                if (!amIWolf) {
                     humanTitleDisplay(user + ", אתה בן אדם");
                 }
                 chatInputDisplay();
                 startTimer(timerDuration, timerEventName);
             }
         }
-        if (protocolVersionedData[0] == "Day" || protocolVersionedData[1] == "הודעת מערכת"){
-            if (protocolVersionedData[3] == "It is Day"){
+        if (protocolVersionedData[0] == "Day" || protocolVersionedData[1] == "הודעת מערכת") {
+            if (protocolVersionedData[3] == "It is Day") {
                 chatInputDisplay();
                 updateUiState("מצב: יום")
                 restartTimer()
-            }
-            else if (protocolVersionedData[3].includes("כל הכבוד")){
+            } else if (protocolVersionedData[3].includes("כל הכבוד")) {
                 humansWon()
                 IsGameRunning = false;
                 return;
-            }
-            else if (protocolVersionedData[3].includes("wolf had won")){
+            } else if (protocolVersionedData[3].includes("wolf had won")) {
                 wolfWon()
                 IsGameRunning = false;
                 return;
-            }
-            else{
+            } else {
                 handleReceivingMessages(protocolVersionedData[1], protocolVersionedData[3])
             }
         }
-        if (protocolVersionedData[0] == "Night"){
-            if (!amIWolf){
+        if (protocolVersionedData[0] == "Night") {
+            if (!amIWolf) {
                 updateUiState("מצב: לילה")
-                if (protocolVersionedData[3] == "you have been killed"){
+                if (protocolVersionedData[3] == "you have been killed") {
                     console.log("killed by wolf set alive to false")
                     alive = false;
                     humanTitleDisplay(user + ", הזאב הרג אותך");
                 }
             }
-            if (amIWolf){
+            if (amIWolf) {
                 updateUiState("מצב: לילה, זמן להרוג")
-                if (protocolVersionedData[3] != "It is Night"){
+                if (protocolVersionedData[3] != "It is Night") {
                     wolf_kill_time(protocolVersionedData[3])
                 }
             }
         }
-        if (protocolVersionedData[0] == "Vote"){
-            if (protocolVersionedData[3] == "Vote Time"){
+        if (protocolVersionedData[0] == "Vote") {
+            if (protocolVersionedData[3] == "Vote Time") {
                 updateUiState("מצב: הצבעה")
                 handleReceivingMessages("הודעת מערכת", "הצביעו למי שאתם חושבים שהוא הזאב.")
-            }
-            else if(alive && protocolVersionedData[1] != "הודעת מערכת" &&  protocolVersionedData[3] != "you have been eliminated" ){
+            } else if (alive && protocolVersionedData[1] != "הודעת מערכת" && protocolVersionedData[3] != "you have been eliminated") {
                 vote_time(protocolVersionedData[3])
             }
-            if ( protocolVersionedData[3] == "you have been eliminated"){
+            if (protocolVersionedData[3] == "you have been eliminated") {
                 humanTitleDisplay(user + ", הודחת בהצבעת הקבוצה");
                 console.log("killed by group. set alive to false")
                 alive = false;
@@ -98,11 +94,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+/**
+ * Registers a new user to the game.
+ */
 function registerUser() {
     const usernameElement = document.getElementById("input_username_id");
     const username = usernameElement.value.trim();
     if (username) {
-        // Ensure that `socket` is defined before trying to use it
         if (socket) {
             message = writeByProtocol("registration request", username)
             socket.emit('client_event', {data: message});
@@ -113,17 +111,24 @@ function registerUser() {
     }
 }
 
-function registrationHandle(protocolVersionedData){
-    if(protocolVersionedData[3] == "success"){
+/**
+ * Handles user registration response from the server.
+ * @param {Array} protocolVersionedData - The data received from the server.
+ */
+function registrationHandle(protocolVersionedData) {
+    if (protocolVersionedData[3] == "success") {
         user = protocolVersionedData[1]
         welcomeMessageDisplay(user + ", ברוך הבא למשחק");
     }
-    if(protocolVersionedData[3] == "fail, already exists"){
+    if (protocolVersionedData[3] == "fail, already exists") {
         alert("שם המשתמש כבר קיים, אנא הכנס שם חדש");
     }
 }
 
-function sendMessage(){
+/**
+ * Sends a chat message to the server.
+ */
+function sendMessage() {
     const messageInput = document.getElementById("input_message_id");
     const message = messageInput.value.trim();
     if (message) {
@@ -133,14 +138,24 @@ function sendMessage(){
     }
 }
 
-function handleReceivingMessages(username, message){
-    if (message.includes("וניצח")){
+/**
+ * Handles receiving messages from the server and updates the UI.
+ * @param {string} username - The username sending the message.
+ * @param {string} message - The message content.
+ */
+function handleReceivingMessages(username, message) {
+    if (message.includes("וניצח")) {
         IsGameRunning = false;
         document.getElementById('votes_content_id').textContent = "המשחק נגמר, בכדי לאתחל אותו יש להפעיל מחדש את השרת.";
     }
     displayMessage(username, message)
 }
 
+/**
+ * Displays a chat message in the chat box.
+ * @param {string} username - The username sending the message.
+ * @param {string} message - The message content.
+ */
 function displayMessage(username, message) {
     if (document.getElementById('chat_box_id').textContent.trim() == "כאן יופיעו הודעות") {
         document.getElementById('chat_box_id').textContent = '';
@@ -155,10 +170,13 @@ function displayMessage(username, message) {
     document.getElementById("chat_box_id").appendChild(messageElement);
 }
 
-
-// Define the timer function
+/**
+ * Starts a countdown timer for the game.
+ * @param {number} duration - The duration of the timer in milliseconds.
+ * @param {string} eventName - The name of the event to dispatch when the timer completes.
+ */
 function startTimer(duration, eventName) {
-    if (IsGameRunning == false){
+    if (IsGameRunning == false) {
         return;
     }
     const endTime = Date.now() + duration;
@@ -171,25 +189,29 @@ function startTimer(duration, eventName) {
             document.dispatchEvent(event);
             document.getElementById('time_id').textContent = 'נגמר הזמן!';
             timeIsOver()
-
         } else {
             document.getElementById('time_id').textContent = `זמן שנותר: ${Math.ceil(remainingTime / 1000)} שניות`;
         }
     }, 1000);
 }
 
-function timeIsOver(){
-    if (alive){
+/**
+ * Handles the end of the timer and notifies the server.
+ */
+function timeIsOver() {
+    if (alive) {
         chatInputDisplay();
         message = writeByProtocol('Change State', "Day Is Over")
         socket.emit('client_event', {data: message});
     }
 }
 
+/**
+ * Restarts the countdown timer.
+ */
 function restartTimer() {
     startTimer(timerDuration, timerEventName);
 }
-
 
 let selectedUser = null; // Variable to keep track of the currently selected user
 let selectedUserElement = null; // Variable to keep track of the currently selected user element
@@ -207,7 +229,6 @@ function createUserElement(userObj) {
     if (userObj.isAlive) {
         userElement.addEventListener('click', () => handleUserSelection(userElement, userObj.username));
     } else {
-        // Disable the user element if not alive
         userElement.style.pointerEvents = 'none'; // Disable click events
         userElement.style.backgroundColor = 'darkgray'; // Set background color to dark gray
     }
@@ -215,29 +236,31 @@ function createUserElement(userObj) {
     return userElement;
 }
 
-
-
-
+/**
+ * Handles the selection of a user during voting or wolf killing phase.
+ * @param {HTMLElement} userElement - The HTML element representing the user.
+ * @param {string} username - The username of the selected user.
+ */
 function handleUserSelection(userElement, username) {
     if (selectedUserElement) {
-        // Unselect the previously selected user
         selectedUserElement.classList.remove('selected');
         selectedUserElement.style.backgroundColor = ''; // Remove background color
     }
 
-    // Select the new user
     userElement.classList.add('selected');
     userElement.style.backgroundColor = 'lightblue'; // Change background color to light blue
 
-    // Update the reference to the currently selected user
     selectedUserElement = userElement;
     selectedUser = username; // Update the selected user
 
     document.getElementById('confirm_button_id').style.display = 'block'; // Show the confirm button
 }
 
-
-// Function to parse the users string into an array of user objects
+/**
+ * Parses the users string into an array of user objects.
+ * @param {string} usersStr - The string containing user information.
+ * @returns {Array} The array of user objects.
+ */
 function parseUsersString(usersStr) {
     return usersStr.split(', ').map(entry => {
         const [username, isAlive] = entry.split(':');
@@ -245,10 +268,12 @@ function parseUsersString(usersStr) {
     });
 }
 
-
-
+/**
+ * Displays the list of users for voting or wolf killing.
+ * @param {string} usersStr - The string containing user information.
+ */
 function displayUsers(usersStr) {
-    if (IsGameRunning == false){
+    if (IsGameRunning == false) {
         return;
     }
     let votesDiv = document.getElementById('votes_content_id');
@@ -261,7 +286,6 @@ function displayUsers(usersStr) {
     const usersArray = parseUsersString(usersStr);
 
     usersArray.forEach(userObj => {
-        // Skip the current user
         if (userObj.username === user) {
             return;
         }
@@ -271,67 +295,89 @@ function displayUsers(usersStr) {
     });
 }
 
-
+/**
+ * Confirms the selected user during voting or wolf killing phase.
+ */
 function confirmSelection() {
     if (selectedUser) {
-        // Disable further selection
         const userItems = document.querySelectorAll('.user-item');
         userItems.forEach(item => {
             item.style.pointerEvents = 'none'; // Disable click events
         });
 
-        // Hide the confirm button
         document.getElementById('confirm_button_id').style.display = 'none';
 
-        // Return the selected user
-        console.log('Selected user:', selectedUser);
-        if (document.getElementById('state_id').textContent == 'מצב: לילה, זמן להרוג'){
-            // send to server the selected user by the wolf
+        if (document.getElementById('state_id').textContent == 'מצב: לילה, זמן להרוג') {
             message = writeByProtocol("Kill By Wolf", selectedUser);
             socket.emit('client_event', {data: message});
             document.getElementById('votes_content_id').textContent = 'הצבעות';
-        }
-        else{
-            // send to server the selected user by the voter
+        } else {
             message = writeByProtocol("Voted To", selectedUser);
             socket.emit('client_event', {data: message});
             document.getElementById('votes_content_id').textContent = 'הצבעות';
         }
-        //return selectedUser;
     } else {
         console.error('No user selected');
-        //return null;
     }
 }
 
-function updateUiState(state){
+/**
+ * Updates the UI state with the current game phase.
+ * @param {string} state - The current game state.
+ */
+function updateUiState(state) {
     document.getElementById('state_id').textContent = state;
 }
 
-function wolf_kill_time(users){
-     displayUsers(users)
+/**
+ * Handles the wolf's turn to select a user to kill.
+ * @param {string} users - The string containing user information.
+ */
+function wolf_kill_time(users) {
+    displayUsers(users)
 }
 
-function vote_time(users){
-    if (IsGameRunning == false){
+/**
+ * Handles the voting phase to select a user to eliminate.
+ * @param {string} users - The string containing user information.
+ */
+function vote_time(users) {
+    if (IsGameRunning == false) {
         return;
     }
-     displayUsers(users)
+    displayUsers(users)
 }
 
-function humansWon(){
-     handleReceivingMessages("הודעת מערכת", "בני האדם ניצחו")
+/**
+ * Displays a message indicating that humans have won.
+ */
+function humansWon() {
+    handleReceivingMessages("הודעת מערכת", "בני האדם ניצחו")
 }
 
-function wolfWon(){
-     handleReceivingMessages("הודעת מערכת", "הזאב ניצח")
+/**
+ * Displays a message indicating that the wolf has won.
+ */
+function wolfWon() {
+    handleReceivingMessages("הודעת מערכת", "הזאב ניצח")
 }
 
+/**
+ * Formats a message according to the protocol.
+ * @param {string} state - The current game state.
+ * @param {string} content - The message content.
+ * @returns {string} The formatted message.
+ */
 function writeByProtocol(state, content) {
     const delimiter = '#$#';
     return state + delimiter + user + delimiter + content.length + delimiter + content;
 }
 
+/**
+ * Parses a message according to the protocol.
+ * @param {Object} data - The data received from the server.
+ * @returns {Array} The parsed message.
+ */
 function readByProtocol(data) {
     const delimiter = '#$#';
     message = data.message
@@ -340,13 +386,17 @@ function readByProtocol(data) {
         return []; // Return an empty array if the input isn't a string
     }
     data = message.split(delimiter);
-    if (data[2] == String(data[3].length)){
+    if (data[2] == String(data[3].length)) {
         return data;
     } else {
         return ["error in data delivery"];
     }
 }
 
+/**
+ * Displays a welcome message to the user.
+ * @param {string} content - The welcome message content.
+ */
 function welcomeMessageDisplay(content) {
     var welcomeMessage = document.getElementById('welcome_message_id');
     var userTitle = document.getElementById('user_title_id')
@@ -355,6 +405,10 @@ function welcomeMessageDisplay(content) {
     welcomeMessage.textContent = content;
 }
 
+/**
+ * Displays a message indicating that the user is the wolf.
+ * @param {string} content - The message content.
+ */
 function wolfTitleDisplay(content) {
     var wolfTitle = document.getElementById('wolf_title_id');
     var welcomeMessage = document.getElementById('welcome_message_id')
@@ -363,6 +417,10 @@ function wolfTitleDisplay(content) {
     wolfTitle.textContent = content;
 }
 
+/**
+ * Displays a message indicating that the user is a human.
+ * @param {string} content - The message content.
+ */
 function humanTitleDisplay(content) {
     var humanTitle = document.getElementById('human_title_id');
     var welcomeMessage = document.getElementById('welcome_message_id')
@@ -371,15 +429,17 @@ function humanTitleDisplay(content) {
     humanTitle.textContent = content;
 }
 
-function chatInputDisplay(){
-    if (IsGameRunning == false){
+/**
+ * Toggles the display of the chat input based on the game state and user status.
+ */
+function chatInputDisplay() {
+    if (IsGameRunning == false) {
         return;
     }
     const chatInput = document.getElementById('chat_input_id');
     if (chatInput.style.display === 'block') {
         chatInput.style.display = 'none'; // Change display from 'block' to 'none' to hide it
-    }
-    else if (chatInput.style.display === 'none' && alive){
+    } else if (chatInput.style.display === 'none' && alive) {
         chatInput.style.display = 'block'; // Change display from 'none' to 'block' to show it
     }
 }
