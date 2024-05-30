@@ -2,6 +2,7 @@ var socket;
 var user;
 var amIWolf = false;
 var alive = true;
+IsGameRunning = true;
 
 const timerDuration = 5000; // Timer duration in milliseconds (5000ms = 5 seconds)
 const timerEventName = 'timerCompleted';
@@ -52,9 +53,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
             else if (protocolVersionedData[3].includes("כל הכבוד")){
                 humansWon()
+                IsGameRunning = false;
+                return;
             }
             else if (protocolVersionedData[3].includes("wolf had won")){
                 wolfWon()
+                IsGameRunning = false;
+                return;
             }
             else{
                 handleReceivingMessages(protocolVersionedData[1], protocolVersionedData[3])
@@ -129,17 +134,12 @@ function sendMessage(){
 }
 
 function handleReceivingMessages(username, message){
+    if (message.includes("וניצח")){
+        IsGameRunning = false;
+        document.getElementById('votes_content_id').textContent = "המשחק נגמר, בכדי לאתחל אותו יש להפעיל מחדש את השרת.";
+    }
     displayMessage(username, message)
 }
-
-// function displayMessage(username, message){
-//     if (document.getElementById('chat_box_id').textContent.trim() == "כאן יופיעו הודעות"){
-//         document.getElementById('chat_box_id').textContent = '';
-//     }
-//     const messageElement = document.createElement("p");
-//     messageElement.textContent = `${username}: ${message}`;
-//     document.getElementById("chat_box_id").appendChild(messageElement);
-// }
 
 function displayMessage(username, message) {
     if (document.getElementById('chat_box_id').textContent.trim() == "כאן יופיעו הודעות") {
@@ -158,6 +158,9 @@ function displayMessage(username, message) {
 
 // Define the timer function
 function startTimer(duration, eventName) {
+    if (IsGameRunning == false){
+        return;
+    }
     const endTime = Date.now() + duration;
     const event = new Event(eventName);
 
@@ -245,6 +248,9 @@ function parseUsersString(usersStr) {
 
 
 function displayUsers(usersStr) {
+    if (IsGameRunning == false){
+        return;
+    }
     let votesDiv = document.getElementById('votes_content_id');
 
     votesDiv.textContent = ''; // Clear existing content
@@ -307,6 +313,9 @@ function wolf_kill_time(users){
 }
 
 function vote_time(users){
+    if (IsGameRunning == false){
+        return;
+    }
      displayUsers(users)
 }
 
@@ -363,6 +372,9 @@ function humanTitleDisplay(content) {
 }
 
 function chatInputDisplay(){
+    if (IsGameRunning == false){
+        return;
+    }
     const chatInput = document.getElementById('chat_input_id');
     if (chatInput.style.display === 'block') {
         chatInput.style.display = 'none'; // Change display from 'block' to 'none' to hide it
@@ -371,4 +383,3 @@ function chatInputDisplay(){
         chatInput.style.display = 'block'; // Change display from 'none' to 'block' to show it
     }
 }
-

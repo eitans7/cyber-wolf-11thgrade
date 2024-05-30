@@ -168,6 +168,8 @@ def handle_client_event(data):
     protocol_versioned_data = read_by_protocol(message)
     logging.debug(f"Received From Client: {protocol_versioned_data}")
     # sort to functions by data
+    if game.get_state() == "GameOver":
+        return
     if protocol_versioned_data[0] == "registration request" and game.get_state() == "registration":
         handle_registrations(protocol_versioned_data)
     if protocol_versioned_data[0] == "send message":
@@ -196,6 +198,12 @@ def handle_client_event(data):
         if killed_user:
             content = write_by_protocol(killed_user.get_user_id(), "you have been killed")
             emit_to_user(killed_user, content)
+        if game.alive_user_count == 2:
+            message = write_by_protocol("הודעת מערכת",
+                                        f"הזאב רצח בלילה את {protocol_versioned_data[3]} וניצח. הזאב היה: {game.get_wolf().get_user_id()}")
+            emit('server_event', {'message': message}, broadcast=True)
+            game.set_state("GameOver")
+            return
         game.set_state("Day")
         emit('server_event', {'message': write_by_protocol("broadcast",
                                                            "It is Day")}, broadcast=True)
@@ -204,9 +212,6 @@ def handle_client_event(data):
         message = write_by_protocol("הודעת מערכת", f"הזאב רצח בלילה את {protocol_versioned_data[3]}")
         emit('server_event', {'message': message}, broadcast=True)
         # check if wolf won
-        if game.alive_user_count == 2:
-            message = write_by_protocol("הודעת מערכת", f"הזאב ניצח. הזאב היה: {game.get_wolf().get_user_id()}")
-            emit('server_event', {'message': message}, broadcast=True)
 
     if protocol_versioned_data[0] == "Voted To":
         game.votes.append(protocol_versioned_data[3])
@@ -242,6 +247,7 @@ def handle_client_event(data):
                                                     f"הזאב ניצח. הזאב היה: {game.get_wolf().get_user_id()}")
                         emit('server_event', {'message': message}, broadcast=True)
                         game.set_state("GameOver")
+                        return
             else:
                 message = write_by_protocol("הודעת מערכת", f"הקבוצה לא הגיעה להסכמה על מועמד להדחה.")
                 emit('server_event', {'message': message}, broadcast=True)
