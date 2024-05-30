@@ -45,7 +45,7 @@ class User:
 
 
 class Game:
-    MAX_USERS = 5
+    MAX_USERS = 8
 
     def __init__(self):
         self.users_list = []
