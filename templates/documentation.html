@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        code {
+            color: #c7254e;
+            background-color: #f9f2f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Game Model</h1>
+    <h2>Assumptions</h2>
+    <ol>
+        <li>There are 8 users initially.</li>
+        <li>One user is randomly chosen as the wolf.</li>
+        <li>During the day, users can chat to discuss and identify the wolf.</li>
+        <li>Each user (including the wolf) votes for another user during the day.</li>
+        <li>During the night, the wolf kills one user.</li>
+    </ol>
+
+    <h2>States</h2>
+    <ul>
+        <li>S<sub>0</sub>: Registration</li>
+        <li>S<sub>1</sub>: Game Start</li>
+        <li>S<sub>2</sub>: Day</li>
+        <li>S<sub>3</sub>: Voting</li>
+        <li>S<sub>4</sub>: Night</li>
+        <li>S<sub>5</sub>: Wolf Killed</li>
+        <li>S<sub>6</sub>: Wolf Kills</li>
+        <li>S<sub>7</sub>: Wolf Wins</li>
+        <li>S<sub>8</sub>: Game Over</li>
+    </ul>
+
+    <h2>Events</h2>
+    <ul>
+        <li>E<sub>0</sub>: All users registered</li>
+        <li>E<sub>1</sub>: Wolf selected</li>
+        <li>E<sub>2</sub>: Day timer ends</li>
+        <li>E<sub>3</sub>: Majority vote for wolf</li>
+        <li>E<sub>4</sub>: No majority vote</li>
+        <li>E<sub>5</sub>: Night timer ends</li>
+        <li>E<sub>6</sub>: Wolf kills all but one</li>
+        <li>E<sub>7</sub>: Wolf identified and killed</li>
+        <li>E<sub>8</sub>: Wolf wins</li>
+    </ul>
+
+    <h2>Graphical Representation</h2>
+    <img src="graph.png" alt="State and Event Transitions in the Game">
+    
+    <h2>Transitions</h2>
+    <ol>
+        <li>(S<sub>0</sub>, E<sub>0</sub>) → S<sub>1</sub> (All users registered)</li>
+        <li>(S<sub>1</sub>, E<sub>1</sub>) → S<sub>2</sub> (Wolf selected)</li>
+        <li>(S<sub>2</sub>, E<sub>2</sub>) → S<sub>3</sub> (Day timer ends)</li>
+    </ol>
+
+    <p>During Voting (S<sub>3</sub>):</p>
+
+    <ol start="4">
+        <li>(S<sub>3</sub>, E<sub>3</sub>) → S<sub>5</sub> (Majority vote for wolf)</li>
+        <li>(S<sub>3</sub>, E<sub>4</sub>) → S<sub>4</sub> (No majority vote)</li>
+    </ol>
+
+    <p>During Night (S<sub>4</sub>):</p>
+
+    <ol start="6">
+        <li>(S<sub>4</sub>, E<sub>5</sub>) → S<sub>2</sub> (Night timer ends)</li>
+        <li>(S<sub>4</sub>, E<sub>6</sub>) → S<sub>6</sub> (Wolf kills all but one)</li>
+        <li>(S<sub>6</sub>, E<sub>5</sub>) → S<sub>2</sub> (Night timer ends)</li>
+        <li>(S<sub>6</sub>, E<sub>7</sub>) → S<sub>7</sub> (Wolf wins)</li>
+    </ol>
+
+    <ol start="10">
+        <li>(S<sub>5</sub>, E<sub>7</sub>) → S<sub>8</sub> (Wolf identified and killed)</li>
+        <li>(S<sub>7</sub>, E<sub>8</sub>) → S<sub>8</sub> (Wolf wins)</li>
+    </ol>
+
+
+
+    <h2>Simulation Algorithm</h2>
+    <ol>
+        <li><strong>Initialization:</strong>
+            <ul>
+                <li>Set initial state S<sub>0</sub></li>
+                <li>Register 8 users</li>
+                <li>Randomly select one user as the wolf</li>
+            </ul>
+        </li>
+        <li><strong>Game Start:</strong>
+            <ul>
+                <li>Transition to S<sub>1</sub></li>
+            </ul>
+        </li>
+        <li><strong>Day:</strong>
+            <ul>
+                <li>Transition to S<sub>2</sub></li>
+                <li>Allow users to chat</li>
+                <li>End day after timer and transition to S<sub>3</sub></li>
+            </ul>
+        </li>
+        <li><strong>Voting:</strong>
+            <ul>
+                <li>Each user randomly votes</li>
+                <li>Check for majority vote
+                    <ul>
+                        <li>If wolf is voted out, transition to S<sub>5</sub></li>
+                        <li>Else, transition to S<sub>4</sub></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><strong>Night:</strong>
+            <ul>
+                <li>Wolf randomly kills one user</li>
+                <li>If only one user remains, transition to S<sub>6</sub></li>
+                <li>Else, transition to S<sub>2</sub></li>
+            </ul>
+        </li>
+        <li><strong>End Game:</strong>
+            <ul>
+                <li>Transition to S<sub>7</sub> from S<sub>5</sub> or S<sub>6</sub></li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>
