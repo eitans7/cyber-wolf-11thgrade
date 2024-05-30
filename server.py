@@ -6,7 +6,6 @@ import logging
 import os
 from collections import Counter
 
-
 LOG_FORMAT = '%(levelname)s | %(asctime)s | %(message)s'
 LOG_LEVEL = logging.DEBUG
 LOG_DIR = 'log'
