@@ -3,7 +3,7 @@ var user;
 var amIWolf = false;
 var alive = true;
 IsGameRunning = true;
-//
+
 const timerDuration = 5000; // Timer duration in milliseconds (5000ms = 5 seconds)
 const timerEventName = 'timerCompleted';
 
